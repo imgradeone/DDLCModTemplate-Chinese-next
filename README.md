@@ -91,9 +91,9 @@ More information about Android is listed in the Wiki or *guide.pdf*.
 ## 开源许可
 
 本 Mod 模板需要使用 Ren'Py。
-Ren'Py 由一系列开源组件构成，它们的开源协议可以在 https://www.renpy.cn/doc/license.html （简体中文）或 https://www.renpy.org/doc/html/license.html （英文）查看。
+Ren'Py 的许可，请参照 https://www.renpy.cn/doc/license.html （简体中文）或 https://www.renpy.org/doc/html/license.html （英文）。
 
-本模板基于 GanstaKingofSA 的 [DDLCModTemplate2.0](https://github.com/GanstaKingofSA/DDLCModTemplate)。
+本模板基于 GanstaKingofSA 的 [DDLCModTemplate2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0)。
 
 本模板属于粉丝作品，遵循 Team Salvato IP Guidelines。
 
