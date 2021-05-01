@@ -1,16 +1,10 @@
-# Welcome to the New Modification Club!
+# DDLC 中文 Mod 模板 2.0
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K22K8SU)
+这是**新的** DDLC 中文 Mod 模板！本模板基于 GanstaKingofSA 的 DDLC Mod Template 2.0，并进行了[旧版](https://github.com/imgradeone/DDLCModTemplate-Chinese)已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/)。
 
-The **new** DDLC Mod Template is a mod template for Doki Doki Literature Club by GanstaKingofSA that adheres to [Team Salvato's IP Guidelines](http://teamsalvato.com/ip-guidelines/) for fan mods.
+**本模板是为使用 DDLC 素材的饭制游戏和 Mod 所设计的，而并非不使用原版素材的作品，也不是用于复制粘贴至与 DDLC 不相关的工程之代码资源。此模板内大部分代码属于 Team Salvato 的知识产物，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/) 使用，否则后果自负。**
 
-**The template is designed for DDLC fan games and mods that use DDLC assets. 
-It is not meant for projects that does not use them, or as code to be copied to your non-DDLC project. 
-Most code in this template are the IP of Team Salvato and may not be copied to non-DDLC fan projects or mods.**
-
-> For a tutorial, download the packaged tutorial `DDLCModTemplate-2.X.X-Tutorial.zip` under **[Releases](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/releases)**. Only available after version **2.3.0** and tutorial builds may have a delay of being released after the version has come out.
-
-> Android Support is only supported on Version **2.4.0** and higher. Refer to *guide.pdf* in the ZIP file for more information in those versions.
+> 此模板自带 Android 支持，详情请看原版 DDLC Mod Template 2.0 所附带的 `guide.pdf`
 
 ### Getting Started for Beginners (Ren'Py 6)
 1. Download and run the [Ren'Py 6.99.12 SDK](https://www.renpy.org/release/6.99.12). **(NOTE: DDLC does not work with newer Ren'Py versions unless upgraded, see below.)**
