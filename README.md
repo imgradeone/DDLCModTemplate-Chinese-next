@@ -1,8 +1,11 @@
 # DDLC 中文 Mod 模板 2.0
+嘿，你~~又~~想用中文写 DDLC Mod？**那你来对地方了！**
 
 这是**新的** DDLC 中文 Mod 模板！本模板基于 GanstaKingofSA 的 DDLC Mod Template 2.0，并进行了[旧版](https://github.com/imgradeone/DDLCModTemplate-Chinese)已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/)。
 
 **本模板是为使用 DDLC 素材的饭制游戏和 Mod 所设计的，而并非不使用原版素材的作品，也不是用于复制粘贴至与 DDLC 不相关的工程之代码资源。此模板内大部分代码属于 Team Salvato 的知识产物，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/) 使用，否则后果自负。**
+
+**如果你是 Mod 作者，请不要将 DDLC 游戏本体包含在你分发的 ZIP 里，这是违反 IP Guidelines 的行为。**
 
 > 请注意：本模板可能尚不完善，且尚缺乏繁体中文支持。部分 GUI 元素暂未被汉化。
 
@@ -57,7 +60,8 @@ Refer to *guide.pdf* in your ZIP folder for more information, but make sure of t
 
 More information about Android is listed in the Wiki or *guide.pdf*.
 
-### Template Features
+## Template Features
+### DDLC Mod Template 2.0
 1. Build Packaging on Ren'Py 6 or 7!
 2. Splash Screen when your mod is launched for the first time.
 3. DDLC's exact RPY fiiles with explainations.
@@ -67,6 +71,10 @@ More information about Android is listed in the Wiki or *guide.pdf*.
     > Refer to *guide.pdf* for configuring your mod for Android.
 7. Xcode Support! Open this project in Xcode and you can edit, build, and run your mod without opening the Ren'Py Launcher ever again! 
     > Note: You need to change your `RENPY_TOOL` location and the Ren'Py app location in the target scheme for Xcode. [Learn more &rsaquo;](XCODE.md)
+### DDLC 中文 Mod 模板
+1. 绝赞中文化（目前是简体中文）
+1. 绝赞字体优化
+1. ~~绝赞咕咕咕~~
 
 ## Added Features
 1. Terra's In-Depth Poem Game Guide!
@@ -86,6 +94,21 @@ More information about Android is listed in the Wiki or *guide.pdf*.
 
 ...and more...
 
----
+## 特别感谢
 
-This template is included with [DDMMaker](https://github.com/GanstaKingofSA/DDLC-ModMaker/releases), a Ren'Py SDK to build only DDLC mods.
+- Team Salvato http://teamsalvato.com / https://ddlc.moe
+- GanstaKingofSA
+- 所有字体作者
+
+## 开源许可
+
+本 Mod 模板需要使用 Ren'Py。
+Ren'Py 由一系列开源组件构成，它们的开源协议可以在 https://www.renpy.cn/doc/license.html （简体中文）或 https://www.renpy.org/doc/html/license.html （英文）查看。
+
+本模板基于 GanstaKingofSA 的 [DDLCModTemplate2.0](https://github.com/GanstaKingofSA/DDLCModTemplate)。
+
+本模板属于粉丝作品，遵循 Team Salvato IP Guidelines。
+
+## 加入社区
+
+[Telegram 频道](https://t.me/DDLCModCN)
