@@ -660,16 +660,17 @@ style poem_vbar is vscrollbar:
 
 
 style yuri_text:
-    font "gui/font/y1.ttf"
+    font "mod_assets/font/shouzhuo.ttf" #font used packaged with the game
     size 32
     color "#000"
     outlines []
 
-style yuri_text_2:
-    font "gui/font/y2.ttf"
-    size 40
-    color "#000"
-    outlines []
+# style yuri_text_2:
+#     font "gui/font/y2.ttf"
+#     size 40
+#     color "#000"
+#     outlines []
+# y2.ttf 未被使用
 
 style yuri_text_3:
     font "gui/font/y3.ttf"
@@ -678,62 +679,118 @@ style yuri_text_3:
     outlines []
     kerning -8
     justify True
+# y3.ttf 暂无中文替代
 
 style natsuki_text:
-    font "gui/font/n1.ttf"
+    font "mod_assets/font/acy.otf"
     size 28
     color "#000"
     outlines []
     line_leading 1
 
 style sayori_text:
-    font "gui/font/s1.ttf"
+    font "mod_assets/font/tegaki.ttf"
     size 34
     color "#000"
     outlines []
 
 style monika_text:
+    font "mod_assets/font/nian.otf"
+    size 34
+    color "#000"
+    outlines []
+
+style yuri_text_en:
+    font "gui/font/y1.ttf" #font used packaged with the game
+    size 32
+    color "#000"
+    outlines []
+
+# style yuri_text_2:
+#     font "gui/font/y2.ttf"
+#     size 40
+#     color "#000"
+#     outlines []
+# y2.ttf 未被使用
+
+style yuri_text_3_en:
+    font "gui/font/y3.ttf"
+    size 18
+    color "#000"
+    outlines []
+    kerning -8
+    justify True
+
+style natsuki_text_en:
+    font "gui/font/n1.ttf"
+    size 28
+    color "#000"
+    outlines []
+    line_leading 1
+
+style sayori_text_en:
+    font "gui/font/s1.ttf"
+    size 34
+    color "#000"
+    outlines []
+
+style monika_text_en:
     font "gui/font/m1.ttf"
     size 34
     color "#000"
     outlines []
 
-label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, where=i11, paper=None):
+label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, where=i11, paper=None, chinese=True):
+    #If no poem key is given, just go back
     if poem == None:
         return
+
     play sound page_turn
+    #If a special track is chosen, play it, otherwise swap over to the character's
+    #special version of "Okay, Everyone!"
     if music:
-        $ currentpos = get_pos()
+        $ currentpos = get_pos() #The current point in the song
         if track:
-            $ audio.t5b = "<from " + str(currentpos) + " loop 4.444>" + track
+            $ audio.t5b = "<from " + str(currentpos) + " loop 4.444>" + track #change music
         else:
-            $ audio.t5b = "<from " + str(currentpos) + " loop 4.444>bgm/5_" + poem.author + ".ogg"
+            $ audio.t5b = "<from " + str(currentpos) + " loop 4.444>bgm/5_" + poem.author + ".ogg" #Play the special character Okay, Everyone! for the character
         stop music fadeout 2.0
         $ renpy.music.play(audio.t5b, channel="music_poem", fadein=2.0, tight=True)
     window hide
-    $ renpy.game.preferences.afm_enable = False
-    if paper:
-        show screen poem(poem, paper=paper)
+
+    #Show the background paper
+    if chinese:
+        if paper:
+            show screen poem(poem, paper=paper)
+            with Dissolve(1)
+        else:
+            show screen poem(poem)
+            with Dissolve(1)
     else:
-        show screen poem(poem)
-    if not persistent.first_poem:
-        $ persistent.first_poem = True
-        $ renpy.save_persistent()
-        show expression "gui/poem_dismiss.png" as poem_dismiss:
-            xpos 1050 ypos 590
-    with Dissolve(1)
+        if paper:
+            show screen poem_en(poem, paper=paper)
+            with Dissolve(1)
+        else:
+            show screen poem_en(poem)
+            with Dissolve(1)
     $ pause()
+
+    #Show an optional character in the background
     if img:
         $ renpy.hide(poem.author)
         $ renpy.show(img, at_list=[where])
-    hide screen poem
-    hide poem_dismiss
-    with Dissolve(.5)
+    
+    if chinese:
+        hide screen poem
+        with Dissolve(.5)
+    else:
+        hide screen poem_en
+        with Dissolve(.5)
     window auto
+    #After the poem is done, switch back to regular version of Okay, Everyone!
     if music and revert_music:
         $ currentpos = get_pos(channel="music_poem")
         $ audio.t5c = "<from " + str(currentpos) + " loop 4.444>bgm/5.ogg"
         stop music_poem fadeout 2.0
         $ renpy.music.play(audio.t5c, fadein=2.0)
     return
-

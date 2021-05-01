@@ -1365,6 +1365,8 @@ define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc",
 
 define _dismiss_pause = config.developer
 
+define gui.system_font = u'mod_assets/font/alipuhuireg.ttf'
+
 # Persistent Variables
 
 # These variables are load at game startup and exist on all saves.

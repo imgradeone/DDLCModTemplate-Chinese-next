@@ -48,13 +48,13 @@ define -2 gui.interface_text_color = '#ffffff'
 # Fonts and Font Sizes
 
 ## The font used for in-game text.
-define -2 gui.default_font = "gui/font/Aller_Rg.ttf"
+define -2 gui.default_font = "mod_assets/font/alipuhuireg.ttf"
 
 ## The font used for character names.
-define -2 gui.name_font = "gui/font/RifficFree-Bold.ttf"
+define -2 gui.name_font = "mod_assets/font/zcoolkuaile.ttf"
 
 ## The font used for out-of-game text.
-define -2 gui.interface_font = "gui/font/Aller_Rg.ttf"
+define -2 gui.interface_font = "mod_assets/font/alipuhuireg.ttf"
 
 ## The size of normal dialogue text.
 define -2 gui.text_size = 24

@@ -1,5 +1,31 @@
+# junk for a repo
+.DS_Store
+errors.txt
 *.rpa
-*.rpyb
+game/cache/bytecode.rpyb
+game/cache/pyanalysis.rpyb
+game/cache/screens.rpyb
+*.save
+game/saves/persistent
+*.bak
+traceback.txt
 *.rpyc
+*.rpyb
+log.txt
+project.json
+game/firstrun
+characters/*.chr
+*.swp
 firstrun
-DDLCModTemplate-*.*.*.zip
+
+# fonts
+*.ttf
+*.otf
+
+# 避免错误内置 DDLC 启动文件
+DDLC.exe
+DDLC.app
+DDLC.py
+DDLC.sh
+
+*.zip

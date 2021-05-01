@@ -193,14 +193,14 @@ image credits_ts:
 
 # Style fonts for the credits
 style credits_header:
-    font "gui/font/RifficFree-Bold.ttf"
+    font "mod_assets/font/zcoolkuaile.ttf"
     color "#ffaae6"
     size 36
-    text_align 0.5
+    text_align 1.5
     outlines []
 
 style credits_text:
-    font "gui/font/Halogen.ttf"
+    font "mod_assets/font/zhushi.ttf"
     color "#fff"
     size 36
     text_align 0.5
