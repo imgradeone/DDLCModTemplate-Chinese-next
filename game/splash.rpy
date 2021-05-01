@@ -6,19 +6,20 @@
 ## and decompile them for the builds to work.
 init -100 python:
     if not renpy.android:
-        for archive in ['audio','images','scripts','fonts']:
+        for archive in ['audio','images','fonts']:
             if archive not in config.archives:
-                renpy.error("DDLC archive files not found in /game folder. Check your installation and try again.")
+                renpy.error("看样子你还没有把 DDLC 游戏的文件复制过去呐。建议您去看看 README 一步步操作。")
 
 # Splash Message
 init python:
     menu_trans_time = 1
     # Default message everyone sees in the game
-    splash_message_default = "This game is an unofficial fan game, unaffiliated with Team Salvato."
+    splash_message_default = "这是非官方的粉丝 Mod，与 Team Salvato 无关。"
     # Used sometimes to change splash messages if called upon
     splash_messages = [
-        "Please support Doki Doki Literature Club.",
-        "Monika is watching you code."
+        "请多多支持 Dan 鸽www",
+        "Monika 在盯着你的粪代码。（笑）",
+        "Monika 保佑你，开发 Mod 不遇一个 unexpection！"
     ]
 
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
@@ -282,16 +283,17 @@ label splashscreen:
         if persistent.first_run and (config.version == persistent.oldversion or persistent.autoload == "postcredits_loop"):
             $ quick_menu = False
             scene black
+            "你似乎删除了 firstrun 文件，并且我们发现还有之前的存档。"
             menu:
-                "A previous save file has been found. Would you like to delete your save data and start over?"
-                "Yes, delete my existing data.":
-                    "Deleting save data...{nw}"
+                "是否删除存档并重置游戏？该操作不可撤销。"
+                "是的，删除存档":
+                    "正在删除存档...{nw}"
                     python:
                         delete_all_saves()
                         renpy.loadsave.location.unlink_persistent()
                         renpy.persistent.should_save_persistent = False
                         renpy.utter_restart()
-                "No, continue where I left off.":
+                "不，继续游戏":
                     $ restore_relevant_characters()
 
         #python:
@@ -318,13 +320,15 @@ label splashscreen:
         pause 1.0
         # You can edit this message but you MUST have say it's not affiliated with Team Salvato
         # must finish the official game and has spoilers, and where to get DDLC from."
-        "[config.name] is a Doki Doki Literature Club fan mod that is not affiliated in anyway with Team Salvato."
-        "It is designed to be played only after the official game has been completed, and contains spoilers for the official game."
-        "Game files for Doki Doki Literature Club are required to play this mod and can be downloaded for free at: https://ddlc.moe or on Steam."
+        "[config.name] 是 Doki Doki Literature Club 的粉丝 Mod，与 Team Salvato 无关。"
+        "本 Mod 理应在通关原游戏后再进行游玩，因此本 Mod 包含剧透。"
+        "要游玩本 Mod，需要原版 Doki Doki Literature Club 的文件。您可以在 https://ddlc.moe 或者 Steam 免费获取。"
         menu:
-            "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept any spoilers contained within."
-            "I agree.":
-                 pass
+            "如果继续游玩 [config.name] 将视为你已经通关原游戏，并接受任何剧透内容。"
+            "我同意。":
+                pass
+            "我不同意，退出。":
+                $ renpy.quit()
         $ persistent.first_run = True
         scene tos2
         with Dissolve(1.5)
@@ -503,8 +507,13 @@ label after_load:
     if anticheat != persistent.anticheat:
         stop music
         scene black
-        "The save file could not be loaded."
-        "Are you trying to cheat?"
+        "存档加载失败。"
+        "您是不是想作弊呢？"
+        show monika 1a at t11 zorder 1
+        if persistent.playername == "":
+            m "您真可笑。"
+        else:
+            m "[persistent.playername]，您真可笑。"
 
         $ renpy.utter_restart()
     return

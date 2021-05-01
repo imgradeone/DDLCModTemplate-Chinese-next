@@ -373,7 +373,7 @@ translate None strings:
 
     # renpy/common/00layout.rpy:429
     old "Are you sure you want to skip to unseen dialogue or the next choice?"
-    new "是否确定跳过未读文本与下个选项？"
+    new "是否确定跳过未读文本到下个选项？"
 
 
 translate None strings:
