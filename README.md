@@ -4,7 +4,11 @@
 
 **本模板是为使用 DDLC 素材的饭制游戏和 Mod 所设计的，而并非不使用原版素材的作品，也不是用于复制粘贴至与 DDLC 不相关的工程之代码资源。此模板内大部分代码属于 Team Salvato 的知识产物，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/) 使用，否则后果自负。**
 
+> 请注意：本模板可能尚不完善，且尚缺乏繁体中文支持。部分 GUI 元素暂未被汉化。
+
 > 此模板自带 Android 支持，详情请看原版 DDLC Mod Template 2.0 所附带的 `guide.pdf`
+
+## Getting Started
 
 ### Getting Started for Beginners (Ren'Py 6)
 1. Download and run the [Ren'Py 6.99.12 SDK](https://www.renpy.org/release/6.99.12). **(NOTE: DDLC does not work with newer Ren'Py versions unless upgraded, see below.)**
@@ -28,6 +32,24 @@ Follow these steps to set up the template for Ren'Py 7.
     > Sometimes this may not do anything or say a error happened. Click `Launch Project` again, and it should boot up.
 6. Once you finished writing your script, navigate the Ren'Py Menu, and select `Build Distributions`. Uncheck all the options and check only `Ren'Py 6 DDLC Compliant Mod` and click `Build`. This will create a cross-platform .ZIP file with files for your mod.
 
+### 中文字体
+
+中文版 DDLC Mod 模板使用了一些免费商用的中文字体，在此致谢。**开始 Mod 开发前，请务必下载这些字体，否则将无法启动工程。安装方式见 [中文字体包安装](#中文字体包安装) 小节。**
+
+如有需要，您也可以自行修改配置文件，以自定义字体，**但请自主承担版权风险**。
+
+中文字体详情请查看 [这里](./game/mod_assets/font/README.md)
+
+#### 中文字体包安装
+
+> 请注意：我们仍然建议您从各个字体的官网下载这些字体，即便它们都是免费商用字体。
+
+您可以下载懒人专用字体包，下载完后将字体解压到 `game/mod_assets/font` 目录下即可。
+
+当前版本字体包：v1.2
+
+请在 https://dokimod.cn/moddev/fontdl.html 获取字体包。
+
 ### Getting Started For Android Porting/Modding
 Refer to *guide.pdf* in your ZIP folder for more information, but make sure of these key points.
 1. Make sure that your package name in Ren'Py Launcher is the same as the package name you will use in `options.rpy` and build name. Example: If your package name is named `com.yuri.storm` and your build name is `STORM`, your package name in Ren'Py Launcher under Android -> Configure must be `com.yuri.storm` as well. 
@@ -46,7 +68,7 @@ More information about Android is listed in the Wiki or *guide.pdf*.
 7. Xcode Support! Open this project in Xcode and you can edit, build, and run your mod without opening the Ren'Py Launcher ever again! 
     > Note: You need to change your `RENPY_TOOL` location and the Ren'Py app location in the target scheme for Xcode. [Learn more &rsaquo;](XCODE.md)
 
-### Added Features
+## Added Features
 1. Terra's In-Depth Poem Game Guide!
 2. Xcode Support for Mac OS/OS X by Alicerunsonfedora!
 3. NVL Support thanks to Yagamirai01!
@@ -55,12 +77,15 @@ More information about Android is listed in the Wiki or *guide.pdf*.
 6. Linux `.sh` Building Support for Linux Users!
 7. Android Support for porting your mod or making a mod for PC and Android!
 
-### Returned Features
+## Returned Features
 1. Ghost Menu (Dan's Spooky Easter Egg)
 2. Sayori Kill Script (If you delete Sayori before the game starts a new game, a new screen takes over)
 3. Monika Kill Script (If you delete Monika after the game loads the main menu and start a new game, a new script plays out)
 4. Special Poems! (Random Special Poems appear when prompted)
 5. Poem Responses! (Doki's respond to your custom poems!)
-and more!
+
+...and more...
+
+---
 
 This template is included with [DDMMaker](https://github.com/GanstaKingofSA/DDLC-ModMaker/releases), a Ren'Py SDK to build only DDLC mods.
