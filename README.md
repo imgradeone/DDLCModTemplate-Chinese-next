@@ -1,16 +1,37 @@
-# Welcome to the New Modification Club!
+# DDLC 中文 Mod 模板 2.0
+嘿，你~~又~~想用中文写 DDLC Mod？**那你来对地方了！**
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K22K8SU)
+这是**新的** DDLC 中文 Mod 模板！本模板基于 GanstaKingofSA 的 DDLC Mod Template 2.0，并进行了[旧版](https://github.com/imgradeone/DDLCModTemplate-Chinese)已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/)。
 
-The **new** DDLC Mod Template is a mod template for Doki Doki Literature Club by GanstaKingofSA that adheres to [Team Salvato's IP Guidelines](http://teamsalvato.com/ip-guidelines/) for fan mods.
+**本模板是为使用 DDLC 素材的饭制游戏和 Mod（而并非不使用原版素材的作品）设计的，提供源代码也并非以便将其复制粘贴到和 DDLC 没有关系的工程。此模板内大部分代码属于 Team Salvato 的知识产物，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/) 使用，否则后果自负。**
 
-**The template is designed for DDLC fan games and mods that use DDLC assets. 
-It is not meant for projects that does not use them, or as code to be copied to your non-DDLC project. 
-Most code in this template are the IP of Team Salvato and may not be copied to non-DDLC fan projects or mods.**
+**如果你是 Mod 作者，请不要将 DDLC 游戏本体包含在你分发的 ZIP 里，这是违反 IP Guidelines 的行为。**
 
-> For a tutorial, download the packaged tutorial `DDLCModTemplate-2.X.X-Tutorial.zip` under **[Releases](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/releases)**. Only available after version **2.3.0** and tutorial builds may have a delay of being released after the version has come out.
+> 请注意：本模板可能尚不完善，且尚缺乏繁体中文支持。部分 GUI 元素暂未被汉化。
 
-> Android Support is only supported on Version **2.4.0** and higher. Refer to *guide.pdf* in the ZIP file for more information in those versions.
+> 此模板自带 Android 支持，详情请看原版 DDLC Mod Template 2.0 所附带的 `guide.pdf`
+
+## Getting Started
+
+### 中文字体
+
+中文版 DDLC Mod 模板使用了一些免费商用的中文字体，在此致谢。**开始 Mod 开发前，请务必下载这些字体，否则将无法启动工程。安装方式见 [中文字体包安装](#中文字体包安装) 小节。**
+
+如有需要，您也可以自行修改配置文件，以自定义字体，**但请自主承担版权风险**。
+
+中文字体详情请查看 [这里](./game/mod_assets/font/README.md)
+
+#### 中文字体包安装
+
+> 请注意：我们仍然建议您从各个字体的官网下载这些字体，即便它们都是免费商用字体。
+
+您可以下载懒人专用字体包，下载完后将字体解压到 `game/mod_assets/font` 目录下即可。
+
+当前版本字体包：v1.2
+
+请在 https://dokimod.cn/moddev/fontdl.html 获取字体包。
+
+---
 
 ### Getting Started for Beginners (Ren'Py 6)
 1. Download and run the [Ren'Py 6.99.12 SDK](https://www.renpy.org/release/6.99.12). **(NOTE: DDLC does not work with newer Ren'Py versions unless upgraded, see below.)**
@@ -41,7 +62,9 @@ Refer to *guide.pdf* in your ZIP folder for more information, but make sure of t
 
 More information about Android is listed in the Wiki or *guide.pdf*.
 
-### Template Features
+## 模板特色功能
+
+### DDLC Mod Template 2.0
 1. Build Packaging on Ren'Py 6 or 7!
 2. Splash Screen when your mod is launched for the first time.
 3. DDLC's exact RPY fiiles with explainations.
@@ -51,22 +74,29 @@ More information about Android is listed in the Wiki or *guide.pdf*.
     > Refer to *guide.pdf* for configuring your mod for Android.
 7. Xcode Support! Open this project in Xcode and you can edit, build, and run your mod without opening the Ren'Py Launcher ever again! 
     > Note: You need to change your `RENPY_TOOL` location and the Ren'Py app location in the target scheme for Xcode. [Learn more &rsaquo;](XCODE.md)
+8. Terra's In-Depth Poemgame Guide!
+9. NVL Support thanks to Yagamirai01!
 
-### Added Features
-1. Terra's In-Depth Poem Game Guide!
-2. Xcode Support for Mac OS/OS X by Alicerunsonfedora!
-3. NVL Support thanks to Yagamirai01!
-4. Ren'Py 7 Mod Package Support!
-5. MacOS/OS X `.app` Building Support for Mac Users!
-6. Linux `.sh` Building Support for Linux Users!
-7. Android Support for porting your mod or making a mod for PC and Android!
+### DDLC 中文 Mod 模板
+1. 绝赞中文化（目前只支持简体中文）
+2. 绝赞字体优化
+3. ~~绝赞咕咕咕~~
 
-### Returned Features
-1. Ghost Menu (Dan's Spooky Easter Egg)
-2. Sayori Kill Script (If you delete Sayori before the game starts a new game, a new screen takes over)
-3. Monika Kill Script (If you delete Monika after the game loads the main menu and start a new game, a new script plays out)
-4. Special Poems! (Random Special Poems appear when prompted)
-5. Poem Responses! (Doki's respond to your custom poems!)
-and more!
+## 特别感谢
 
-This template is included with [DDMMaker](https://github.com/GanstaKingofSA/DDLC-ModMaker/releases), a Ren'Py SDK to build only DDLC mods.
+- Team Salvato http://teamsalvato.com / https://ddlc.moe
+- GanstaKingofSA
+- 所有字体作者
+
+## 开源许可
+
+本 Mod 模板需要使用 Ren'Py。
+Ren'Py 的许可，请参照 https://www.renpy.cn/doc/license.html （简体中文）或 https://www.renpy.org/doc/html/license.html （英文）。
+
+本模板基于 GanstaKingofSA 的 [DDLCModTemplate2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0)。
+
+本模板属于粉丝作品，遵循 Team Salvato IP Guidelines。
+
+## 加入社区
+
+[Telegram 频道](https://t.me/DDLCModCN)
