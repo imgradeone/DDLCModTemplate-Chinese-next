@@ -8,6 +8,7 @@
 
 # 这里可以为你的 Mod 命名。
 # 把 "DDLC 中文 Mod 模板" 改成你的 Mod 名字（比如 "我永远喜欢 Sayori"）
+## 带有 _() 的字符串表示其可被翻译。
 define config.name = "DDLC 中文 Mod 模板"
 
 # 这里可以控制是否在游戏主菜单展示 Mod 名字及版本号。

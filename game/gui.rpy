@@ -1,6 +1,5 @@
-
-## The init offset statement causes the init code in this file to run before
-## any other init's in any other file.
+## “init offset”语句可使此文件中的初始化语句在任何其他文件中的“init”语句之前运
+## 行。
 
 ## NOTE: To configure settings for Android, scroll down to the init python block
 ## on line 379
@@ -374,7 +373,7 @@ define gui.nvl_thought_xalign = 0.0
 define gui.nvl_button_xpos = 450
 define gui.nvl_button_xalign = 0.0
 
-# Mobile Phones & Tablets i.e the Android GUI code
+# 手机和平板的 GUI 适配
 
 init python:
 
