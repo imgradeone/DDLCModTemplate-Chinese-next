@@ -448,7 +448,6 @@ label splashscreen:
     show white
     $ persistent.ghost_menu = False
     $ splash_message = splash_message_default
-    $ config.main_menu_music = audio.t1
     $ renpy.music.play(config.main_menu_music)
     $ starttime = datetime.datetime.now()
     show intro with Dissolve(0.5, alpha=True)
@@ -539,7 +538,6 @@ label autoload:
 
 # starts the menu music once started
 label before_main_menu:
-    $ config.main_menu_music = audio.t1
     return
 
 # Basic Quit.

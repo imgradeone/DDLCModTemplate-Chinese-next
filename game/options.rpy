@@ -2,64 +2,64 @@
 ## This template version is 2.4.4. When asked to provide the template version you are using,
 ## give them this version number. DO NOT REMOVE OR CHANGE THIS COMMENT.
    
-# This is where you will name your mod!
-# Change "DDLC Mod Template 2.0" to your mod name (e.g. "Yuri")
-define config.name = "DDLC Mod Template"
+## 目前中文 Mod 模板的版本为 2.0.0-dev，基于原版改良模板的 2.4.4 版本改造。
+## 如果你需要向别人提及模板版本，建议把这两个都放上去。
+## 不要修改、删除这段注释，包括上面的英文原版。
 
-# This controls whether you want your mod name to show in the main menu.
-# If your mod name is big, it is suggested to turn this off
+# 这里可以为你的 Mod 命名。
+# 把 "DDLC 中文 Mod 模板" 改成你的 Mod 名字（比如 "我永远喜欢 Sayori"）
+define config.name = "DDLC 中文 Mod 模板"
+
+# 这里可以控制是否在游戏主菜单展示 Mod 名字及版本号。
+# 一般情况下可以打开以与原游戏区分，但如果 Mod 名字太长，建议改为 False
 define gui.show_name = True
 
-# This is where you will input the version of your mod.
-# If you have multiple versions of your mod, this will be pretty useful to change.
-# If you are starting out, set this to "1.0"
-define config.version = "2.4.4"
+# 这里可以输入版本号。如果你的 Mod 版本很多，那这时版本号会很有用。
+# 如果你刚刚开始，那么建议把版本号设为 "1.0"
+define config.version = "2.0.0-dev"
 
-# This adds information about your mod in the About section.
-# DDLC does not have a about section so you can leave this blank.
-define gui.about = _("")
+# 这里是在“关于”页显示的 Mod 介绍文字。
+# 由于我们重新启用了关于界面，你可以在这里写点介绍。
+define gui.about = _("""这里是写简介的地方。在 options.rpy 里写上你的 Mod 简介吧！""")
 
-# This is the name of your build that the Ren'Py SDK will read.
-# The build name is ASCII only so no numbers, spaces, or semicolons.
-# Example: Doki Doki Yuri Time to DokiDokiYuriTime
-define build.name = "DDLCModTemplateTwo"
+# 这是 Ren'Py SDK 会读取的构建名。
+# 构建名只能使用 ASCII 字符，因此只能使用英文字母，不能有空格、数字、下划线。
+# 例：Sayori Is The Best → SayoriIsTheBest
+define build.name = "DDLCModTempCNNext"
 
-# This is the package name of your build used to identify your app folder
-# for DDLC. Make sure this is the same as the package name defined when
-# you configured it in the Configure Tab within Android in Ren'Py Launcher.
-## All apps must follow com. but you can change sdc to your name.
-define package_name = "com.sdc." + build.name.lower() 
+# 这是针对 Android Mod 移植的包名。
+# 请务必将其与 Ren'Py 启动器中的配置保持一致。
+## 按照包名规范，您可以将 "cn.dokimod." 改成其他内容，但最好还是以 "com.xxx." 之类的东西
+## 作为开头。
+define package_name = "cn.dokimod." + build.name.lower() 
 
-# This configures whether your mod has sound effects (e.g. slap sound effects) or not.
-# It is best to leave this set to True default.
+# 控制设置菜单中的音量设置显示
+# 音效，建议保留为 True
 define config.has_sound = True
 
-# This configures whether your mod has music (e.g. Your Reality) or not.
-# It is best to leave this set to True default.
+# 背景音乐，建议保留为 True
 define config.has_music = True
 
-# This configures whether your mod has voices!
-# If your using voice actors in your mod, set this to True, else leave it at False.
+# 语音，如果 Mod 有语音则为 True，否则为 False
 define config.has_voice = False
 
-# This configures what song/music will play when you launch your mod.
-# audio.t1 is the Doki Doki Literature Club Main Menu Music.
-# If you want to change this, change the "t1" to the song you want.
+# 这里控制主菜单的背景音乐。
+# audio.t1 是 Doki Doki Literature Club 的主菜单音乐。
+# 如果你想修改，那么把 "t1" 改成其他已定义的 BGM。
 define config.main_menu_music = audio.t1
 
-# These two settings control the transition effects of DDLC on the game menu.
-# Dissolve(.2) sets the transition effect you see.
-# config.enter_transition controls the effect seen when entering the game menu.
-# config.exit_transition controls the effect when returning to the game.
+# 这是进入和退出游戏菜单时使用的转场。
+# Dissolve(.2) 相当于转场特效。
+# config.enter_transition 控制进入游戏菜单时使用的转场。
+# config.exit_transition 控制退出游戏菜单 / 返回游戏时使用的转场。
 define config.enter_transition = Dissolve(.2)
 define config.exit_transition = Dissolve(.2)
 
-# This controls the transition effect of DDLC when loading a saved game.
-# By default, this is set to None and you can customize what transition you want to show.
-# If you are unsure about this setting, leave it as is.
+# 这是加载存档后显示的转场。
+# 默认情况下为 None，你可以自定义转场，但如果不确定，请保留为 None。
 define config.after_load_transition = None
 
-# This controls the transition effect of DDLC when your mod has ended.
+# 这是在故事结束后显示的转场。
 # Dissolve(.2) sets the transition effect you see.
 define config.end_game_transition = Dissolve(.5)
 
@@ -177,8 +177,8 @@ init python:
     build.archive("scripts", 'mod')
     build.archive("mod_assets", 'mod')
 
-    ## Do not touch this. This is so Ren'Py can add the .sh file 
-    ## for Linux/Mac to run your mod
+    ## 不要动这里。
+    ## 这里可以让 Ren'Py 添加 Linux / macOS 的执行文件。
     try:
         build.renpy_patterns.remove((u'renpy.py', [u'all']))
     except:
