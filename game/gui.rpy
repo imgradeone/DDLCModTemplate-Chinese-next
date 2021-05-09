@@ -1,61 +1,60 @@
 ## “init offset”语句可使此文件中的初始化语句在任何其他文件中的“init”语句之前运
 ## 行。
 
-## NOTE: To configure settings for Android, scroll down to the init python block
-## on line 379
+## 如需配置 Android 移植 GUI，请查看第 376 行。
 
+## 调用gui.init会将样式重置为合理的默认值，并设置游戏的宽度和高度（分辨率）。
 init -2 python:
     # Set's the resolution of DDLC to 1280x720p@60Hz
     gui.init(1280, 720)
 
-# GUI Config Variables
-define -2 gui.hover_sound = "gui/sfx/hover.ogg" # Hover Sound Effect
-define -2 gui.activate_sound = "gui/sfx/select.ogg" # Click Sound Effect
-define -2 gui.activate_sound_glitch = "gui/sfx/select_glitch.ogg" # Glitched Sound Effect
+## GUI 配置变量
+define -2 gui.hover_sound = "gui/sfx/hover.ogg" # 悬停音效
+define -2 gui.activate_sound = "gui/sfx/select.ogg" # 点击音效
+define -2 gui.activate_sound_glitch = "gui/sfx/select_glitch.ogg" # 点击音效（Glitch）
 
-# Colors!
-# This sets the color of text in DDLC
+# 颜色
+# 控制界面中文本的颜色。
 
-## Color used to label and highlight text.
+# 整个界面中使用的强调色，用于标记和突出显示文本。
 define -2 gui.accent_color = '#ffffff'
 
-## The color used for a text button when it is neither selected nor hovered.
+# 当既未选中也未悬停时用于文本按钮的颜色。
 define -2 gui.idle_color = '#aaaaaa'
 
-## The small color is used for small text, which needs to be brighter/darker to
-## achieve the same effect.
+## 小颜色用于小文本，需要更亮/更暗才能达到相同的效果。
 define -2 gui.idle_small_color = '#333'
 
-## The color that is used for buttons and bars that are hovered.
+## 用于悬停的按钮和滑条的颜色。
 define -2 gui.hover_color = '#cc6699'
 
-## The color used for a text button when it is selected but not focused.
+## 用于选中但非焦点的文本按钮的颜色。
 define -2 gui.selected_color = '#bb5588'
 
-## The color used for a text button when it cannot be selected.
+## 用于无法选择的文本按钮的颜色。
 define -2 gui.insensitive_color = '#aaaaaa7f'
 
-## Colors used for the portions of bars that are not filled in. These are not
-## used directly, but are used when re-generating bar image files.
+## 用于未填充的滑条部分的颜色。这些颜色不直接使用，但在重新生成条形图像文件时使用。
+## 对于 DDLC，这些选项完全没有用，但最好还是留着。
 define -2 gui.muted_color = '#6666a3'
 define -2 gui.hover_muted_color = '#9999c1'
 
-## The colors used for dialogue and menu choice text.
+## 用于对话和菜单选择文本的颜色。
 define -2 gui.text_color = '#ffffff'
 define -2 gui.interface_text_color = '#ffffff'
 
-# Fonts and Font Sizes
+# 字体和字体大小
 
-## The font used for in-game text.
+## 用于游戏内文本的字体。
 define -2 gui.default_font = "mod_assets/font/alipuhuireg.ttf"
 
-## The font used for character names.
+## 用于角色名称的字体。
 define -2 gui.name_font = "mod_assets/font/zcoolkuaile.ttf"
 
-## The font used for out-of-game text.
+## 用于游戏外文本的字体。
 define -2 gui.interface_font = "mod_assets/font/alipuhuireg.ttf"
 
-## The size of normal dialogue text.
+## 普通对话文本的大小。
 define -2 gui.text_size = 24
 
 ## The size of character names.
