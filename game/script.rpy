@@ -1,45 +1,43 @@
 # Script.rpy
-# This is the main script that DDLC/Ren'Py calls upon to start
-# your mod's story! 
+# 这里支撑着游戏的整体运行逻辑。
 
-# Imports stuff needed for the Android build of DDLC
+# 导入 Android Mod 需要的库
 init python:
     if renpy.android:
         import os
 
 label start:
 
-    # Configures your mod to use a ID to prevent users from cheating.
-    # Leave this as default and only change the value 'persistent.anticheat' has
-    # in definitions.rpy if you want to change it
+    # 用于防作弊（读取之前存档）的 ID。
+    # 不要在这里修改相应 ID，请在 definitions.rpy 修改。
     $ anticheat = persistent.anticheat
 
-    # Controls what chapter the game starts for the poem game.
+    # 这里控制游戏的章节，对于 poem game 有用。
     $ chapter = 0
 
-    # This makes sure if the user quits during pause, 
-    # it is set to false after restarting the game. Precaution.
+    # 如果游戏在暂停时被玩家退出，那么它将设为 False。
+    # 慎用。
     $ _dismiss_pause = config.developer
 
-    # Names of the Characters
-    # To add a character -> $ mi_name = "Mike". Don't forget to
-    # add them also in definitions.rpy!
+    # 角色命名。
+    # 如需添加新角色 -> $ mi_name = "Mike"
+    # 一定要记得去 definitions.rpy 再定义一次！
     $ s_name = "Sayori" # 可选译名：纱世里（推荐）、莎世里、纱悠里
     $ m_name = "Monika" # 推荐译名：莫妮卡
     $ n_name = "Natsuki" # 可选译名：夏树（推荐）、娜苏琪
     $ y_name = "Yuri" # 推荐译名：优里
 
-    # Controls whether we have a menu in the textbox or not.
+    # 控制是否显示底部文字菜单和是否允许使用 Esc 显示菜单。
     $ quick_menu = True
 
-    # Controls whether we want normal or glitched dialogue
-    # For glitched dialogue, use 'style.edited' than 'style.normal'
+    # 控制对话文字风格。
+    # 对于“修改”类文本，请使用 'style.edited'，否则请保持 'style.normal'
     $ style.say_dialogue = style.normal
 
-    # Controls whether Sayori is dead. Leave this alone unless needed.
+    # 控制 Sayori 此时是否 GG，但这个变量目前没什么用。
     $ in_sayori_kill = None
     
-    # Controls whether we allow skipping dialogue.
+    # 控制是否允许玩家跳过 / 快进对话。
     $ allow_skipping = True
     $ config.allow_skipping = True
 

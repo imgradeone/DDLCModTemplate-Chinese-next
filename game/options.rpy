@@ -192,6 +192,8 @@ init python:
     # Example: build.classify("game/**.pdf", "scripts all")
     
     build.classify("game/mod_assets/**", "mod_assets all")
+    build.classify("game/gui/**", "mod_assets all")
+    build.classify("game/images/**", "mod_assets all")
     build.classify("game/**.rpyc", "scripts all")
     build.classify("game/README.txt", None)
     build.classify("game/**.txt", "scripts all")
@@ -228,3 +230,4 @@ init python:
 
     # Doki Doki Mod Manager metadata file
     build.classify('ddmm-mod.json','mod')
+    build.classify('ddmm-bg.png','mod')
