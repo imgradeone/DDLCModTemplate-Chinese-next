@@ -49,7 +49,7 @@ style input:
     color gui.accent_color
 
 style hyperlink_text:
-    color gui.accent_color
+    color "#fa82b6"
     hover_color gui.hover_color
     hover_underline True
 
