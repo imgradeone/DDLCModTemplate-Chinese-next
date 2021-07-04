@@ -1,11 +1,6 @@
 # Script.rpy
 # 这里支撑着游戏的整体运行逻辑。
 
-# 导入 Android Mod 需要的库
-init python:
-    if renpy.android:
-        import os
-
 label start:
 
     # 用于防作弊（读取之前存档）的 ID。

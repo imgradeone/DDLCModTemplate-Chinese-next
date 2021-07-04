@@ -1,8 +1,8 @@
 ﻿# Options.rpy
-## This template version is 2.4.4. When asked to provide the template version you are using,
+## This template version is 2.4.6. When asked to provide the template version you are using,
 ## give them this version number. DO NOT REMOVE OR CHANGE THIS COMMENT.
    
-## 目前中文 Mod 模板的版本为 2.0.0-dev，基于原版改良模板的 2.4.4 版本改造。
+## 目前中文 Mod 模板的版本为 2.0.0-dev，基于原版改良模板的 2.4.6 版本改造。
 ## 如果你需要向别人提及模板版本，建议把这两个都放上去。
 ## 不要修改、删除这段注释，包括上面的英文原版。
 
@@ -27,12 +27,6 @@ define gui.about = _("""这里是写简介的地方。在 options.rpy 里写上�
 # 构建名只能使用 ASCII 字符，因此只能使用英文字母，不能有空格、数字、下划线。
 # 例：Sayori Is The Best → SayoriIsTheBest
 define build.name = "DDLCModTempCNNext"
-
-# 这是针对 Android Mod 移植的包名。
-# 请务必将其与 Ren'Py 启动器中的配置保持一致。
-## 按照包名规范，您可以将 "cn.dokimod." 改成其他内容，但最好还是以 "com.xxx." 之类的东西
-## 作为开头。
-define package_name = "cn.dokimod." + build.name.lower() 
 
 # 控制设置菜单中的音量设置显示
 # 音效，建议保留为 True
@@ -223,11 +217,11 @@ init python:
 
     build.include_old_themes = False
 
-    # Advanced Addons
-    # This section is for advanced build classifications to your mod that
-    # can be added to your mod. Note DDLC runs as normal and doesn't require this.
-    # This is either for compatibility issues or added features.
+    # # Advanced Addons
+    # # This section is for advanced build classifications to your mod that
+    # # can be added to your mod. Note DDLC runs as normal and doesn't require this.
+    # # This is either for compatibility issues or added features.
 
-    # Doki Doki Mod Manager metadata file
-    build.classify('ddmm-mod.json','mod')
-    build.classify('ddmm-bg.png','mod')
+    # # Doki Doki Mod Manager metadata file
+    # build.classify('ddmm-mod.json','mod')
+    # build.classify('ddmm-bg.png','mod')

@@ -3,9 +3,11 @@
 
 这是**新的** DDLC 中文 Mod 模板！本模板基于 GanstaKingofSA 的 DDLC Mod Template 2.0，并进行了[旧版](https://github.com/imgradeone/DDLCModTemplate-Chinese)已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/)。
 
-**本模板是为使用 DDLC 素材的饭制游戏和 Mod（而并非不使用原版素材的作品）设计的，提供源代码也并非以便将其复制粘贴到和 DDLC 没有关系的工程。此模板内大部分代码属于 Team Salvato 的知识产物，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/) 使用，否则后果自负。**
+**本模板是为使用原版 DDLC 素材的饭制游戏和 Mod（而并非不使用原版素材的作品）设计的，提供源代码也并非以便将其复制粘贴到和 DDLC 没有关系的工程。此模板内大部分代码属于 Team Salvato 的知识产物，请遵循 Team Salvato 的 [IP Guidelines](http://teamsalvato.com/ip-guidelines/) 使用，否则后果自负。**
 
 **如果你是 Mod 作者，请不要将 DDLC 游戏本体包含在你分发的 ZIP 里，这是违反 IP Guidelines 的行为。**
+
+> 本 Mod 模板不支持 Doki Doki Literature Club Plus。
 
 > 请注意：本模板可能尚不完善，且尚缺乏繁体中文支持。部分 GUI 元素暂未被汉化。
 
@@ -33,8 +35,9 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 
 ---
 
-### 使用 Ren'Py SDK 6 进行 Mod 开发（）
-1. 下载并运行 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12). **（请注意：DDLC 不兼容新版 Ren'Py，除非更新。）**
+### 使用 Ren'Py SDK 6 进行 Mod 开发
+1. 下载并运行 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12). 
+    > 请注意：DDLC 不兼容新版 Ren'Py，除非游戏后续更新。
 2. Go to releases to download the [latest build](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/releases) of the template.
 3. Download DDLC on http://ddlc.moe or Steam & copy the `DDLC-1.1.1-pc` (`ddlc-mac` for MacOS/OS X or `Doki Doki Literature Club` for Steam) to the `renpy-6.99.12.4-sdk` folder. Rename the folder to your mod name.
 3. Place the files withing the Mod Template's ZIP file into the DDLC folder you copied to. Accept any replaces if prompted. 
@@ -44,7 +47,8 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 6. Once you finished writing your script, navigate the Ren'Py Menu, and select `Build Distributions`. Uncheck all the options and check only `Ren'Py 6 DDLC Compliant Mod` and click `Build`. This will create a cross-platform .ZIP file with files for your mod.
 
 ### Getting Started for Advanced Users (Ren'Py 7)
-1. 下载并运行 [最新版 Ren'Py SDK](https://www.renpy.org/latest.html) **（请注意：使用 Ren'Py 7 构建的 Mod 不兼容 Ren'Py 6。）**
+1. 下载并运行 [Ren'Py SDK 7.4.5](https://www.renpy.org/release/7.4.5)。
+    > 请注意：使用 Ren'Py 7 构建的 Mod 不兼容 Ren'Py 6。我们也会跟进上游的变动，以完美适配最新的 Ren'Py SDK。目前 Ren'Py SDK 7.4.6 有破坏性改动，会导致 DDLC 转场失效，请不要更新 SDK！！！
 2. Go to releases to download the [latest build](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/releases) of the template.
 3. Download DDLC on http://ddlc.moe or Steam & copy the `DDLC-1.1.1-pc` (`ddlc-mac` for MacOS/OS X or `Doki Doki Literature Club` for Steam) to the `renpy-<version>-sdk` folder. Rename the folder to your mod name.
 3. Place the files withing the Mod Template's ZIP file into the DDLC folder you copied to. Accept any replaces if prompted. 
