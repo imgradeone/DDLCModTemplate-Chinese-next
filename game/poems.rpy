@@ -641,7 +641,32 @@ screen poem(currentpoem, paper="paper"):
         null height 100
     vbar value YScrollValue(viewport="vp") style "poem_vbar"
 
-
+screen poem_en(currentpoem, paper="paper"):
+    style_prefix "poem"
+    vbox:
+        add paper
+    viewport id "vp":
+        child_size (710, None) #Subwindow size for showing text
+        mousewheel True #make scrollable
+        draggable True
+        vbox:
+            null height 40
+            #Text style is determine by the author
+            if currentpoem.author == "yuri":
+                if currentpoem.yuri_2:
+                    text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text_en"
+                elif currentpoem.yuri_3:
+                    text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text_3_en"
+                else:
+                    text "[currentpoem.title]\n\n[currentpoem.text]" style "yuri_text_en"
+            elif currentpoem.author == "sayori":
+                text "[currentpoem.title]\n\n[currentpoem.text]" style "sayori_text_en"
+            elif currentpoem.author == "natsuki":
+                text "[currentpoem.title]\n\n[currentpoem.text]" style "natsuki_text_en"
+            elif currentpoem.author == "monika":
+                text "[currentpoem.title]\n\n[currentpoem.text]" style "monika_text_en"
+            null height 100
+    vbar value YScrollValue(viewport="vp") style "poem_vbar"
 
 style poem_vbox:
     xalign 0.5

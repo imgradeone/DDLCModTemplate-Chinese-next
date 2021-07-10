@@ -215,7 +215,7 @@ image warning:
 init python:
     if not persistent.do_not_delete:
         import os
-       if renpy.android: #checks if the platform is android
+        if renpy.android: #checks if the platform is android
             try:
                 # writes character files if missing and correct playthrough to Android/data/[your mod]/characters
                 if not os.access(os.environ['ANDROID_PUBLIC'] + "/characters/", os.F_OK):
@@ -321,7 +321,7 @@ label splashscreen:
         # must finish the official game and has spoilers, and where to get DDLC from."
         "[config.name] 是 Doki Doki Literature Club 的粉丝 Mod，与 Team Salvato 无关。"
         "本 Mod 理应在通关原游戏后再进行游玩，因此本 Mod 包含剧透。"
-        "要游玩本 Mod，需要原版 Doki Doki Literature Club 的文件。您可以在 https://ddlc.moe 或者 Steam 免费获取。"
+        "要游玩本 Mod，需要原版 Doki Doki Literature Club 的文件。您可以在 {a=https://ddlc.moe}DDLC.moe{/a} 或者 Steam 免费获取。"
         menu:
             "如果继续游玩 [config.name] 将视为你已经通关原游戏，并接受任何剧透内容。"
             "我同意。":
