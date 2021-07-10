@@ -29,7 +29,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 
 您可以下载懒人专用字体包，下载完后将字体解压到 `game/mod_assets/font` 目录下即可。
 
-请在 https://dokimod.cn/moddev/fontdl.html 获取字体包。
+请在 https://revolution.dokimod.cn/modtemplate/chinesefonts/ 获取字体包。
 
 ---
 
