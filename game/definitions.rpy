@@ -917,6 +917,8 @@ image natsuki glitch1:
     yoffset 0 zoom 1 xoffset 0 ytile 1
     "natsuki 4e"
 
+image natsuki glitch1_noanimation =  "natsuki/glitch1.png" # 赠品
+
 image natsuki scream = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/scream.png")
 image natsuki vomit = "natsuki/vomit.png"
 
@@ -1110,6 +1112,8 @@ image yuri 4bb = im.Composite((960, 960), (0, 0), "yuri/b2.png", (0, 0), "yuri/3
 image yuri 4bc = im.Composite((960, 960), (0, 0), "yuri/c2.png", (0, 0), "yuri/3b.png")
 image yuri 4bd = im.Composite((960, 960), (0, 0), "yuri/d2.png", (0, 0), "yuri/3b.png")
 image yuri 4be = im.Composite((960, 960), (0, 0), "yuri/e2.png", (0, 0), "yuri/3b.png")
+
+image yuri eyesfull = "yuri/eyesfull.png"
 
 image y_glitch_head:
     "images/yuri/za.png"

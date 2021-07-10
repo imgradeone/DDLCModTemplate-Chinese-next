@@ -593,6 +593,16 @@ After all,
 Not all good times must come to an end."""
     )
 
+    poem_natsuki_cntest = Poem(
+    author = "natsuki",
+    title = "一篇测试",
+    text = """\
+这是一篇用于测试 Acy 字体排版的一坨鸟不拉屎的东西，没别的目的。\
+但愿我能一次性改完这个鬼东西吧...............
+枯了。
+如果遇到什么最后一行字被吃了的问题，我可能也没办法。"""
+    )
+
 image paper = "images/bg/poem.jpg"
 image paper_glitch = LiveComposite((1280, 720), (0, 0), "paper_glitch1", (0, 0), "paper_glitch2")
 image paper_glitch1 = "images/bg/poem-glitch1.png"
@@ -712,6 +722,8 @@ style natsuki_text:
     color "#000"
     outlines []
     line_leading 1
+    line_spacing 6
+    kerning 1.5
 
 style sayori_text:
     font "mod_assets/font/tegaki.ttf"
