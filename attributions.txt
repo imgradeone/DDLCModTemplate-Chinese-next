@@ -1,0 +1,10 @@
+FONT LICENSES for DDLC Chinese Mod Template
+
+acy.otf: Copyright (c) 2019-2020, lxfly2000 (lxfly2000@outlook.com). Licensed under SIL Open Font License 1.1.
+harmonyossans.ttf: Copyright 2021 Huawei Device Co., Ltd. Licensed under HarmonyOS Sans Fonts License Agreement.
+nian.otf: Copyright (c) 2019, Xuzhou Xinye Media Technology Co., Ltd.
+shouzhuo.ttf: (c) 2019 Hanchan Type. All Rights Reserved.
+sourcehanserif.otf: Copyright (c) 2017 Adobe Systems Incorporated.
+tegaki.ttf: 8:51:22 pm
+zcoolkuaile.ttf: Copyright (c) 2016 刘兵克 (Liu Bingke)
+zhushi.ttf: Copyright (c) 2017 杨任东字体

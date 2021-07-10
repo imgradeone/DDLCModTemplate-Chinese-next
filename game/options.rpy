@@ -211,6 +211,8 @@ init python:
     build.classify('/game/cache/*.*', None)
     build.classify('**.rpa', None)
     build.classify('README.html','mod all')
+    build.classify('attributions.txt','mod all')
+    build.classify('game/mod_assets/font/LICENSE-harmonyossans.txt','mod all')
 
     # Set's README.html as documentation
     build.documentation('README.html')

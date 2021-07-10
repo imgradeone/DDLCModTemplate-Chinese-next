@@ -1365,7 +1365,7 @@ define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc",
 
 define _dismiss_pause = config.developer
 
-define gui.system_font = u'mod_assets/font/alipuhuireg.ttf'
+define gui.system_font = u'mod_assets/font/harmonyossans.ttf'
 
 # Persistent Variables
 
