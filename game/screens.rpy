@@ -482,7 +482,7 @@ screen navigation():
             if renpy.variant("pc"):
 
                 ## Help isn't necessary or relevant to mobile devices.
-                textbutton _("帮助") action [Help("README.html"), Show(screen="dialog", message="帮助文档已在浏览器打开。", ok_action=Hide("dialog"))]
+                textbutton _("帮助") action [Help("help.html"), Show(screen="dialog", message="帮助文档已在浏览器打开。", ok_action=Hide("dialog"))]
 
                 ## The quit button is banned on iOS and unnecessary on Android.
                 textbutton _("退出") action Quit(confirm=not main_menu)

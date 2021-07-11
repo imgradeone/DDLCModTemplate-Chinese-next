@@ -13,6 +13,8 @@
 
 > 此模板自带 Android 支持，详情请看原版 DDLC Mod Template 2.0 所附带的 `guide.pdf`
 
+您可以查看 [更新日志](CHANGELOG.md)
+
 ## 开始制作 Mod
 
 ### 中文字体

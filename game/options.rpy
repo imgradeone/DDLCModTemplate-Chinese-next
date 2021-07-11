@@ -210,12 +210,12 @@ init python:
     build.classify('/game/10', None)
     build.classify('/game/cache/*.*', None)
     build.classify('**.rpa', None)
-    build.classify('README.html','mod all')
+    build.classify('help.html','mod all')
     build.classify('attributions.txt','mod all')
     build.classify('game/mod_assets/font/LICENSE-harmonyossans.txt','mod all')
 
-    # Set's README.html as documentation
-    build.documentation('README.html')
+    # Set's help.html as documentation
+    build.documentation('help.html')
 
     build.include_old_themes = False
 
