@@ -3,9 +3,9 @@
 
 ## 如需配置 Android 移植 GUI，请查看第 376 行。
 
-## 调用gui.init会将样式重置为合理的默认值，并设置游戏的宽度和高度（分辨率）。
+## 调用 gui.init 会将样式重置为合理的默认值，并设置游戏的宽度和高度（分辨率）。
 init -2 python:
-    # Set's the resolution of DDLC to 1280x720p@60Hz
+    # DDLC 默认分辨率为 1280x720（720p），擅自修改此项可能会有意外发生。
     gui.init(1280, 720)
 
 ## GUI 配置变量
@@ -57,7 +57,7 @@ define -2 gui.interface_font = "mod_assets/font/harmonyossans.ttf"
 ## 普通对话文本的大小。
 define -2 gui.text_size = 24
 
-## The size of character names.
+## 角色名称文本大小。
 define -2 gui.name_text_size = 24
 
 ## The size of text in the game's user interface.

@@ -36,7 +36,7 @@ label start:
     $ allow_skipping = True
     $ config.allow_skipping = True
 
-    # Start of the script
+    # 脚本开始
     call ch1_start
 
     return
