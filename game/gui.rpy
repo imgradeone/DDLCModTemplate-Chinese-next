@@ -333,7 +333,7 @@ define gui.history_text_ypos = 5
 define gui.history_text_width = 740
 define gui.history_text_xalign = 0.0
 
-# NVL-Mode
+# NVL 模式
 
 ## The NVL-mode screen displays the dialogue spoken by NVL-mode characters.
 
@@ -417,7 +417,7 @@ init python:
         gui.file_slot_cols = 3
         gui.file_slot_rows = 2
 
-        ## NVL-mode.
+        ## NVL 模式
         gui.nvl_height = 115
 
         gui.nvl_name_width = 150

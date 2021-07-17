@@ -10,10 +10,10 @@ init -100 python:
             if archive not in config.archives:
                 renpy.error("看样子你还没有把 DDLC 游戏的文件复制过去呐。建议您去看看 README 一步步操作。")
 
-# Splash Message
+# 启动屏幕信息
 init python:
     menu_trans_time = 1
-    # Default message everyone sees in the game
+    # 默认的启动屏幕信息，所有玩家都可以看到。
     splash_message_default = "这是非官方的粉丝 Mod，与 Team Salvato 无关。"
     # Used sometimes to change splash messages if called upon
     splash_messages = [
@@ -24,7 +24,7 @@ init python:
 
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
 
-# Main Menu Images
+# 主界面图片
 image menu_logo:
     "/mod_assets/DDLCModTemplateLogo.png"
     subpixel True

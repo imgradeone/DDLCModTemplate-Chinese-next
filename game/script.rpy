@@ -41,7 +41,7 @@ label start:
 
     return
 
-# the end label of the game. Not the credits.    
+# 游戏的 END 标志。（不是 Credits）
 label endgame(pause_length=4.0):
     $ quick_menu = False
     stop music fadeout 2.0
