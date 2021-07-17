@@ -795,7 +795,7 @@ label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, w
         $ renpy.music.play(audio.t5b, channel="music_poem", fadein=2.0, tight=True)
     window hide
 
-    #Show the background paper
+    # 判断中文模式状态，并展示诗歌内容
     if chinese:
         if paper:
             show screen poem(poem, paper=paper)

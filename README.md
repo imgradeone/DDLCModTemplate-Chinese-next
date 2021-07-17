@@ -49,7 +49,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
     > 有时候，启动项目可能不会发生任何事情，或者报错。您可以再次单击 `Launch Project` / `运行工程` ，此时工程应该可以正常启动。
 1. 当你完成脚本编写后，转到 Ren'Py SDK 主界面，选择 `Build Distributions` / `生成分发版`。将 `Build Packages` / `生成分发包` 中的其他选项全部取消，仅选中 `Ren'Py 6 DDLC Compliant Mod`，然后点击 `Build` / `生成`。这个操作会生成跨平台的 ZIP 文件，这就是你的 Mod 文件。
 
-### Getting Started for Advanced Users (Ren'Py 7)
+### 使用 Ren'Py SDK 6 进行 Mod 开发
 1. 下载并运行 [Ren'Py SDK 7.4.5](https://www.renpy.org/release/7.4.5)。
     > 请注意：使用 Ren'Py 7 构建的 Mod 不兼容 Ren'Py 6。我们也会跟进上游的变动，以完美适配最新的 Ren'Py SDK。目前 Ren'Py SDK 7.4.6 有破坏性改动，会导致 DDLC 转场失效，请暂时不要更新 SDK！！！
 1. 前往 Releases 页面获取 [模板的最新版本](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/releases)。（目前 Mod 模板暂无稳定版本，您可以使用 GitHub 的 `Use this template` 创建新工程）
