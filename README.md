@@ -122,5 +122,12 @@ Ren'Py 的许可，请参照 https://www.renpy.cn/doc/license.html （简体中�
 ## 加入社区
 
 [Telegram 频道](https://t.me/DDLCModCN)
+[Odysee 频道](https://odysee.com/@DokiMod:1)
 
-Copyright © 2019-2021 GanstaKingofSA. All rights reserved. Doki Doki Literature Club, the Doki Doki Literature Club code, is the property of Team Salvato (Dan Salvato LLC). Copyright © 2017 Team Salvato. All rights reserved.
+---
+
+Copyright © 2019-2021 GanstaKingofSA. All rights reserved. 
+
+Modified and translated by imgradeone.
+
+Doki Doki Literature Club, the Doki Doki Literature Club code, is the property of Team Salvato (Dan Salvato LLC). Copyright © 2017 Team Salvato. All rights reserved.

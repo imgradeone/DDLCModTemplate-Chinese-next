@@ -9,7 +9,8 @@
 
 define persistent.demo = False
 define persistent.steam = ("steamapps" in config.basedir.lower())
-# Change this to True to enable Developer Mode
+
+# 开发者模式开关
 define config.developer = False
 
 python early:
@@ -30,12 +31,12 @@ init python:
         if pos: return pos
         return 0
 
-    # Delete's All Saves
+    # 删除所有存档
     def delete_all_saves():
         for savegame in renpy.list_saved_games(fast=True):
             renpy.unlink_save(savegame)
 
-    # Delete's Characters
+    # 删除指定角色文件
     def delete_character(name):
         import os
         if renpy.android:
@@ -45,7 +46,7 @@ init python:
             try: os.remove(config.basedir + "/characters/" + name + ".chr")
             except: pass
 
-    # Restores Character's CHR
+    # 恢复所有角色文件
     def restore_all_characters():
         if renpy.android:
             try: renpy.file(os.environ['ANDROID_PUBLIC'] + "/characters/monika.chr")
@@ -66,7 +67,7 @@ init python:
             try: renpy.file("../characters/sayori.chr")
             except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
     
-    # Restores Characters if their playthough matches current run.
+    # 根据周目数来恢复对应角色文件
     def restore_relevant_characters():
         restore_all_characters()
         if persistent.playthrough == 1 or persistent.playthrough == 2:
@@ -78,7 +79,7 @@ init python:
         elif persistent.playthrough == 4:
             delete_character("monika")
 
-    # Controls time.
+    # 控制时间所用的暂停
     def pause(time=None):
         #global _windows_hidden
         if not time:
@@ -88,11 +89,11 @@ init python:
             #_windows_hidden = False
             return
         if time <= 0: return
-        #_windows_hidden = True
+        # _windows_hidden = True
         renpy.pause(time)
-        #_windows_hidden = False
+        # _windows_hidden = False
 
-# Music
+# 音乐 / 音效
 
 # This section is where you can reference DDLC audio and add your own!
 # audio. - tells Ren'Py this is sound
@@ -270,7 +271,7 @@ image glitch_color2:
         alpha 0.7
         linear 0.45 alpha 0
 
-# Character Definitions
+# 角色定义
 
 # This is where the characters bodies and faces are defined.
 # They are defined by left half, right half and their head.
@@ -1353,7 +1354,7 @@ image monika g2:
             pause 0.2
     repeat
 
-# Character Variables
+# 角色变量
 
 # This configure the character variables for writing dialog for each character
 ## To define a new character with assets, do so like this
