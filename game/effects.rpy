@@ -4,7 +4,7 @@
 # Use this as a starting point if you would like to override with your own.
 
 init python:
-    # Screen caps the current screen used by many functions
+    # 屏幕截图，用于许多函数与定义。
     def screenshot_srf():
         if renpy.version_tuple[0] >= 7 and renpy.version_tuple[1] >= 4:
             srf = renpy.display.draw.screenshot(None)
@@ -13,7 +13,7 @@ init python:
         
         return srf
 
-    # Inverts the colors on the screen
+    # 屏幕反色。
     def invert():
         srf = screenshot_srf()
         inv = renpy.Render(srf.get_width(), srf.get_height()).canvas().get_surface()
@@ -36,7 +36,7 @@ init python:
                 render.blit(self.srf, (0, 0))
             return render
 
-    # Hides all windows, showing the background
+    # 隐藏所有窗口，显示背景
     def hide_windows_enabled(enabled=True):
         global _windows_hidden
         _windows_hidden = not enabled
@@ -112,7 +112,7 @@ init python:
             return render
 
 # Defines the screen for Ren'Py
-# By default, tear the screen into 10 pieces
+# 默认情况下会把屏幕撕裂成 10 份并产生混乱效果。
 screen tear(number=10, offtimeMult=1, ontimeMult=1, offsetMin=0, offsetMax=50, srf=None):
     zorder 150
     add Tear(number, offtimeMult, ontimeMult, offsetMin, offsetMax, srf) size (1280,720)

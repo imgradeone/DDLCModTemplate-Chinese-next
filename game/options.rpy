@@ -17,7 +17,7 @@ define gui.show_name = True
 
 # 这里可以输入版本号。如果你的 Mod 版本很多，那这时版本号会很有用。
 # 如果你刚刚开始，那么建议把版本号设为 "1.0"
-define config.version = "2.0.0-dev"
+define config.version = "2.0.0-beta1"
 
 # 这里是在“关于”页显示的 Mod 介绍文字。
 # 由于我们重新启用了关于界面，你可以在这里写点介绍。
@@ -71,7 +71,7 @@ define config.window = "auto"
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
 
-# This sets the text speed of your mod.
+# 这里可以控制 Mod 默认的文字展示速度。
 # By default this is set to 50. 
 # Increasing this number will speed up text while decreasing the number slows down text speed.
 # 0 is instant text display.
@@ -115,7 +115,7 @@ define config.autosave_slots = 0
 # Best not to leave this alone.
 define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
 
-# Stuff to leave alone also.
+# 最好也不要动这一块。
 define config.image_cache_size = 64
 define config.predict_statements = 50
 define config.rollback_enabled = config.developer

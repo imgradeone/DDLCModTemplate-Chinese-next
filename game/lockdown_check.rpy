@@ -4,7 +4,7 @@
 # warn new users and such about template issues with certain Ren'Py versions
 # or warn them about Quality Assurance with Ren'Py versions higher than the
 # one the mod template was tested for.
-## DO NOT MODIFY THIS FILE!
+## 请 勿 修 改 该 文 件 ！ ！ ！
 
 label lockdown_check:
     if renpy.version_tuple == (7, 4, 6, 1693):
@@ -24,7 +24,7 @@ label lockdown_check:
             "如果您同意使用该版本的 Ren'Py SDK 进行 Mod 开发，则意味着您能接受未知的兼容性 bug。"
             "我同意。":
                 $ persistent.lockdown_warning = True
-                "您现在已经同意，可以继续 Mod 开发了。You have agreed to this disclaimer. You may now proceed to mod DDLC under this version of Ren'Py. Happy modding!"
+                "您现在已经同意，可以继续 Mod 调试了。"
                 return
             "我不同意。":
                 "您选择了不同意，因此 DDLC 中文 Mod 模板将暂时停止在该版本 Ren'Py SDK 下工作，除非重新同意。"

@@ -690,10 +690,6 @@ style poem_vbar is vscrollbar:
 
     ysize 700
 
-
-
-
-
 style yuri_text:
     font "mod_assets/font/shouzhuo.ttf" #font used packaged with the game
     size 32

@@ -1,7 +1,7 @@
 # DDLC 中文 Mod 模板 2.0
 嘿，你~~又~~想用中文写 DDLC Mod？**那你来对地方了！**
 
-这是**新的** DDLC 中文 Mod 模板！本模板基于 GanstaKingofSA 的 DDLC Mod Template 2.0，并进行了 [旧版](https://github.com/imgradeone/DDLCModTemplate-Chinese) 已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](https://revolution.dokimod.cn/ipguidelines.html)。
+这是**全新的** DDLC 中文 Mod 模板！本模板基于 GanstaKingofSA 的 [DDLC Mod Template 2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0)，并得到了旧版已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](https://revolution.dokimod.cn/ipguidelines.html)。
 
 当前版本的模板支持 Ren'Py SDK 6.99.12 及 7.4.5。
 
@@ -94,7 +94,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. macOS `.app` 及 Linux `.sh` 启动文件制作支持
 1. 完整的 Android 支持！DDLC 的一切（除了 `[currentuser]` 变量）可在 Android 平台正常运行。
     > 请前往 [原版 DDLC Mod Template 2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/blob/master/guide.pdf) 所附带的 `guide.pdf` 了解 Android Mod 移植 / 开发。
-1. Xcode 支持！Open this project in Xcode and you can edit, build, and run your mod without opening the Ren'Py Launcher ever again! 
+1. Xcode 支持！您可以在 Xcode 中直接编辑、构建、测试您的 DDLC Mod，无需打开 Ren'Py 启动器。
     > 提示：您需要更改 `RENPY_TOOL` 变量，将其定位到您的 Ren'Py SDK 应用程序位置。[了解更多 &rsaquo;](XCODE.md)
 1. Terra 的深度诗词游戏教程（WIP）
 1. NVL 模式支持 - 特别感谢 Yagamirai01

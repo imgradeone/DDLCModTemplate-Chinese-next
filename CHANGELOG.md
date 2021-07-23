@@ -1,6 +1,6 @@
 # 更新日志
 
-## 未发布版本（v2.0.0-dev）
+## v2.0.0-beta1（测试版本）
 
 - First release.
 
@@ -14,3 +14,4 @@
 ### 中文字体
 - changed!: 主界面中文字体更换为 HarmonyOS Sans
 - improved: Acy 字体展示效果
+- add: attributions.txt
