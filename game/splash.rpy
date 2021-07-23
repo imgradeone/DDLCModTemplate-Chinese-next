@@ -198,7 +198,7 @@ image intro:
     "white" with Dissolve(0.5, alpha=True)
     0.5
 
-# Special Mod Message Text
+# 特殊的 Mod 文字提示。
 
 image warning:
     truecenter
@@ -208,16 +208,13 @@ image warning:
     "white" with Dissolve(0.5, alpha=True)
     0.5
 
-# Checks for missing character files
-## Note: For Android, make sure to change the default package name of to 
-## your own package name in options.rpy under define package_name. 
-##Your package name is what you defined in Ren'Py Launcher in the Android section
+# 检查缺失的角色文件。
 init python:
     if not persistent.do_not_delete:
         import os
-        if renpy.android: #checks if the platform is android
+        if renpy.android: # 检查平台是否为 Android。
             try:
-                # writes character files if missing and correct playthrough to Android/data/[your mod]/characters
+                # 补回缺失角色文件，目录为 Android/data/[您的Mod包名]/characters
                 if not os.access(os.environ['ANDROID_PUBLIC'] + "/characters/", os.F_OK):
                     os.mkdir(os.environ['ANDROID_PUBLIC'] + "/characters")
                 if persistent.playthrough <= 2:
@@ -251,14 +248,14 @@ init python:
             except:
                 pass
 
-# Startup Disclaimer Images
+# 启动警告背景图片。
 image tos = "bg/warning.png"
 image tos2 = "bg/warning2.png"
 
-# Startup Disclaimer
+# 启动警告 / 声明
 
 label splashscreen:
-    # Grabs current username of the PC on Windows
+    # 在 Windows 系统中自动获取电脑用户名及进程列表。
     python:
         process_list = []
         currentuser = ""
@@ -274,7 +271,6 @@ label splashscreen:
                         currentuser = user
             except:
                 pass
-
 
     python:
         firstrun = ""
@@ -296,8 +292,8 @@ label splashscreen:
                 "不，继续游戏":
                     $ restore_relevant_characters()
 
-    # Added this for 7.4.6 and to warn those on QA testing Ren'Py versions.
-    ## DO NOT MODIFY THESE THREE LINES.
+    # 为 Ren'Py SDK 7.4.6 和更新版本增加的兼容性警告。
+    ## 请 不 要 修 改 这 三 行 。
     default persistent.lockdown_warning = False
 
     if not persistent.lockdown_warning:
@@ -306,7 +302,7 @@ label splashscreen:
     # Sets First Run to False to Show Disclaimer
     default persistent.first_run = False
 
-    # Startup Disclaimer
+    # 启动声明
 
     if not persistent.first_run:
         python:
@@ -317,8 +313,8 @@ label splashscreen:
         scene tos
         with Dissolve(1.0)
         pause 1.0
-        # You can edit this message but you MUST have say it's not affiliated with Team Salvato
-        # must finish the official game and has spoilers, and where to get DDLC from."
+        # 您可以随意更改以下内容，但请您 务 必 注 明 本 Mod 与 Team Salvato 无关，
+        # 且包含剧透，必须在通关原作后游玩，同时保留原作下载链接。
         "[config.name] 是 Doki Doki Literature Club 的粉丝 Mod，与 Team Salvato 无关。"
         "本 Mod 理应在通关原游戏后再进行游玩，因此本 Mod 包含剧透。"
         "要游玩本 Mod，需要原版 Doki Doki Literature Club 的文件。您可以在 {a=https://ddlc.moe}DDLC.moe{/a} 或者 Steam 免费获取。"
@@ -336,8 +332,8 @@ label splashscreen:
 
         $ persistent.first_run = True
 
-    ## Controls where Sayori Kill Early Starts Up.
-    ## Commented out for mod safety reasons.
+    ## 控制 Sayori XX 彩蛋。
+    ## 为避免 Mod 社死，保证心理安全，默认注释该段。
     # python:
     #     s_kill_early = None
     #     if persistent.playthrough == 0:
@@ -357,7 +353,7 @@ label splashscreen:
     #             except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
 
 
-    # Controls Special Poems at random on startup
+    # 首次启动游戏时获取特殊诗序号。
     if not persistent.special_poems:
         python hide:
             persistent.special_poems = [0,0,0]
@@ -377,7 +373,7 @@ label splashscreen:
 
     $ config.allow_skipping = False
 
-    ## Shows the ghost menu if the user is lucky to roll it
+    ## ghost menu 随机展示，仅在二周目生效，默认概率 1/64，可以自己修改。
     if persistent.playthrough == 2 and not persistent.seen_ghost_menu and renpy.random.randint(0, 63) == 0:
         show black
         $ config.main_menu_music = audio.ghostmenu
@@ -390,8 +386,8 @@ label splashscreen:
         $ config.allow_skipping = True
         return
 
-    ## Commented out for mod safety reasons.
-    ## Sayori Early Death Easter Egg
+    ## 为避免 Mod 社死，保证心理安全，默认注释该段。
+    ## Sayori 提前 XX 彩蛋
     # if s_kill_early:
     #     show black
     #     play music "bgm/s_kill_early.ogg"
@@ -435,7 +431,7 @@ label splashscreen:
     #     show noise:
     #         alpha 0.1
     #     with Dissolve(1.0)
-    #     show expression Text("Now everyone can be happy.", style="sayori_text"):
+    #     show expression Text("现在，大家都高兴了。", style="sayori_text"):
     #         xalign 0.8
     #         yalign 0.5
     #         alpha 0.0
@@ -469,7 +465,8 @@ label warningscreen:
 
 ## If Monika.chr is deleted, this would play instead of the regular Chapter 1
 ## From Script-CH0.rpy
-## Commented out for mod safety reasons.
+## 为避免 Mod 社死，保证心理安全，默认注释该段。
+
 # label ch0_kill:
 #     $ s_name = "Sayori"
 #     show sayori 1b zorder 2 at t11
@@ -516,7 +513,7 @@ label after_load:
         $ renpy.utter_restart()
     return
 
-# Autoreloads the game 
+# 自动读档。
 label autoload:
     python:
         if "_old_game_menu_screen" in globals():
@@ -536,11 +533,11 @@ label autoload:
         except: pass
     jump expression persistent.autoload
 
-# starts the menu music once started
+# 返回主菜单之前的事件。
 label before_main_menu:
     return
 
-# Basic Quit.
+# 退出游戏的事件。
 label quit:
     if persistent.ghost_menu:
         hide screen main_menu
