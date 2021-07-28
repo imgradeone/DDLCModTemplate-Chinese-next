@@ -14,7 +14,7 @@ init -100 python:
 init python:
     menu_trans_time = 1
     # 默认的启动屏幕信息，所有玩家都可以看到。
-    splash_message_default = "这是非官方的粉丝 Mod，与 Team Salvato 无关。"
+    splash_message_default = "这是非官方的饭制 Mod，与 Team Salvato 无关。"
     # Used sometimes to change splash messages if called upon
     splash_messages = [
         "请多多支持 Dan 鸽www",

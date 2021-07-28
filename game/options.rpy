@@ -17,7 +17,7 @@ define gui.show_name = True
 
 # 这里可以输入版本号。如果你的 Mod 版本很多，那这时版本号会很有用。
 # 如果你刚刚开始，那么建议把版本号设为 "1.0"
-define config.version = "2.0.0-beta1"
+define config.version = "2.0.0-beta2-development"
 
 # 这里是在“关于”页显示的 Mod 介绍文字。
 # 由于我们重新启用了关于界面，你可以在这里写点介绍。
@@ -89,11 +89,11 @@ default preferences.music_volume = 0.75
 default preferences.sfx_volume = 0.75
 
 # This controls the save directory of your mod.
-# Change "DDLCModTemplate2" to your mod's name
+# Change "DDLCModTempCNNext" to your mod's name
 # Windows Directory for Saves: %AppData%/RenPy/
 # macOS Directory for Saves: $HOME/Library/RenPy/ (Un-hide the Library Folder)
 # Linux Directory for Saves $HOME/.renpy/
-define config.save_directory = "DDLCModTemplateTwo"
+define config.save_directory = "DDLCModTempCNNext"
 
 # This controls the window logo of your mod.
 # By default this defaults to the DDLC Icon PNG.

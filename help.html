@@ -59,7 +59,7 @@ p {
 <div class="banner-divider"></div>
 <div class="inner-content">
   <h1>DDLC 中文 Mod 模板帮助</h1>
-  <h2>免责声明</h2>
+  <h2>声明</h2>
   <p><em>
     新版 DDLC 中文 Mod 模板是 Doki Doki Literature Club 的中文 Mod 制作模板，与 Team Salvato 无关。您应当在通关原游戏后使用此 Mod 模板。Mod 需要 DDLC 原版文件，您可以在 <a href=https://ddlc.moe>DDLC.moe</a> 或者 Steam 下载。
   </em></p>
@@ -68,52 +68,52 @@ p {
     模板会修改 DDLC，因此您必须获取原版 DDLC。您可以在 <a href=https://ddlc.moe>DDLC.moe</a> 或者 Steam 下载。
   </p>
   <p>
-    To install, copy all the files in this ZIP folder into the <tt>game</tt> folder in your DDLC folder. This replaces the scripts for the original game. Opening Doki Doki Literature Club will now load with all of the modified files.
+    您可以将本 ZIP 压缩包内的所有文件解压并复制到 DDLC 的游戏文件夹内，如果有提示，请允许覆盖所有文件。接下来，打开游戏，你将看到修改后的 DDLC，此时 Mod 就安装完成了。
   </p>
-  <h3>Windows (Steam Release)</h3>
+  <h3>Windows（Steam 版本）</h3>
   <p>
-    If you are running DDLC on Steam, you can access the game files by right-clicking the game in your Library, then selecting <tt>Properties</tt>. In the <tt>Local Files</tt> tab, click the <tt>Browse local files...</tt> button. This will open a window with the game directory.
+    如果您的 DDLC 是从 Steam 获取的，请在 Steam 库中右键单击 DDLC，选择 <tt>管理</tt> → <tt>浏览本地文件</tt>，这样就可以查看 DDLC 的本地文件并进行 Mod 安装了。
   </p>
-  <h3>macOS (OS X)</h3>
+  <h3>macOS</h3>
   <p>
-    Mac users can access the game directory by right-clicking on the DDLC application and selecting <tt>Show Package Contents</tt>. Then, the game directory can be found in <tt>Contents/Resources/autorun</tt>.
+    Mac 用户可以通过右键单击 DDLC.app 文件，选择 <tt>显示包内容</tt>，然后转到 <tt>Contents/Resources/autorun</tt> 文件夹，这样就可以查看 DDLC 的本地文件并进行 Mod 安装了。
   </p>
-  <h2>Uninstall</h2>
+  <h2>卸载 Mod</h2>
   <p>
-    To restore DDLC, either remove the mod template files or re-download DDLC on <a href=http://ddlc.moe>http://ddlc.moe</a> or Steam.
+    如果您想还原原版 DDLC，您可以手动删除 Mod 模板的所有文件，或者重新在 <a href=https://ddlc.moe>DDLC.moe</a> 或者 Steam 下载 DDLC。
   </p>
-  <h2>Basic Help</h2>
+  <h3>特殊情况（对于使用 Ren'Py 7 构建的 Mod）</h3>
   <p>
-    To advance through the game, <tt>left-click</tt> or press the <tt>space</tt> or <tt>enter</tt> keys. When at a menu,
-    <tt>left-click</tt> to make a choice, or use the arrow keys to select a choice and <tt>enter</tt> to activate it.
+    某些情况下，Mod 压缩包内可能会包含 .exe 等类的可执行文件。由于 Ren'Py 兼容性问题，请您仍然将 Mod 压缩包内的文件解压到 DDLC 文件夹内，但请使用压缩包附带的可执行文件启动游戏。
+  </p>
+  <h2>基本说明</h2>
+  <p>
+    <p>要进行游戏，请使用鼠标左键或空格、回车键阅读文本。遇到选项时，请使用鼠标指针指向并左键选择，或使用方向键选择一个选项，按下回车键选择。</p>
   </p>
 
-  <h3>Game Menu</h3>
+  <h3>游戏菜单</h3>
   <p>
-    When playing a game, press the <tt>escape</tt> key to enter the game menu. The game menu
-    gives the following choices:
+    游戏过程中，按下鼠标右键或 Esc 键，会出现如下菜单：
   </p>
-
   <dl>
-    <dt>Return</dt>
-    <dd>Returns to the game.</dd>
-    <dt>Save Game</dt>
-    <dd>Allows you to save a game by clicking on a save slot.</dd>
-    <dt>Load Game</dt>
-    <dd>Allows you to load a game by clicking on a save slot. Clicking on "Auto" accesses the automatic save slots.</dd>
-    <dt>Preferences</dt>
+    <dt>返回</dt>
+    <dd>返回游戏。</dd>
+    <dt>存档</dt>
+    <dd>允许您通过点击来保存游戏进度到指定的存档位中。</dd>
+    <dt>读档</dt>
+    <dd>允许您通过点击指定存档位中的存档加载游戏进度。点击「自动」将会访问自动存档的存档位（如果 Mod 提供）。</dd>
+    <dt>设置</dt>
     <dd>
-      Changes the game preferences (options/configuration):
+      改变游戏的偏好设定（显示 / 阅读）：
       <dl>
-        <dt>Display</dt>
-        <dd>Switches between fullscreen and windowed mode.</dd>
-        <dt>Text Speed</dt>
-        <dd>Controls the rate at which text displays. The further to the right this slider is, the faster the text
-          will display. All the way to the right causes text to be shown instantly.</dd>
-        <dt>Skip - Unseen Text</dt>
+        <dt>显示模式</dt>
+        <dd>在全屏幕与窗口模式之间切换。</dd>
+        <dt>文字显示速度</dt>
+        <dd>控制每一行文本的显示速率，滑块越往右则越快。当滑块最靠右时，每行文本将瞬间显示完毕。</dd>
+        <dt>跳过 - 未浏览过的内容</dt>
         <dd>Chooses between skipping messages that have been already seen (in any play through the game), and
           skipping all messages.</dd>
-        <dt>Skip - After Choices</dt>
+        <dt>跳过 - 选择选项之后</dt>
         <dd>Controls if skipping stops upon reaching a menu.</dd>
         <dt>Auto-Forward Time</dt>
         <dd>Controls automatic advance. The further to the left this slider is, the shorter the amount of time
@@ -168,13 +168,12 @@ p {
   <p>
     Deleting save data for a mod will not alter or delete original save data from DDLC.
   </p>
-  <h2>Legal Notice</h2>
+  <h2>法律提示</h2>
   <p>
-    This program contains free software licensed under a number of licenses, including the GNU Lesser Public License. A
-    complete list of software is available at <a href="http://www.renpy.org/doc/html/license.html">http://www.renpy.org/doc/html/license.html</a>.
+    Ren'Py 包含了由数个许可证授权的免费软件，包括 MIT 许可证和 GNU 宽松通用公共许可证。完整软件列表及源代码链接，请访问 <a href="http://www.renpy.org/doc/html/license.html">此处</a>。
   </p>
   <p>
-    This mod is a fan work. Doki Doki Literature Club and all related characters and assets are the property of Team Salvato. Intellectual property in this mod is used in accordance with Team Salvato's Intellectual Property Guidelines, which can be found at <a href="http://teamsalvato.com/ip-guidelines/">http://teamsalvato.com/ip-guidelines/</a>.
+    本 Mod 仅为粉丝作品。Doki Doki Literature Club and all related characters and assets are the property of Team Salvato. Intellectual property in this mod is used in accordance with Team Salvato's Intellectual Property Guidelines, which can be found at <a href="http://teamsalvato.com/ip-guidelines/">http://teamsalvato.com/ip-guidelines/</a>.
   </p>
 </div>
 <div class="banner-divider"></div>
