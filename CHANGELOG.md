@@ -3,7 +3,7 @@
 ## 未发布版本（v2.0.0-beta2-development）
 
 - add: 帮助文档翻译（依旧不完全）
-- refactor: 翻译更新
+- refactor: 翻译更新（`跳过` -> `快进`）
 - refactor: 修改默认存档位置为 `DDLCModTempCNNext`
 - refactor: 更新 `original_scripts/script.rpy` 的文件逻辑
 

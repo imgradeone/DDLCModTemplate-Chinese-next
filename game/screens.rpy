@@ -394,7 +394,7 @@ screen quick_menu():
 
             #textbutton _("Back") action Rollback()
             textbutton _("历史") action ShowMenu('history')
-            textbutton _("跳过") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("快进") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("自动") action Preference("auto-forward", "toggle")
             textbutton _("存档") action ShowMenu('save')
             textbutton _("读档") action ShowMenu('load')
@@ -968,7 +968,7 @@ screen preferences():
 
                 vbox:
                     style_prefix "check"
-                    label _("跳过设置")
+                    label _("快进设置")
                     textbutton _("未浏览过的内容") action Preference("skip", "toggle")
                     textbutton _("选择选项之后") action Preference("after choices", "toggle")
                     #textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
@@ -1536,7 +1536,7 @@ screen skip_indicator():
         hbox:
             spacing 6
 
-            text _("正在跳过")
+            text _("正在快进")
 
             text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
             text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
