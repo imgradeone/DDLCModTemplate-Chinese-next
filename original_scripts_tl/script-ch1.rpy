@@ -6,8 +6,8 @@ label ch1_main:
     play music t2
     show monika 5 zorder 2 at t11
 
-    m "Hi again, [player]!"
-    m "Glad to see you didn't run away on us. Hahaha!"
+    m "[player]，咱们又见面啦！"
+    m "我还以为你会被我们吓跑呢。哈哈哈！"
     mc "Nah, don't worry."
     mc "This might be a little strange for me, but I at least keep my word."
     show monika zorder 1 at thide
