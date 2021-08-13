@@ -217,65 +217,65 @@ label ch0_main:
     hide natsuki
     hide yuri
     with wipeleft
-    "The girls have a few desks arranged to form a table."
-    "As Sayori mentioned, it's been widened so that there is one space next to Monika and one space next to Sayori."
-    "Natsuki and Yuri walk over to the corner of the room, where Natsuki grabs a wrapped tray and Yuri opens the closet."
-    "Still feeling awkward, I take a seat next to Sayori."
-    "Natsuki proudly marches back to the table, tray in hand."
+    "女孩们把几张课桌拼成了一张大桌子。"
+    "正如纱世里所说，桌子加宽了，所以莫妮卡和她旁边都留了一个空位。"
+    "夏树和优里则走到房间的角落，夏树端出来一个盖好的托盘，而优里打开了储藏间。"
+    "我还是觉得有些尴尬，于是就坐在了纱世里的旁边。"
+    "夏树趾高气扬地走了回来，手里端着托盘。"
     show natsuki 2z zorder 2 at t32
-    n "Okaaay, are you ready?"
-    n "...Ta-daa!"
+    n "哼哼，准备好了吗？"
+    n "...哒哒！"
     show sayori 4m zorder 2 at t31
     show monika 2d zorder 2 at t33
-    s "Uwooooah!"
-    "Natsuki lifts the foil off the tray to reveal a dozen white, fluffy cupcakes decorated to look like little cats."
-    "The whiskers are drawn with icing, and little pieces of chocolate were used to make ears."
+    s "哇哦！"
+    "夏树掀开托盘上的锡箔纸，托盘上放着十二个小猫形状的白色、松软的小蛋糕。"
+    "她用糖霜画出小猫的胡须，而小片的巧克力则被用来做成耳朵。T"
     show sayori zorder 3 at f31
-    s 4r "So cuuuute~!"
+    s 4r "好可爱～！"
     show sayori zorder 2 at t31
     show monika zorder 3 at f33
-    m 2b "I had no idea you were so good at baking, Natsuki!"
+    m 2b "夏树，我从来不知道你的烘焙技术这么厉害！"
     show monika zorder 2 at t33
     show natsuki zorder 3 at f32
-    n 2d "Ehehe. Well, you know."
-    n "Just hurry and take one!"
-    "Sayori grabs one first, then Monika. I follow."
+    n 2d "嗯哼哼，没想到吧。"
+    n "快尝尝！"
+    "纱世里马上拿起了一块，然后是莫妮卡，接着是我。"
     show natsuki zorder 2 at t32
     show sayori zorder 3 at f31
-    s 4q "It's delicious!"
-    "Sayori talks with her mouth full and has already managed to get icing on her face."
-    "I turn the cupcake around in my fingers, looking for the best angle to take a bite."
+    s 4q "超好吃！"
+    "纱世里边吃边说着，脸上沾满了糖霜。"
+    "我把蛋糕放在手里转了个圈，想找一个合适的角度下口。"
     show sayori zorder 1 at thide
     show monika zorder 1 at thide
     hide sayori
     hide monika
     show natsuki 1c zorder 2 at t32
-    "Natsuki is quiet."
-    "I can't help but notice her sneaking glances in my direction."
-    "Is she waiting for me to take a bite?"
-    "I finally bite down."
-    "The icing is sweet and full of flavor - I wonder if she made it herself."
-    mc "This is really good."
-    mc "Thank you, Natsuki."
-    n 5h "W-Why are you thanking me? It's not like I...!"
-    "{i}(Haven't I heard this somewhere before...?){/i}"
+    "夏树默不作声。"
+    "我不禁注意到了夏树偷偷瞄向我的视线。"
+    "她是在等我咬下去么？"
+    "我终于咬下了一口。"
+    "糖霜甜度正好，风味十足——这真的是她自己做的吗？"
+    mc "这个真不错。"
+    mc "谢谢你，夏树。"
+    n 5h "为-为什么你要谢我？我又不是...！"
+    "{i}（我是不是在哪听过这个台词？）{/i}"
     show natsuki at s32
-    n 5s "...Made them for you or anything."
-    mc "Eh? I thought you technically did. Sayori said--"
+    n 5s "...为了你才做的。"
+    mc "诶？我觉得其实就是啊。纱世里说过--"
     show natsuki zorder 2 at t32
-    n 12c "Well, maybe!"
-    n "But not for, y-you know, {i}you!{/i} Dummy..."
-    mc "Alright, alright..."
+    n 12c "也许是吧！"
+    n "但不是为了...就...不是为{i}你{/i}做的！笨蛋..."
+    mc "行行行..."
     show natsuki zorder 1 at thide
     hide natsuki
-    "I give up on Natsuki's weird logic and dismiss the conversation."
-    "Yuri returns to the table, carrying a tea set."
-    "She carefully places a teacup in front of each of us before setting down the teapot next to the cupcake tray."
+    "我放弃理解夏树的古怪逻辑，只能草草结束了对话。"
+    "优里这时端着一套茶具回到了桌旁。"
+    "她小心翼翼地在每个人面前摆好一个茶杯，然后将茶壶放在蛋糕托盘旁边。"
     show yuri 1a zorder 2 at t21
-    mc "You keep a whole tea set in this classroom?"
-    y "Don't worry, the teachers gave us permission."
-    y "After all, doesn't a hot cup of tea help you enjoy a good book?"
-    mc "Ah... I-I guess..."
+    mc "你居然把一整套茶具都放在部室里了？"
+    y "别担心，老师已经同意了。"
+    y "而且，热茶配好书，不是很好嘛？"
+    mc "啊...也...也许吧..."
     show monika 4a zorder 2 at t22
     m "Ehehe, don't let yourself get intimidated, Yuri's just trying to impress you."
     show yuri at h21
