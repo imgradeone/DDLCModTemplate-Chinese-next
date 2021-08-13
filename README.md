@@ -103,12 +103,15 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. 绝赞中文化（目前只支持简体中文）
 2. 绝赞字体优化
 3. ~~绝赞咕咕咕~~
+4. 内置汉化剧本（贡献者详见特别感谢）
 
 ## 特别感谢
 
 - Team Salvato http://teamsalvato.com / https://ddlc.moe
 - [GanstaKingofSA](https://github.com/GanstaKingofSA)
 - 所有字体作者
+- 社区汉化补丁团队（同时也是 DDLC Plus 饭制翻译支持者）：[DB (aka dumb)][https://steamcommunity.com/id/HomuLilly/]、[Javelin&Tea (aka J&Tea)][https://steamcommunity.com/profiles/76561198037532534/]、[TBGN][https://steamcommunity.com/id/PhyYuan/]、[Pizza Hime (aka 擎天披利)][https://steamcommunity.com/id/qweion/]
+- [Riotloc 团队](https://www.riotloc.com)（DDLC Plus 官方翻译团队）
 
 ## 开源许可
 
@@ -121,7 +124,7 @@ Ren'Py 的许可，请参照 https://www.renpy.cn/doc/license.html （简体中�
 
 ## 加入社区
 
-[Telegram 频道](https://t.me/DDLCModCN)
+[Telegram 频道](https://t.me/DDLCModCN)  
 [Odysee 频道](https://odysee.com/@DokiMod:1)
 
 ---

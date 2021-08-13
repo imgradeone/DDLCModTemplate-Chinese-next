@@ -6,6 +6,8 @@
 - refactor: 翻译更新（`跳过` -> `快进`）
 - refactor: 修改默认存档位置为 `DDLCModTempCNNext`
 - refactor: 更新 `original_scripts/script.rpy` 的文件逻辑
+- add: 原版剧情翻译（in progress，基于 Plus 和原版社区翻译）
+- refactor: 修改默认角色名称，匹配官方译名
 
 ## v2.0.0-beta1（测试版本）
 

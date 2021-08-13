@@ -16,11 +16,11 @@ label start:
 
     # 角色命名。
     # 如需添加新角色 -> $ mi_name = "Mike"
-    # 一定要记得去 definitions.rpy 再定义一次！
-    $ s_name = "Sayori" # 可选译名：纱世里（推荐）、莎世里、纱悠里
-    $ m_name = "Monika" # 推荐译名：莫妮卡
-    $ n_name = "Natsuki" # 可选译名：夏树（推荐）、娜苏琪
-    $ y_name = "Yuri" # 推荐译名：优里
+    # 一定要记得去 definitions.rpy 再定义一次角色！
+    $ s_name = "纱世里" # 原：Sayori
+    $ m_name = "莫妮卡" # 原：Monika
+    $ n_name = "夏树" # 原：Natsuki
+    $ y_name = "优里" # 原：Yuri
 
     # 控制是否显示底部文字菜单和是否允许使用 Esc 显示菜单。
     $ quick_menu = True
