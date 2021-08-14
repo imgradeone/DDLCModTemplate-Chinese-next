@@ -264,7 +264,7 @@ label ch0_main:
     mc "诶？我觉得其实就是啊。纱世里说过--"
     show natsuki zorder 2 at t32
     n 12c "也许是吧！"
-    n "但不是为了...就...不是为{i}你{/i}做的！笨蛋..."
+    n "但不是为了...就...不是为 {i}你{/i} 做的！笨蛋..."
     mc "行行行..."
     show natsuki zorder 1 at thide
     hide natsuki

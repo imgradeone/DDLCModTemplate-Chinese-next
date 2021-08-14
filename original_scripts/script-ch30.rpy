@@ -366,7 +366,7 @@ label ch30_postpoem:
     m "But, you know..."
     m "The poem I wrote...is also for you."
     m "Will you please read it?"
-    call showpoem (poem_m4, music=False)
+    call showpoem (poem_m4, music=False, chinese=False)
     m "I hope you enjoyed it..."
     m "I always put all my heart into the poems that I write."
     m "The truth is, all the poems I've written have been about my realization..."

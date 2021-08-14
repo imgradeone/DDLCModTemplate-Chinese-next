@@ -32,38 +32,38 @@ label poemresponse_start:
             $ pt = ""
         # MC's dialogue of who to share first or next
         if poemsread == 0:
-            $ menutext = "Who should I show my poem to first?"
+            $ menutext = "我应该先跟谁分享我的诗呢？"
         else:
-            $ menutext = "Who should I show my poem to next?"
+            $ menutext = "接下来要跟谁分享我的诗呢？"
         # Main Menu of the Poem Responses
         # You can add more boxes here by copy and pasting the others and changing
         # their variables and text to that new character
         menu:
             "[menutext]"
 
-            "Sayori" if not s_readpoem and persistent.playthrough == 0:
+            "纱世里" if not s_readpoem and persistent.playthrough == 0:
                 $ s_readpoem = True
                 if chapter == 1 and poemsread == 0:
-                    "I'm definitely most comfortable sharing it with Sayori first."
-                    "She's my good friend, after all."
+                    "果然还是先和纱世里分享最轻松自在了。"
+                    "毕竟她是我的好朋友。"
                 call poemresponse_sayori
-            "Natsuki" if not n_readpoem:
+            "夏树" if not n_readpoem:
                 $ n_readpoem = True
                 if chapter == 1 and poemsread == 0:
-                    "I told Natsuki I was interested in her poems yesterday."
-                    "It's probably only fair if I shared mine with her first."
+                    "我昨天跟夏树说我对她的诗感兴趣。"
+                    "可能先和她分享会比较好一些。"
                 call poemresponse_natsuki
-            "Yuri" if not y_readpoem and not y_ranaway:
+            "优里" if not y_readpoem and not y_ranaway:
                 $ y_readpoem = True
                 if chapter == 1 and poemsread == 0:
-                    "Yuri seems the most experienced, so I should start with her."
-                    "I can trust her opinion to be fair."
+                    "优里似乎是最有经验的，所以我应该先和她分享。"
+                    "我相信她的意见是公允的。"
                 call poemresponse_yuri
-            "Monika" if not m_readpoem:
+            "莫妮卡" if not m_readpoem:
                 $ m_readpoem = True
                 if chapter == 1 and poemsread == 0:
-                    "I should start with Monika."
-                    "Yesterday she seemed eager to read my poem, and I want her to know I'm putting in effort."
+                    "我应该先从莫妮卡开始。"
+                    "她昨天似乎非常想读我的诗，而我也想让她看到我的努力。"
                 call poemresponse_monika
         # Adds a new poem read point per poem share
         $ poemsread += 1
@@ -160,7 +160,7 @@ label poemresponse_monika:
 # call showpoem calls the poem from poems.rpy to be displayed
 # img="yuri 3t" is the pose the doki should be when the scene happens hiddenly
 label ch1_y_end:
-    call showpoem (poem_y1, img="yuri 3t")
+    call showpoem (poem_y1_chs, img="yuri 3t")
     y 3t "..."
     y "I...I'm sorry I have such terrible handwriting!"
     mc "What??"
@@ -219,7 +219,7 @@ label ch1_y_end:
     return
 
 label ch2_y_end:
-    call showpoem (poem_y2)
+    call showpoem (poem_y2_chs)
     y 2m "Um..."
     y "I was a little more daring with this one than yesterday's..."
     mc "I can see that."
@@ -290,7 +290,7 @@ label ch3_y_end:
     # asks if Yuri liked all 3 poems. if true it jumps to a special response label
     if y_appeal >= 3:
         jump ch3_y_end_special
-    call showpoem (poem_y3, img="yuri 2v")
+    call showpoem (poem_y3_chs, img="yuri 2v")
     y "Um..."
     y "I'm aware that the beach is kind of an inane thing to write about."
     y "But I did my best to take a metaphorical approach to it."
@@ -328,7 +328,7 @@ label ch3_y_end:
     mc "Thanks for sharing."
     return
 label ch3_y_end_special:
-    call showpoem (poem_y3b, img="yuri 4b")
+    call showpoem (poem_y3b_chs, img="yuri 4b")
     "Finishing the poem, I start to hand it back to Yuri."
     "But instead of taking it from me, she looks away."
     y "..."
@@ -381,7 +381,7 @@ label ch3_y_end_special:
     return
 
 label ch1_n_end:
-    call showpoem (poem_n1, img="natsuki 2s")
+    call showpoem (poem_n1_chs, img="natsuki 2s")
     n 2q "Yeah..."
     n "I told you that you weren't gonna like it."
     mc "I like it."
@@ -415,7 +415,7 @@ label ch1_n_end:
     return
 
 label ch2_n_end:
-    call showpoem (poem_n2)
+    call showpoem (poem_n2_chs)
     n 2a "Not bad, right?"
     mc "It's quite a bit longer than yesterday's."
     n 2w "Yesterday's was way too short..."
@@ -488,7 +488,7 @@ label ch3_n_end:
     $ n_read3 = True
     if n_appeal >= 3:
         jump ch3_n_end_special
-    call showpoem (poem_n3)
+    call showpoem (poem_n3_chs)
     n 2a "Yeah..."
     n "I felt like I kept writing about negative things, so I wanted to write something with a nice message for once."
     n 2z "Besides...the beach is awesome!"
@@ -521,7 +521,7 @@ label ch3_n_end:
     n "At the very least, it was good practice."
     return
 label ch3_n_end_special:
-    call showpoem (poem_n3b)
+    call showpoem (poem_n3b_chs)
     n 1q "..."
     n "...Why are you looking at me like that?"
     n "If you don't like it, then just say it."
@@ -577,7 +577,7 @@ label ch3_n_end_special:
     return
 
 label ch1_s_end:
-    call showpoem (poem_s1)
+    call showpoem (poem_s1_chs)
     mc "Sayori..."
     mc "This is just a guess, but..."
     mc "Did you wait until this morning to write this?"
@@ -611,7 +611,7 @@ label ch1_s_end:
     return
 
 label ch2_s_end:
-    call showpoem (poem_s2)
+    call showpoem (poem_s2_chs)
     mc "Holy crap..."
     mc "Sayori, did you really write this?"
     s 2j "Of course I did!"
@@ -647,38 +647,38 @@ label ch3_s_end:
     return
 
 label ch1_m_end:
-    call showpoem (poem_m1)
+    call showpoem (poem_m1_chs)
 label ch1_m_end2:
-    m 1a "So...what do you think?"
-    mc "Hmm...it's very...freeform, if that's what you call it."
-    mc "Sorry, I'm not really the right person to ask for feedback..."
-    m 2e "Ahaha. It's okay."
-    m 2b "Yeah, that kind of style has gotten pretty popular nowadays."
-    m "That is, a lot of poems have been putting emphasis on the timing between words and lines."
-    m 2a "When performed out loud, it can be really powerful."
-    mc "What was the inspiration behind this one?"
-    m "Ah..."
-    m 3d "Well, I'm not sure if I know how to put it..."
-    m 3a "I guess you could say that I had some kind of epiphany recently."
-    m "It's been influencing my poems a bit."
-    mc "An epiphany?"
-    m 1a "Yeah...something like that."
-    m "I'm kind of nervous to talk about deep stuff like that, because it's kind of coming on strongly..."
-    m "Maybe after everyone is better friends with each other."
-    m 1j "Anyway..."
-    m 3b "Here's Monika's Writing Tip of the Day!"
-    m "Sometimes when you're writing a poem - or a story - your brain gets too fixated on a specific point..."
-    m "If you try so hard to make it perfect, then you'll never make any progress."
-    m "Just force yourself to get something down on the paper, and tidy it up later!"
-    m "Another way to think about it is this:"
-    m "If you keep your pen in the same spot for too long, you'll just get a big dark puddle of ink."
-    m "So just move your hand, and go with the flow!"
-    m 3k "...That's my advice for today!"
-    m "Thanks for listening~"
+    m 1a "那么...你觉得如何？"
+    mc "唔...这首诗非常...不拘一格，应该是这么说吧。"
+    mc "抱歉，我真的不是征求反馈意见的合适人选..."
+    m 2e "啊哈哈。没关系。"
+    m 2b "嗯，这种风格现在已经相当流行了。"
+    m "也就是，很多诗会注重强调词和行之间的节奏把控。"
+    m 2a "大声朗读出来时，就能极具感染力。"
+    mc "这首诗背后的灵感是什么？"
+    m "啊..."
+    m 3d "嗯，我不太确定能不能表达好..."
+    m 3a "我想可以这么说，我最近有些顿悟了。"
+    m "而这也稍微影响到了我的诗。"
+    mc "顿悟？"
+    m 1a "是的...诸如此类的东西吧。"
+    m "我对于谈论这些深层次的东西有些紧张，因为这聊起来显得有点咄咄逼人..."
+    m "也许是在大家的友谊更进一步之时降临的吧。"
+    m 1j "总之..."
+    m 3b "以下是莫妮卡的今日写作小窍门！"
+    m "在写诗（或者是写故事）的时候，你的大脑会过分执着于某个特定点上..."
+    m "如果过于追求完美的话，那就永远不会有任何进步。"
+    m "只要强迫你自己在纸上写下一些东西，事后再整理就行了！"
+    m "可以换个角度这样想："
+    m "如果你把钢笔放在同一个位置太久，那么你只会得到一个很大的黑色墨点。"
+    m "所以只要挥洒起来，顺其自然就行了！"
+    m 3k "...以上就是我今天的建议！"
+    m "感谢倾听～"
     return
 
 label ch2_m_end:
-    call showpoem (poem_m2)
+    call showpoem (poem_m2_chs)
     mc "Hm..."
     mc "It's even more abstract than your last one, huh?"
     m 5 "Ahaha..."
@@ -710,7 +710,7 @@ label ch2_m_end:
     m "Thanks for listening~"
     return
 label ch3_m_end:
-    call showpoem (poem_m3)
+    call showpoem (poem_m3_chs)
     m 1a "You know..."
     m "I feel like learning and looking for answers are the sorts of things that give life meaning."
     m 1e "Not to get too philosophical or anything..."
@@ -1364,39 +1364,39 @@ label ch3_n_good:
 
 label ch1_s_bad:
     s 1b "..."
-    s "...Wow!"
+    s "...哇！"
     s "[player]..."
-    s 4r "Your poem is really bad!"
+    s 4r "你的诗真的好烂啊！"
     s "Ahahaha!"
-    mc "Eh?!"
+    mc "诶？！"
     s 4a "It's fine, it's fine~"
     s "It's your first time."
-    s "Besides..."
+    s "至少..."
     label ch1_s_shared:
-        s 1a "I'm really happy just that you wrote one."
-        s "It just reminds me of how you're really a part of the club now~"
-        "(Not to mention the fact that I'm standing in front of you in the clubroom...?)"
-        mc "Er...well, of course."
-        mc "I'm not really into it yet, but that doesn't mean I'll break my promise."
-        s 1d "See?"
-        s "It's like I said before, [player]..."
-        s "Deep down, you're not selfish at all, you know?"
-        s "Trying new things like this for other people..."
-        s 2q "That's something that only really good people do!"
-        mc "Thanks...Sayori."
-        "...I'm not sure if Sayori sees the full picture of my motive here."
-        "Then again..."
-        "I can't deny that she's part of the reason I joined."
-        "Knowing how much this means to her and all..."
-        s 1x "Yeah."
-        s "And I'm gonna make sure you have lots of fun here, okay?"
-        s "That will be my way of thanking you~"
-        mc "Alright, I'm going to hold you to that, then."
-        s 4r "Yay~!"
-        s "Now, you'll read my poem too, right?"
-        s 1y "Don't worry, I'm really bad at this."
-        s "Ehehe..."
-        mc "We'll see about that."
+       s 1a "我真的很高兴你会写一首诗。"
+        s "这提醒了我，你现在真的是文学部的一员了～"
+        "(更何况我现在人就在部室里，正站在你的面前...？)"
+        mc "呃...对，当然了。"
+        mc "我现在还不熟练，不过这并不意味着我会违背我的承诺。"
+        s 1d "对吧？"
+        s "[player]，就像我之前说的那样..."
+        s "在内心深处，你一点也不自私，对不？"
+        s "像这样为了别人而尝试新的事物..."
+        s 2q "只有非常好的人才会这么做哦！"
+        mc "谢谢你...纱世里。"
+        "...我不确定纱世里是不是完全明白我的动机是什么。"
+        "况且..."
+        "我也无法否认她是我加入社团的原因之一。"
+        "我心里清楚知道，这对她意味着什么..."
+        s 1x "嗯。"
+        s "我保证你在这能玩得很开心的，好吗？"
+        s "这就是我感谢你的方式～"
+        mc "好啊，那你可要说话算数哦。"
+        s 4r "耶～！"
+        s "现在，轮到你读我的诗了，是吧？"
+        s 1y "别担心，我真的不擅长写诗。"
+        s "诶嘿嘿..."
+        mc "我们拭目以待吧。"
         return
 
 label ch1_s_med:
@@ -1415,38 +1415,38 @@ label ch1_s_med:
 
 label ch1_s_good:
     s 1n "..."
-    s "...Oh my goodness!"
-    s 4b "This is sooooo good, [player]!"
-    mc "Eh?"
-    s 4r "I love it~!"
-    s "I had no idea you were such a good writer!"
-    mc "Sayori..."
-    mc "You must be seriously overreacting."
-    mc "I'm not a good writer at all."
-    mc "I honestly have no idea what I'm doing."
-    s 1x "Well..."
-    s "Maybe that's why!"
-    s "Because I have no idea what I like, either!"
-    s 1r "Ahahaha!"
-    mc "Jeez..."
+    s "...我的天哪！"
+    s 4b "[player]，你写得太太太太太——好了！"
+    mc "诶？"
+    s 4r "我很喜欢～！"
+    s "我以前都不知道你是这么出色的诗人！"
+    mc "纱世里..."
+    mc "你显然是有些反应过度了。"
+    mc "我根本不是一个好诗人。"
+    mc "实际上，我压根都不知道自己在干什么。"
+    s 1x "好吧..."
+    s "可能这就是原因！"
+    s "因为我也不知道我喜欢什么！"
+    s 1r "啊哈哈哈！"
+    mc "真是的..."
     if y_readpoem:
-        "Yuri's opinion was way more constructive than this..."
+        "优里的观点比这有建设性多了..."
     else:
-        "I'm sure Yuri's opinion has to be a little more constructive than this."
+        "我相信优里的观点肯定比你这稍微要有建设性一点 。"
     if not n_readpoem:
-        "Maybe even Natsuki's."
-    mc "Are you sure you don't like it just because I wrote it?"
-    s 1b "Eh?"
-    s "Well, I'm sure that's part of it."
-    s 1x "I think I understand you better than a lot of other people, you know?"
-    s "So when I read your poem..."
-    s "It's not just a poem..."
-    s 4q "It's a [player] poem!"
-    s "And that makes it feel extra special!"
-    s "Like I can feel your feelings in it~"
-    "Sayori hugs the sheet against her chest."
-    mc "You're so weird, Sayori..."
-    s "Ehehe..."
+        "就连夏树的点评可能都比你的强呢。"
+    mc "你确定你不是因为这是我写的才喜欢它吗？"
+    s 1b "诶？"
+    s "这个嘛，确实有一部分是这个原因。"
+    s 1x "我觉得我比其他人更了解你哦~"
+    s "所以你的诗在我读来..."
+    s "不仅仅是一首诗..."
+    s 4q "还是 [player] 写的诗！"
+    s "这就让它倍显特殊了！"
+    s "比如说，我可以感受到你在诗中的情感～"
+    "纱世里把那张纸抱在了胸前。"
+    mc "你真古怪，纱世里..."
+    s "诶嘿嘿..."
     jump ch1_s_shared
 
 
@@ -2369,52 +2369,53 @@ label ch3_y_good:
 # As mentioned she uses _m_start to begin
 
 label ch1_m_start:
-    m 1b "Hi, [player]!"
-    m "Having a good time so far?"
-    mc "Ah...yeah."
-    m 1k "Good! Glad to hear it!"
-    m 4a "By the way, since you're new and everything..."
-    m "If you ever have any suggestions for the club, like new activities, or things we can do better..."
-    m 4b "I'm always listening!"
-    m "Don't be afraid to bring things up, okay?"
+    m 1b "嗨，[player]！"
+    m "到目前为止，你在文学部过得开心吗？"
+    mc "啊...还好。"
+    m 1k "好！很高兴听到你这么说！"
+    m 4a "顺便，由于你是新来的..."
+    m "如果你对社团有什么建议，比如说新的活动，或是可以改进的地方..."
+    m 4b "可以随时跟我说哦。"
+    m "有事别怕提出来，好吗？"
     show monika 4a
-    mc "Alright...I'll keep that in mind."
-    "Of course I'll be afraid to bring things up."
-    "I'm much better off just going with the flow until I'm more settled in."
-    m 1a "Anyway..."
-    m "Want to share your poem with me?"
-    mc "It's kind of embarrassing, but I guess I have to."
-    m 5a "Ahahaha!"
-    m "Don't worry, [player]!"
-    m "We're all a little embarrassed today, you know?"
-    m "But it's that sort of barrier that we'll all learn to get past soon."
-    mc "Yeah, that's true."
-    "I hand Monika my poem."
-    m 2a "...Mhm!"
+    mc "好的...我会记住的。"
+    "我不怕提出问题就怪了。"
+    "在没有完全融入之前，我最好还是随波逐流吧。"
+    m 1a "话说回来..."
+    m "你想跟我分享一下你的诗吗？"
+    mc "虽然有些尴尬，不过我想也只能这么做了。"
+    m 5a "啊哈哈哈！"
+    m "别担心，[player]！"
+    m "我们今天都会有一点尴尬的嘛。"
+    m "但我们很快就都能学会该如何克服它。"
+    mc "是的，说得没错。"
+    "我把我的诗递给了莫妮卡。"
+
+    m 2a "...唔！"
     # determines the next scene by who won the poemgame and their appeal number
     $ nextscene = "m_" + poemwinner[0] + "_" + str(eval(poemwinner[0][0] + "_appeal"))
     call expression nextscene
 
     # this plays after Monika voices on the tone of your poem to which specific doki
-    mc "I'm sure I'll end up trying different things a lot."
-    mc "It could take a while before I feel comfortable doing this."
-    m 1k "That's okay!"
-    m 1b "I'd love to see you try new things."
-    m "That's the best way to find the kind of style that suits you."
-    m 3e "Everyone else might be a little bit biased toward their own kinds of styles..."
-    m 3a "But I'll always help you find what suits you the most!"
-    m "So don't force yourself to write the way everyone else wants you to write."
-    m "It's not like you have to worry about impressing them or anything."
-    m 5 "Ahaha!"
-    mc "Ahaha..."
-    m 1a "Anyway, do you want to read my poem now?"
-    m 1e "Don't worry, I'm not very good..."
-    mc "You sound pretty confident for someone who claims to not be very good."
-    m 1j "Well...that's 'cause I have to sound confident."
-    m 1b "That doesn't mean I always feel that way, you know?"
+    mc "我相信，我最终会尝试很多不同东西的。"
+    mc "可能要花上一段时间后，我才能适应写作。"
+    m 1k "没关系！"
+    m 1b "我很乐意看到你尝试新东西。"
+    m "这个方法最能帮你找到适合自己的风格。"
+    m 3e "其他人都偏爱与她们自己相近的风格..."
+    m 3a "不过我会帮你找到最适合你的那种！"
+    m "所以，不要强迫自己使用别人希望的方式来写作。"
+    m "反正你并不需要担心能否打动她们之类的。"
+    m 5 "啊哈哈！"
+    mc "啊哈哈..."
+    m 1a "话说回来，你想现在读一读我的诗吗？"
+    m 1e "别担心，我的水平不是很好..."
+    mc "你自称水平不是很好，但你的语气听起来还是自信满满的啊。"
+    m 1j "好吧...是因为我的语气必须自信满满啦。"
+    m 1b "这并不意味着我心里真的总是自信满满，明白吗？"
     show monika 1a
-    mc "I see..."
-    mc "Well, let's read it, then."
+    mc "这样啊..."
+    mc "好了，那我们来读你的吧。"
     return
 
 label ch2_m_start:
@@ -2514,30 +2515,30 @@ label m_natsuki_1:
     return
 
 label m_sayori_1:
-    m 2a "I like this one!"
-    m "It makes me think of something Sayori would like."
-    mc "Is that so?"
-    m 2d "You and Sayori are really good friends, right?"
-    m "I wouldn't be surprised if you had those sorts of things in common."
-    mc "Ah, well..."
-    mc "We may be good friends, but Sayori and I are actually really different."
-    m "Hmm..."
-    m "Well, that may be the case."
-    m 3a "But maybe there are also some similarities that you wouldn't expect."
-    m "The way she talks about you..."
-    m "It sounds like the two of you really care about each other's well-being."
-    m "Even if you show it in different ways, it ends up being more similar than you'd think."
-    m 1a "So I think that's the kind of vibe I get when reading your poem."
-    mc "Hmm..."
-    mc "You sure you're not reading into it too much?"
-    m 5 "Ahaha! I could be!"
-    m "Oh gosh, I sound like Yuri..."
-    m 2a "...But in any case, Sayori's writing has kind of a gentle feel to it."
-    m "I can tell that she likes exploring with emotions, like happiness and sadness."
-    m "Who knew that someone so happy would enjoy sad things, too?"
-    mc "Yeah... That's totally unexpected."
-    m 2j "Well, to each their own~"
-    m 2a "And you shouldn't be afraid to experiment a little bit, either."
+    m 2a "我喜欢这首诗！"
+    m "这让我感觉像是纱世里会喜欢的东西。"
+    mc "是吗？"
+    m 2d "你和纱世里是非常要好的朋友，对吧？"
+    m "你们有这样的共同点，我也不会感到惊讶的。"
+    mc "啊，那个..."
+    mc "我们是好朋友，但是纱世里和我其实还是大不相同的。"
+    m "唔..."
+    m "好吧，也许你说得没错。"
+    m 3a "不过可能你们也有一些意想不到的相似之处。"
+    m "她谈到你的方式..."
+    m "听起来就像是你们两个都很在乎彼此的幸福。"
+    m "即便你们是用不同的方式展现出来的，但最终比你想象中的要更相似。"
+    m 1a "所以我在阅读你的诗的时候，就有这样的既视感。"
+    mc "唔..."
+    mc "你确定你没有过分解读吗？"
+    m 5 "啊哈哈！也有可能！"
+    m "天哪，我听起来就跟优里一样..."
+    m 2a "...不过，无论如何，纱世里的诗里有一种轻柔的感觉。"
+    m "我知道她喜欢带着情绪去探索，比如快乐和悲伤。"
+    m "谁知道这么开心的一个人，也会喜欢悲伤的事情呢？"
+    mc "是啊...完全出乎意料。"
+    m 2j "好了，每个人都有选择喜好的权利～"
+    m 2a "你也不用害怕进行一些小小的尝试。"
     return
 
 label m_yuri_1:

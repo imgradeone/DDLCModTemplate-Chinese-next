@@ -7,126 +7,126 @@ label ch1_main:
     show monika 5 zorder 2 at t11
 
     m "[player]，咱们又见面啦！"
-    m "我还以为你会被我们吓跑呢。哈哈哈！"
-    mc "Nah, don't worry."
-    mc "This might be a little strange for me, but I at least keep my word."
+    m "我还以为你会放我们鸽子呢。哈哈哈！"
+    mc "不会的，别担心。"
+    mc "我至少还是个守信的人嘛，虽说这么自夸有点奇怪。"
     show monika zorder 1 at thide
     hide monika
-    "Well, I'm back at the Literature Club."
-    "I was the last to come in, so everyone else is already hanging out."
+    "好吧，我又回到了文学部。"
+    "我到得最晚，其他人都已经在闲聊了。"
     show yuri 1a zorder 2 at t32
-    y "Thanks for keeping your promise, [player]."
-    y "I hope this isn't too overwhelming of a commitment for you."
-    y 1u "Making you dive headfirst into literature when you're not accustomed to it..."
+    y "谢谢你信守了诺言呢，[player]。"
+    y "希望这个承诺对你来说不至于太过沉重。"
+    y 1u "逼着你你在还不熟悉文学的时候就一头扎进去..."
     show natsuki 4e zorder 2 at t33
-    n "Oh, come on! Like he deserves any slack."
-    n "Sayori told me you didn't even want to join any clubs this year."
-    n "And last year, too!"
-    n 4c "I don't know if you plan to just come here and hang out, or what..."
-    n "But if you don't take us seriously, then you won't see the end of it."
+    n "拜托哦！说得好像他可以偷懒一样！"
+    n "纱世里告诉过我，你今年本来一个社团都不想加入。"
+    n "去年也是这样的！"
+    n 4c "我不知道你是打算过来随便看看的，还是什么别的..."
+    n "不过你要是不把我们当回事的话，那你就完蛋了。"
     show monika 2b at l41
-    m "Natsuki, you certainly have a big mouth for someone who keeps her manga collection in the clubroom."
-    n 4o "M-M-M...!!"
+    m "夏树，你管得也真宽啊，明明自己都把漫画收藏放在部室里了。"
+    n 4o "M-M-M...！！"
     show monika at lhide
     hide monika
-    "Natsuki finds herself stuck between saying \"Monika\" and \"Manga\"."
+    "夏树不知该说\"莫妮卡\"还是\"漫画\"才好。"
     show natsuki at h33
-    n 1v "Manga is literature!!"
+    n 1v "漫画也是文学！！"
     show natsuki zorder 1 at thide
     hide natsuki
-    "Swiftly defeated, Natsuki plops back into her seat."
+    "迅速败下阵来的夏树跌坐回了她的座位。"
     show yuri zorder 2 at t22
     show sayori 2x zorder 3 at f21
-    s "Don't worry, guys~"
-    s "[player] always gives it his best as long as he's having fun."
-    s "He helps me with busywork without me even asking."
-    s "Like cooking, cleaning my room..."
+    s "大家别担心嘛～"
+    s "只要 [player] 乐在其中，他还是会尽心尽力的哦。"
+    s "他甚至会主动帮我做一些琐事。"
+    s "比如做饭、打扫我的房间..."
     show sayori 2a zorder 2 at t21
     show yuri zorder 3 at f22
-    y 2m "How dependable..."
+    y 2m "真可靠啊..."
     show yuri zorder 2 at t22
-    mc "Sayori, that's because your room is so messy it's distracting."
-    mc "And you almost set your house on fire once."
+    mc "纱世里，还不是因为你房间太乱了。"
+    mc "而且有一次你差点把房间都点着了。"
     show sayori at s21
-    s 5 "Is that so... Ehehe..."
+    s 5 "是吗...诶嘿嘿..."
     show yuri zorder 3 at f22
-    y 1s "You two are really good friends, aren't you?"
-    y "I might be a little jealous..."
+    y 1s "你们俩真是关系很好的朋友呢，对吧？"
+    y "我可是会有些嫉妒的..."
     show yuri zorder 2 at t22
     show sayori zorder 3 at f21
-    s 1 "How come? You and [player] can become good friends too!"
+    s 1 "怎么会呢？你和 [player] 也可以变成好朋友啊！"
     show sayori zorder 2 at t21
     show yuri zorder 3 at f22
-    y 4b "U-Um..."
+    y 4b "唔-唔..."
     show yuri zorder 2 at t22
-    mc "S-Sayori--"
+    mc "纱......纱世里——"
     show sayori zorder 3 at f21
-    s "Hmm?"
+    s "嗯？"
     show sayori zorder 2 at t21
     mc "..."
-    "As usual, Sayori seems oblivious to the weird situation she just put me into."
+    "和往常一样，纱世里似乎并未意识到，她刚刚害我陷入了多么诡异的境地。"
     show sayori zorder 3 at f21
-    s 4x "Oh, oh! Yuri even brought you something today, you know~"
+    s 4x "哦，对了！你知道吗？优里今天甚至还给你带了件东西～"
     show sayori zorder 2 at t21
     show yuri zorder 3 at f22
-    y 3n "W-Wait! Sayori..."
+    y 3n "等—等一下！纱世里..."
     show yuri zorder 2 at t22
-    mc "Eh? Me?"
+    mc "诶？给我？"
     show yuri zorder 3 at f22
-    y 3o "Um... Not really..."
+    y 3o "嗯...其实也不算..."
     show yuri zorder 2 at t22
     show sayori zorder 3 at f21
-    s 4r "Don't be shy~"
+    s 4r "别害羞嘛～"
     show sayori zorder 2 at t21
     show yuri zorder 3 at f22
-    y "It's really nothing..."
+    y "真的没什么..."
     show yuri zorder 2 at t22
-    mc "What is it?"
+    mc "是什么呢？"
     show yuri zorder 3 at f22
-    y 4c "N-Never mind!"
-    y "Sayori made it sound like a big deal when it's really not..."
-    y "Uuuuh, what do I do..."
+    y 4c "没...没什么！"
+    y "纱世里有点小题大做了..."
+    y "呃，我该怎么办..."
     show yuri zorder 2 at t22
     show sayori zorder 3 at f21
-    s 1g "Eh? I'm sorry, Yuri, I wasn't thinking..."
+    s 1g "诶？对不起，优里，是我没注意..."
     show sayori zorder 1 at thide
     hide sayori
     show yuri zorder 2 at t11
-    "I guess that means it's up to me to rescue this situation..."
-    mc "Hey, don't worry about it."
-    mc "First of all, I wasn't expecting anything in the first place."
-    mc "So any nice gesture from you is a pleasant surprise."
-    mc "It'll make me happy no matter what."
-    y 3v "I-Is that so..."
-    mc "Yeah. I won't make it a big deal if you don't want it to be."
-    y "Alright..."
-    y 1a "Well, here."
-    "Yuri reaches into her bag and pulls out a book."
-    y "I didn't want you to feel left out..."
-    y "So I picked out a book that I thought you might enjoy."
-    y "It's a short read, so it should keep your attention, even if you don't usually read."
-    y "And we could, you know..."
+    "这大概意味着需要由我来救场了..."
+    mc "嘿，别担心。"
+    mc "首先，我从一开始就没有期待过什么。"
+    mc "你的任何善意都会让我非常惊喜。"
+    mc "不管是什么我都会很高兴的。"
+    y 3v "是-是那样吗..."
+    mc "是啊。你要是不愿意，我也不会大题小做的。"
+    y "好吧..."
+    y 1a "呐，给。"
+    "优里把手伸进包里，掏出了一本书。"
+    y "我希望你可以更快地融入进来..."
+    y "所以我就找了本我觉得你可能会喜欢的书。"
+    y "故事不长，所以即使你平时不怎么看书，也应该可以专注地读完。"
+    y "而且我们可以，嗯..."
     show yuri at sink
-    y 4b "Discuss it...if you wanted..."
-    "Th-This is..."
-    "How is this girl accidentally being so cute?"
-    "She even picked out a book she thinks I'll like, despite me not reading much..."
-    mc "Yuri, thank you! I'll definitely read this!"
-    "I enthusiastically take the book."
+    y 4b "一起讨论...如果你愿意的话..."
+    "这-这..."
+    "这个女孩怎么这么可爱呢？"
+    "就连我这样不常常看书的人，她都去挑了一本她认为我会喜欢的书给我..."
+    mc "谢谢你，优里！我一定会看的！"
+    "我热情地接过了那本书。"
     show yuri 2m zorder 2 at t11
-    y "Phew..."
-    y 2a "Well, you can read it at your own pace."
-    y "I look forward to hearing what you think."
+    y "呼..."
+    y 2a "嗯，你可以按照自己的节奏来。"
+    y "期待能听到你的想法。"
     show yuri zorder 1 at thide
     hide yuri
 
 
-    "Now that everyone's settled in, I expected Monika to kick off some scheduled activities for the club."
-    "But that doesn't seem to be the case."
-    "Sayori and Monika are having a cheery conversation in the corner."
-    "Yuri's face is already buried in a book."
-    "I can't help but notice her intense expression, like she was waiting for this chance."
-    "Meanwhile, Natsuki is rummaging around in the closet."
+    "鉴于大家都已经到场，我本以为莫妮卡会开始主持已经安排好的社团活动。"
+    "然而她并没有。"
+    "纱世里和莫妮卡正在角落里进行着愉快的交谈。"
+    "而优里已经把脸埋进了书里。"
+    "我情不自禁地注意到了她那认真的表情，仿佛等待这次机会已久。"
+    "与此同时，夏树在储藏间里到处翻找着什么。"
 
 
     $ nextscene = poemwinner[0] + "_exclusive_" + str(eval(poemwinner[0][0] + "_appeal"))
@@ -137,24 +137,24 @@ label ch1_main:
     hide sayori
     hide natsuki
     hide yuri
-    m "By the way, did you remember to write a poem last night?"
-    mc "Y-Yeah..."
-    "My relaxation ends."
-    "I can't believe I agreed to do something so embarrassing."
-    "I couldn't really find much inspiration, since I've never really done this before."
-    m "Well, now that everyone's ready, why don't you find someone to share with?"
+    m "说起来，你们昨晚记得写诗了吗？"
+    mc "当...当然..."
+    "我的轻松时光戛然而止。"
+    "我简直不敢相信自己居然答应了做这么羞耻的事情。"
+    "我其实找不到太多的灵感，因为我从来都没有写过诗。"
+    m "好的，既然大家都准备好了，那么何不找个人分享一下呢？"
     show sayori 4q zorder 2 at t22
-    s "I can't wait~!"
+    s "我都等不及啦～！"
     show sayori zorder 1 at thide
     show monika zorder 1 at thide
     hide sayori
     hide monika
-    "Sayori and Monika enthusiastically pull out their poems."
-    "Sayori's is on a wrinkled sheet of loose leaf torn from a spiral notebook."
-    "On the other hand, Monika wrote hers in a composition notebook."
-    "I can already see Monika's pristine handwriting from where I sit."
-    "Natsuki and Yuri reluctantly comply as well, reaching into their bags."
-    "I do the same, myself."
+    "纱世里和莫妮卡迫不及待地拿出了她们的诗。"
+    "纱世里的诗写在一张皱巴巴的活页纸上，那是从螺旋笔记本上撕下来的。"
+    "而莫妮卡则把诗写在了作文本上。"
+    "我在座位上就能看到莫妮卡那干净的字迹。"
+    "夏树和优里也不情愿地照做了，把手伸进了包里。"
+    "那我也照做吧。"
 
     return
 
@@ -164,11 +164,11 @@ label ch1_end:
     scene bg club_day
     with wipeleft_scene
     play music t3
-    mc "Phew..."
-    "I guess that's everyone."
-    "I glance around the room."
-    "That was a little more stressful than I anticipated."
-    "It's as if everyone is judging me for my mediocre writing abilities..."
+    mc "呼..."
+    "终于结束了。"
+    "我扫视了一下整个房间。"
+    "气氛比我预想中的更压抑一些。"
+    "就好像所有人都在审视我那平庸的写作水平..."
     "Even if they're just being nice, there's no way my poems can stand up to theirs."
     "This is a literature club, after all."
     "I sigh."

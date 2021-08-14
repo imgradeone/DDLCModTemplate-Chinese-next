@@ -160,7 +160,7 @@ label poemresponse_monika:
 # call showpoem calls the poem from poems.rpy to be displayed
 # img="yuri 3t" is the pose the doki should be when the scene happens hiddenly
 label ch1_y_end:
-    call showpoem (poem_y1, img="yuri 3t")
+    call showpoem (poem_y1, img="yuri 3t", chinese=False)
     y 3t "..."
     y "I...I'm sorry I have such terrible handwriting!"
     mc "What??"
@@ -219,7 +219,7 @@ label ch1_y_end:
     return
 
 label ch2_y_end:
-    call showpoem (poem_y2)
+    call showpoem (poem_y2, chinese=False)
     y 2m "Um..."
     y "I was a little more daring with this one than yesterday's..."
     mc "I can see that."
@@ -290,7 +290,7 @@ label ch3_y_end:
     # asks if Yuri liked all 3 poems. if true it jumps to a special response label
     if y_appeal >= 3:
         jump ch3_y_end_special
-    call showpoem (poem_y3, img="yuri 2v")
+    call showpoem (poem_y3, img="yuri 2v", chinese=False)
     y "Um..."
     y "I'm aware that the beach is kind of an inane thing to write about."
     y "But I did my best to take a metaphorical approach to it."
@@ -328,7 +328,7 @@ label ch3_y_end:
     mc "Thanks for sharing."
     return
 label ch3_y_end_special:
-    call showpoem (poem_y3b, img="yuri 4b")
+    call showpoem (poem_y3b, img="yuri 4b", chinese=False)
     "Finishing the poem, I start to hand it back to Yuri."
     "But instead of taking it from me, she looks away."
     y "..."
@@ -381,7 +381,7 @@ label ch3_y_end_special:
     return
 
 label ch1_n_end:
-    call showpoem (poem_n1, img="natsuki 2s")
+    call showpoem (poem_n1, img="natsuki 2s", chinese=False)
     n 2q "Yeah..."
     n "I told you that you weren't gonna like it."
     mc "I like it."
@@ -415,7 +415,7 @@ label ch1_n_end:
     return
 
 label ch2_n_end:
-    call showpoem (poem_n2)
+    call showpoem (poem_n2, chinese=False)
     n 2a "Not bad, right?"
     mc "It's quite a bit longer than yesterday's."
     n 2w "Yesterday's was way too short..."
@@ -488,7 +488,7 @@ label ch3_n_end:
     $ n_read3 = True
     if n_appeal >= 3:
         jump ch3_n_end_special
-    call showpoem (poem_n3)
+    call showpoem (poem_n3, chinese=False)
     n 2a "Yeah..."
     n "I felt like I kept writing about negative things, so I wanted to write something with a nice message for once."
     n 2z "Besides...the beach is awesome!"
@@ -521,7 +521,7 @@ label ch3_n_end:
     n "At the very least, it was good practice."
     return
 label ch3_n_end_special:
-    call showpoem (poem_n3b)
+    call showpoem (poem_n3b, chinese=False)
     n 1q "..."
     n "...Why are you looking at me like that?"
     n "If you don't like it, then just say it."
@@ -577,41 +577,40 @@ label ch3_n_end_special:
     return
 
 label ch1_s_end:
-    call showpoem (poem_s1)
-    mc "Sayori..."
-    mc "This is just a guess, but..."
-    mc "Did you wait until this morning to write this?"
-    s 4h "No!"
-    s 4l "J-Just a little bit!"
-    mc "You can't answer 'just a little bit' to a yes or no question..."
-    s 5b "I forgot to do it last night..."
-    mc "Well, at least that makes me feel a little better about myself..."
-    s 1h "Don't be mean!"
-    s "I still tried my best..."
-    mc "Ah, yeah..."
-    mc "I didn't mean to say that it was a bad poem."
-    mc "It came out nice...or, how should I put it..."
-    mc "It sounds just like you."
-    s 1d "Really?"
-    mc "Yeah."
-    mc "Especially that last line..."
-    s 4r "I made eggs and toast!"
-    mc "Even though you were late to school...?"
-    s 5d "It's bad to skip breakfast!"
-    s "I get all cranky..."
-    mc "Well, I guess there's no point in arguing..."
-    mc "Anyway, thanks for showing me."
-    s 1q "Ehehe~"
-    s "This was so much fun."
-    s "Monika's the best!"
-    mc "Ah...yeah."
-    s "But next time, I won't forget."
-    s 4x "And I'm gonna write the best poem ever!"
-    mc "Well, I guess I look forward to it."
+    mc "纱世里..."
+    mc "让我大胆猜一猜..."
+    mc "你是不是今早才写了这首诗？"
+    s 4h "不是！"
+    s 4l "只...只有一点啦！"
+    mc "你不能对一个是非问题回答'只有一点'..."
+    s 5b "我昨晚忘了写嘛..."
+    mc "好吧，至少这让我的自我感觉好了些..."
+    s 1h "不要这么过分啦！"
+    s "毕竟我还是有尽力的啊..."
+    mc "啊，好吧..."
+    mc "我不是说这首诗不好。"
+    mc "结果还不错...嗯，该怎么说好呢..."
+    mc "这很纱世里。"
+    s 1d "真的吗？"
+    mc "嗯。"
+    mc "尤其是最后一行..."
+    s 4r "我做了鸡蛋和烤面包！"
+    mc "即便你上学要迟到了...？"
+    s 5d "不吃早饭是不好的！"
+    s "我整个人都会变得暴躁..."
+    mc "好吧，我觉得这也没什么好争的..."
+    mc "不管怎么样，谢谢你能给我看这首诗。"
+    s 1q "诶嘿嘿～"
+    s "真是太有意思了。"
+    s "莫妮卡是最棒的！"
+    mc "啊...没错。"
+    s "不过下一次，我不会忘了写的。"
+    s 4x "而且我会写出最好的诗！"
+    mc "好啊，我很期待。"
     return
 
 label ch2_s_end:
-    call showpoem (poem_s2)
+    call showpoem (poem_s2, chinese=False)
     mc "Holy crap..."
     mc "Sayori, did you really write this?"
     s 2j "Of course I did!"
@@ -647,7 +646,7 @@ label ch3_s_end:
     return
 
 label ch1_m_end:
-    call showpoem (poem_m1)
+    call showpoem (poem_m1, chinese=False)
 label ch1_m_end2:
     m 1a "So...what do you think?"
     mc "Hmm...it's very...freeform, if that's what you call it."
@@ -678,7 +677,7 @@ label ch1_m_end2:
     return
 
 label ch2_m_end:
-    call showpoem (poem_m2)
+    call showpoem (poem_m2, chinese=False)
     mc "Hm..."
     mc "It's even more abstract than your last one, huh?"
     m 5 "Ahaha..."
@@ -710,7 +709,7 @@ label ch2_m_end:
     m "Thanks for listening~"
     return
 label ch3_m_end:
-    call showpoem (poem_m3)
+    call showpoem (poem_m3, chinese=False)
     m 1a "You know..."
     m "I feel like learning and looking for answers are the sorts of things that give life meaning."
     m 1e "Not to get too philosophical or anything..."
@@ -1810,63 +1809,63 @@ label ch3_s_good:
 
 label ch1_y_bad:
     y 1g "..."
-    y "Mm..."
+    y "唔..."
     y "..."
-    "Yuri stares at the poem."
-    "A minute passes, more than enough time for her to finish reading."
-    mc "Um..."
-    y "Oh!"
-    y 3n "S-Sorry...!"
-    y "I forgot to start speaking..."
-    y "U-Um!"
-    mc "It's fine, don't force yourself."
-    y 2v "I'm not..."
-    y "I just need to put my thoughts into words."
-    y "Hold on..."
-    y "...Okay."
-    y 1f "This is your first time writing a poem, right?"
-    mc "Er, yeah..."
-    mc "Why do you ask?"
-    y "I'm just making sure."
-    y "I guessed that it might be after reading through it."
-    mc "Ah, so it's that bad."
-    y 2p "No!!"
-    y 2o "...Did I just raise my voice...?"
-    y 4c "Uu, I'm so sorry..."
-    "Yuri buries her face in her hands."
-    "I couldn't help but notice that it's been several minutes and we really haven't gotten anywhere."
-    "It might take Yuri a while to get used to new people..."
-    mc "It's fine, I really didn't notice."
-    mc "What were you saying?"
-    y 2u "Right...um..."
+    "优里盯着那首诗。"
+    "一分钟过去了，要读完诗已经绰绰有余了。"
+    mc "唔..."
+    y "哦！"
+    y 3n "抱-抱歉...！"
+    y "我忘了说话了..."
+    y "唔-唔！"
+    mc "没关系，别强迫自己。"
+    y 2v "我没有..."
+    y "我只是需要一点时间来酝酿下我的语言。"
+    y "稍微等我一下..."
+    y "...好了。"
+    y 1f "这是你第一次写诗，对吗？"
+    mc "呃，是啊..."
+    mc "你为什么要这么问？"
+    y "我只是确认一下。"
+    y "在读完这首诗之后，我就猜到应该是了。"
+    mc "啊，也就是说我写的这首诗很烂啊。"
+    y 2p "不是的！！"
+    y 2o "...我刚刚是不是大声了点...？"
+    y 4c "呜，抱歉..."
+    "优里把脸埋进了手里。"
+    "我不禁注意到，已经好几分钟过去了，而我们一点进展都没有。"
+    "优里可能需要一些时间来适应新人..."
+    mc "没事啦，我都没注意到。"
+    mc "你刚刚说了什么来着？"
+    y 2u "好吧...唔..."
     label ch1_y_shared:
-        y 1a "It's just that there are specific writing habits that are usually typical of new writers."
-        y "And having been through that myself, I kind of learned to pick up on them."
-        y 1i "I think the most noticeable thing I recognize in new writers is that they try to make their style very deliberate."
-        y "In other words, they tend to pick a writing style separate from the topic matter, and they form-fit the two together."
-        y 1a "The end result is that both the style and the expressiveness are weakened."
-        "Once Yuri finds her train of thought, it's as if her demeanor totally changes."
-        "Her stammering is completely gone, and she sounds like an expert."
-        y 1k "Of course, that's not something you can be blamed for."
-        y "There are so many different skills and techniques that go into writing even a simple poem."
-        y 1a "Not just finding them and building them, but getting them to work together is probably the most challenging part."
-        y "It might take you some time, but it all comes with practice, and learning by example, and trying new things."
-        y "I also hope that everyone else in the club gives you valuable feedback."
-        y 1l "Natsuki can be a little bit biased, though..."
-        mc "Biased? How?"
-        y 2j "U-Um..."
-        y "Well..."
-        y "Never mind..."
-        y "I shouldn't be talking about people like that..."
-        y "Sorry..."
-        mc "It's fine."
-        "I'm not sure if Yuri is apologizing to herself, to me, or to Natsuki."
-        mc "Do you mind if I read your poem now?"
-        y 3c "Please do!"
-        y "I'd love to share my thought process behind it..."
-        "Yuri smiles dreamily, as if that's a rare opportunity for her."
-        "Which itself is kind of funny..."
-        "...After all, isn't this supposed to be a literature club?"
+        y 1a "你的诗里能看到一般新手诗人特有的写作习惯。"
+        y "我也是从新手过来的，所以对于这些习惯都有些熟悉。"
+        y 1i "我觉得，新手作者最明显的一点就是，他们会非常谨慎地决定风格。"
+        y "换句话说，他们更喜欢剥离主题来选择写作风格，然后再将两者结合起来。"
+        y 1a "而最终结果就是，风格和表现力都被削弱了。"
+        "一旦优里找到了思路，那么她的举止就像是完全变了个样。"
+        "她的磕磕巴巴完全消失了，听起来就像是专家一样。"
+        y 1k "当然，这也无可厚非。"
+        y "即便是写一首简单的诗，也有大量不同的技巧和技术。"
+        y 1a "你要做的不仅仅是找到并构建它们，还要让它们相互配合，这可能才是最有挑战性的部分。"
+        y "这可能会需要你花上一些时间，不过这一切都要从实践、实例学习以及尝试新事物中来。"
+        y "我也希望，社团里的其他人都能给你宝贵的反馈意见。"
+        y 1l "不过夏树可能会有些偏见..."
+        mc "偏见？怎么会？"
+        y 2j "唔-唔..."
+        y "好吧..."
+        y "别在意..."
+        y "我不应该那样谈论别人的..."
+        y "抱歉..."
+        mc "没关系。"
+        "我不知道优里在对着谁道歉，是她自己、我、还是夏树。"
+        mc "介意我现在读你的诗吗？"
+        y 3c "请读！"
+        y "我很乐意分享它背后的思维过程..."
+        "优里恍惚地笑着，似乎对她来说这是一个难得的机会。"
+        "这本身有点好笑..."
+        "...毕竟，这里不就是文学社团吗？"
         return
 
 label ch1_y_med:

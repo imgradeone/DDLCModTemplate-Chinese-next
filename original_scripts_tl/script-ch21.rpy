@@ -7,44 +7,44 @@ label ch21_main:
         subpixel True
         truecenter
         linear 240 rotate 8 zoom 1.30
-    m "Hi again, [player]!"
-    m "Glad to see you didn't run away on us. Hahaha!"
-    mc "Nah, don't worry."
-    mc "This might be a little strange for me, but I at least keep my word."
+    m "[player]，咱们又见面啦！"
+    m "我还以为你会放我们鸽子呢。哈哈哈！"
+    mc "不会的，别担心。"
+    mc "我至少还是个守信的人嘛，虽说这么自夸有点奇怪。"
     show monika zorder 1 at thide
     hide monika
-    "Well, I'm back at the Literature Club."
-    "I was the last to come in, so everyone else is already hanging out."
+    "好吧，我又回到了文学部。"
+    "我到得最晚，其他人都已经在闲聊了。"
     show yuri glitch2 zorder 2 at t32
-    y "Thanks for keeping your promise, [player]."
-    y 1a "I hope this isn't too overwhelming of a commitment for you."
-    y 1u "Making you dive headfirst into literature when you're not accustomed to it..."
+    y "谢谢你信守了诺言呢，[player]。"
+    y "希望这个承诺对你来说不至于太过沉重。"
+    y 1u "逼着你你在还不熟悉文学的时候就一头扎进去..."
     show natsuki glitch1 zorder 2 at i33
-    n "Oh, come on! Like he deserves any slack."
-    n 4e "You already had to be dragged here by Monika."
-    n "I don't know if you plan to just come here and hang out, or what..."
-    n "But if you don't take us seriously, then you won't see the end of it."
+    n "拜托哦！说得好像他可以偷懒一样！"
+    n 4e "你已经是被莫妮卡拉来的了。"
+    n "我不知道你是打算过来随便看看的，还是什么别的..."
+    n "不过你要是不把我们当回事的话，那你就完蛋了。"
     show monika 2b onlayer front at l41
-    m "Natsuki, you certainly have a big mouth for someone who keeps her manga collection in the clubroom."
-    n 4o "M-M-M...!!"
+    m "夏树，作为一个在部室放了自己漫画收藏的人，你这么说也挺多嘴的嘛。"
+    n 4o "M-M-M...！！"
     show monika onlayer front at lhide
     hide monika onlayer front
-    "Natsuki finds herself stuck between saying \"Monika\" and \"Manga\"."
+    "夏树不知该说\"莫妮卡\"还是\"漫画\"才好。"
     show natsuki at h33
-    n 1v "Manga is literature!!"
+    n 1v "漫画也是文学！！"
     show natsuki zorder 1 at thide
     hide natsuki
-    "Swiftly defeated, Natsuki plops back into her seat."
+    "迅速败下阵来的夏树跌坐回了她的座位。"
     show yuri 2s zorder 2 at t11
-    y "I'm sorry, [player]..."
-    y "We'll make sure to put your comfort first, okay?"
+    y "抱歉，[player]..." # 二周目 part start
+    y "我们会尽力让你在社团里感到舒适的，好吗？"
     show yuri 2g
-    "Yuri shoots Natsuki with a disappointed glance."
-    y 1a "Um, anyway..."
-    y "Now that you're in the club and all..."
-    y "...Perhaps you might have interest in picking up a book to read?"
-    mc "Well..."
-    mc "I can't really say no either way."
+    "优里向夏树投去了责备的一瞥。"
+    y 1a "呃，不管怎样..."
+    y "现在既然你已经是社团的正式成员了..."
+    y "...也许你会有兴趣挑一本书来读读看？"
+    mc "唔..."
+    mc "我也没理由拒绝对吧。"
     mc "Like you said, I'm in this club now."
     mc "So it only feels right for me to do something like that, if you ask."
     y 4b "W-Wait..."
@@ -57,33 +57,32 @@ label ch21_main:
     y 3t "A-Are you sure...?"
     y "I just felt like..."
     y 3u "...Well, as Vice President and all..."
-    y "...That I should help you get started on something you might like."
-    "Yuri reaches into her bag and pulls out a book."
-    y 1s "I didn't want you to feel left out..."
-    y "So I picked out a book that I thought you might enjoy."
-    y "It's a short read, so it should keep your attention, even if you don't usually read."
-    y "And we could, you know..."
+    y "...That I should help you get started on something you might like." # 二周目 part end
+    "优里把手伸进包里，掏出了一本书。"
+    y "我希望你可以更快地融入进来..."
+    y "所以我就找了本我觉得你可能会喜欢的书。"
+    y "故事不长，所以即使你平时不怎么看书，也应该可以专注地读完。"
+    y "而且我们可以，嗯..."
     show yuri at sink
-    y 4b "Discuss it...if you wanted..."
-    "Th-This is..."
-    "How is this girl accidentally being so cute?"
-    "She even picked out a book she thinks I'll like, despite me not reading much..."
-    mc "Yuri, thank you! I'll definitely read this!"
-    "I enthusiastically take the book."
+    y 4b "一起讨论...如果你愿意的话..."
+    "这-这..."
+    "这个女孩怎么这么可爱呢？"
+    "就连我这样不常常看书的人，她都去挑了一本她认为我会喜欢的书给我..."
+    "我热情地接过了那本书。"
     show yuri 2m zorder 2 at t11
-    y "Phew..."
-    y 2a "Well, you can read it at your own pace."
-    y "I look forward to hearing what you think."
+    y "呼..."
+    y 2a "嗯，你可以按照自己的节奏来。"
+    y "期待能听到你的想法。"
     show yuri zorder 1 at thide
     hide yuri
     show layer master
 
 
-    "Now that everyone's settled in, I expected Monika to kick off some scheduled activities for the club."
-    "But that doesn't seem to be the case."
-    "Yuri's face is already buried in a book."
-    "I can't help but notice her intense expression, like she was waiting for this chance."
-    "Meanwhile, Natsuki is rummaging around in the closet."
+    "鉴于大家都已经到场，我本以为莫妮卡会开始主持已经安排好的社团活动。"
+    "然而她并没有。"
+    "优里已经把脸埋进了书里。"
+    "我情不自禁地注意到了她那认真的表情，仿佛等待这次机会已久。"
+    "与此同时，夏树在储藏间里到处翻找着什么。"
 
 
     $ nextscene = poemwinner[0] + "_exclusive2_" + str(eval(poemwinner[0][0] + "_appeal"))
