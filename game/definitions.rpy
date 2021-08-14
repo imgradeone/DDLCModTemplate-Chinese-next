@@ -11,7 +11,7 @@ define persistent.demo = False
 define persistent.steam = ("steamapps" in config.basedir.lower())
 
 # 开发者模式开关
-define config.developer = False
+define config.developer = "auto"
 
 python early:
     import singleton
@@ -1369,7 +1369,25 @@ define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suf
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('夏树 & 优里', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
+# Allows the player to dismiss or not based off config.developer
 define _dismiss_pause = config.developer
+
+# [BETA] Pronoun Variables
+## This section adds the feature to use player pronouns within the game text easily.
+## To use this feature, simply ask the user for their pronoun and use it here.
+## For capitalization, use heC, himC, areC and hesC
+default persistent.he = ""
+default persistent.him = ""
+default persistent.are = ""
+default persistent.hes = ""
+default he = persistent.he
+default him = persistent.him
+default are = persistent.are
+default hes = persistent.hes
+default heC = persistent.he.capitalize()
+default himC = persistent.him.capitalize()
+default areC = persistent.are.capitalize()
+default hesC = persistent.hes.capitalize()
 
 define gui.system_font = u'mod_assets/font/harmonyossans.ttf'
 

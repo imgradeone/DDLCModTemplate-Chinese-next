@@ -10,8 +10,8 @@ label start:
     # 这里控制游戏的章节，对于 poem game 有用。
     $ chapter = 0
 
-    # 如果游戏在暂停时被玩家退出，那么它将设为 False。
-    # 慎用。
+    # 控制是否允许玩家快速展示所有文字，默认基于开发者选项 
+    # (located in definitions.rpy)
     $ _dismiss_pause = config.developer
 
     # 角色命名。
@@ -37,7 +37,7 @@ label start:
     $ config.allow_skipping = True
 
     # 脚本开始
-    call ch1_start
+    call ch0_start
 
     return
 

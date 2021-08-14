@@ -1,8 +1,8 @@
 ﻿# Options.rpy
-## This template version is 2.4.6. When asked to provide the template version you are using,
+## This template version is 2.4.8. When asked to provide the template version you are using,
 ## give them this version number. DO NOT REMOVE OR CHANGE THIS COMMENT.
    
-## 目前中文 Mod 模板的版本为 2.0.0-dev，基于原版改良模板的 2.4.6 版本改造。
+## 目前中文 Mod 模板的版本为 2.0.0-beta2-development，基于原版改良模板的 2.4.8 版本改造。
 ## 如果你需要向别人提及模板版本，建议把这两个都放上去。
 ## 不要修改、删除这段注释，包括上面的英文原版。
 

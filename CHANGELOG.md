@@ -8,6 +8,7 @@
 - refactor: 更新 `original_scripts/script.rpy` 的文件逻辑
 - add: 原版剧情翻译（in progress，基于 Plus 和原版社区翻译）
 - refactor: 修改默认角色名称，匹配官方译名
+- patch: 跟进原模版 2.4.8 更新
 
 ## v2.0.0-beta1（测试版本）
 

@@ -272,33 +272,32 @@ label splashscreen:
             except:
                 pass
 
-    python:
-        firstrun = ""
-
-    if not firstrun:
-        if persistent.first_run and (config.version == persistent.oldversion or persistent.autoload == "postcredits_loop"):
-            $ quick_menu = False
-            scene black
-            "你似乎删除了 firstrun 文件，并且我们发现还有之前的存档。"
-            menu:
-                "是否删除存档并重置游戏？该操作不可撤销。"
-                "是的，删除存档":
-                    "正在删除存档...{nw}"
-                    python:
-                        delete_all_saves()
-                        renpy.loadsave.location.unlink_persistent()
-                        renpy.persistent.should_save_persistent = False
-                        renpy.utter_restart()
-                "不，继续游戏":
-                    $ restore_relevant_characters()
+    if persistent.first_run and (config.version == persistent.oldversion or persistent.autoload == "postcredits_loop"):
+        $ quick_menu = False
+        scene black
+        "你似乎删除了 firstrun 文件，或者我们发现还有旧版本的存档。"
+        menu:
+            "是否删除存档并重置游戏？该操作不可撤销。"
+            "是的，删除存档":
+                "正在删除存档...{nw}"
+                python:
+                    delete_all_saves()
+                    renpy.loadsave.location.unlink_persistent()
+                    renpy.persistent.should_save_persistent = False
+                    renpy.utter_restart()
+            "不，继续游戏":
+                $ restore_relevant_characters()
 
     # 为 Ren'Py SDK 7.4.6 和更新版本增加的兼容性警告。
-    ## 请 不 要 修 改 这 三 行 。
+    ## 请 不 要 修 改 这 几 行 。
     default persistent.lockdown_warning = False
 
-    if not persistent.lockdown_warning:
-        call lockdown_check
-
+    if config.developer:
+        if not persistent.lockdown_warning:
+            call lockdown_check
+    else:
+        $ persistent.lockdown_warning = True
+    
     # Sets First Run to False to Show Disclaimer
     default persistent.first_run = False
 
