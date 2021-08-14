@@ -5,10 +5,10 @@ init python:
         text = """\
 我卷曲的长发
 浸染在路灯的琥珀光下
-是这个吧
-在时光的冲刷下幸存的最后一盏街灯
-尚不曾被未来那恶心的青绿色吞没
-我浸在光下，冷静着；吞吐着现实却萦绕于过往
+是它吧
+在时光的洪流中幸存的最后一盏街灯
+尚不曾被未来那恶心的病态青晖吞没
+我沐浴着旧时代的灯光，吞吐着现实却萦绕于过往
 灯光幻灭
 我方幻醒"""
         )
@@ -170,7 +170,7 @@ unreleased tension experienced by my entire body. Her Third Eye is drawing me cl
         author = "natsuki",
         title = "雄鹰能飞翔",
         text = """\
-猴子善攀爬
+猿猴善攀爬
 蟋蟀会跳高
 骏马爱赛跑
 夜猫能捕猎
