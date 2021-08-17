@@ -178,7 +178,7 @@ label ch0_main:
     show sayori zorder 2 at t31
     show yuri zorder 3 at f33
     y 4b "别——别这么说..."
-    "优里，看起来更加成熟，却有点害羞，似乎不太跟得上纱世里和夏树这样的人的节奏。"
+    "优里，看起来更加成熟，却有点害羞，似乎不太跟得上纱世里和夏树这类人的节奏。"
     show yuri zorder 2 at t33
     mc "啊...那个，很高兴认识你们俩。"
     show yuri zorder 1 at thide

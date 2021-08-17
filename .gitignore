@@ -5,8 +5,10 @@ errors.txt
 game/cache/bytecode.rpyb
 game/cache/pyanalysis.rpyb
 game/cache/screens.rpyb
+game/cache/shaders.txt
 *.save
 game/saves/persistent
+game/saves/navigation.json
 *.bak
 traceback.txt
 *.rpyc
@@ -29,4 +31,3 @@ DDLC.py
 DDLC.sh
 
 *.zip
-game/saves/navigation.json
