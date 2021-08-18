@@ -561,7 +561,7 @@ label ch0_main:
     show sayori 1a zorder 2 at t11
     s "对了, [player], 你来都来了, 咱们今天一起走回家吧？"
     "对哦 - 因为纱世里在放学后总是要参加社团活动, 所以我们就再也没有一起回过家。"
-    mc "好啊, 我们走吧。"
+    mc "好啊，我们走吧。"
     s 4q "好耶~"
 
     scene bg residential_day
