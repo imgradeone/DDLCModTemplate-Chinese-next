@@ -496,14 +496,24 @@ label ch23_end:
     hide monika
     "Monika giggles as Yuri pushes her out the door."
     python:
-        try: renpy.file(config.basedir + "/have a nice weekend!")
-        except: open(config.basedir + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
-        try: os.remove(config.basedir + "/hxppy thxughts.png")
-        except: pass
-        try: os.remove(config.basedir + "/CAN YOU HEAR ME.txt")
-        except: pass
-        try: os.remove(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
-        except: pass
+        if renpy.android:
+            try: renpy.file(os.environ['ANDROID_PUBLIC'] + "/have a nice weekend!")
+            except: open(os.environ['ANDROID_PUBLIC'] + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
+            try: os.remove(os.environ['ANDROID_PUBLIC'] + "/hxppy thxughts.png")
+            except: pass
+            try: os.remove(os.environ['ANDROID_PUBLIC'] + "/CAN YOU HEAR ME.txt")
+            except: pass
+            try: os.remove(os.environ['ANDROID_PUBLIC'] + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
+            except: pass
+        else:
+            try: renpy.file(config.basedir + "/have a nice weekend!")
+            except: open(config.basedir + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
+            try: os.remove(config.basedir + "/hxppy thxughts.png")
+            except: pass
+            try: os.remove(config.basedir + "/CAN YOU HEAR ME.txt")
+            except: pass
+            try: os.remove(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
+            except: pass
 
     play music t10y
     show yuri 2m zorder 2 at t11

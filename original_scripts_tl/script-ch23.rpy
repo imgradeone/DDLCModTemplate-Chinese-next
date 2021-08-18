@@ -41,201 +41,201 @@ label ch23_main:
 
     play music t6
     show yuri 2y5 zorder 2 at t11
-    y "Hi, [player]!"
-    y "I've been waiting for you."
-    y 2d "Are you ready to continue reading?"
-    y "I brought my best tea today--"
+    y "嗨，[player]！"
+    y "我一直都在等你呢。"
+    y 2d "你准备好继续看书了吗？"
+    y "我今天带了最好的茶--"
     show yuri 2f
     show natsuki 4w zorder 3 at f33
-    n "Monika!"
-    n "I told you not to--"
-    n 1g "Ugh..."
-    n "Is she really late again?"
+    n "莫妮卡！"
+    n "我告诉过你不要--"
+    n 1g "呃..."
+    n "她又迟到了吗？"
     show natsuki zorder 2 at t33
     show yuri zorder 3 at f32
-    y 1h "Inconsiderate as usual, Natsuki."
+    y 1h "你还是和平常一样肆意妄为啊，夏树。"
     show yuri zorder 2 at t32
     show natsuki zorder 3 at f33
-    n 4c "Excuse me?"
+    n 4c "什么？"
     show natsuki zorder 2 at t33
     show yuri zorder 3 at f32
-    y 1r "Must you always interrupt my conversations with your incessant yelling?"
+    y 1r "你就那么喜欢用你无休无止的嚎叫打断我的对话吗？"
     show yuri zorder 2 at t32
     show natsuki zorder 3 at f33
-    n 1o "What are you talking about?!"
-    n 1q "You say that like I do it on a regular basis or something."
-    n "I just wasn't paying attention, okay? I'm sorry."
-    n 4u "Seriously... What's gotten into you lately?"
+    n 1o "你在说些什么啊？！"
+    n 1q "你意思是，我每天都会这样吗？"
+    n "我刚刚真的只是没太注意，好吗？我错了。"
+    n 4u "说真的...你最近到底怎么了？"
     if n_appeal >= 2:
-        n "Look..."
-        n "I did some thinking about yesterday."
-        n 2q "I was a little more hostile than I meant to be..."
-        n 1q "I guess I really felt threatened or something."
-        n 1h "But I know this is something we're doing together."
-        n 1q "Another new member wouldn't hurt, as long as they're cool..."
-        n 5w "And I guess another girl would be nice this time..."
-        n 5u "So..."
+        n "你听我说..."
+        n "我已经反思过昨天的行为了。"
+        n 2q "我确实说得有点过分了..."
+        n 1q "一定是我当时觉得被吓到了之类的。"
+        n 1h "我知道我们都在努力让社团变好。"
+        n 1q "再来一两个新成员也不会怎么样，除非他们性格差到爆..."
+        n 5w "我觉得这次再来一个女生的话，也挺好的..."
+        n 5u "所以..."
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
         $ style.say_dialogue = style.normal
-        y 2u "Natsuki..."
+        y 2u "夏树..."
         $ style.say_dialogue = style.edited
-        y 1f "Nobody cares."
-        y "Why don't you go look for some coins under the vending machines or something?"
+        y 1f "没人在乎的。"
+        y "您咋不试试钻到售货机底下捡捡硬币呢？"
         $ style.say_dialogue = style.normal
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-        n 1p "--!"
+        n 1p "--！"
         n 1r "..."
         n 12f "..."
         show natsuki at thide
         hide natsuki
         $ pause(1.0)
         show monika 1g at l31
-        m "Aw, man..."
-        m "I'm the last one here again!"
+        m "哦，天哪..."
+        m "我又是最后一个到的！"
         show yuri zorder 3 at f32
-        y 1f "Were you practicing piano again?"
+        y 1f "你又去练钢琴了？"
         show yuri zorder 2 at t32
         show monika zorder 3 at f31
-        m 5a "Yeah..."
-        m "Ahaha..."
+        m 5a "是啊..."
+        m "啊哈哈..."
         show monika zorder 2 at t31
         show yuri zorder 3 at f32
-        y 1m "You must have a lot of determination."
-        y "Starting this club, and still trying to make time for piano..."
+        y 1m "那你的毅力可真强哦。"
+        y "组织这个社团，还要挤出时间练钢琴..."
         show yuri 1a zorder 2 at t32
         show monika zorder 3 at f31
-        m 1a "Well, maybe not determination..."
-        m 3a "But I guess passion."
-        m "It motivates me to work hard for the festival, too."
+        m 1a "嗯，也许不是毅力..."
+        m 3a "我觉得是热情驱动着我。"
+        m "它也激励着我更努力地准备学园祭呢。"
     else:
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-        y 2n "Me?"
-        y 2o "N-Nothing..."
+        y 2n "我？"
+        y 2o "没-没有吧..."
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
         n "..."
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-        y 2v "Is it really that bad...?"
+        y 2v "我真的很异常吗...？"
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-        n 2m "See, it {i}is{/i} something."
+        n 2m "看到了吗，{i}绝对{/i}有问题。"
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-        y 3p "I'll get over it!"
-        y 3y6 "It's not even anything noteworthy..."
-        y 3o "I've just been feeling a little on edge lately..."
-        y 3n "A-Anyway, we don't need to talk about it!"
+        y 3p "我会克服的！"
+        y 3y6 "这都不是什么值得一提的事情..."
+        y 3o "我只是觉得有些紧张..."
+        y 3n "总-总之，别讨论这个啦！"
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-        n 2q "Well, I just felt like I needed to bring it up."
-        n 5q "It's not like I really care or anything..."
+        n 2q "嗯，我只是觉得我需要把这件事讲出来罢了。"
+        n 5q "我其实也没那么在意..."
         show natsuki zorder 2 at t33
         show yuri 3e
         show monika 1g at l31
-        m "Aw, man..."
-        m "I'm the last one here again!"
+        m "哦，天哪..."
+        m "我又是最后一个到的！"
         show natsuki zorder 3 at f33
-        n 2c "Well, [player] just walked in too."
+        n 2c "嗯，[player] 也刚刚才来。"
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-        y 1f "Were you practicing piano again?"
+        y 1f "你又去练钢琴了？"
         show yuri zorder 2 at t32
         show monika zorder 3 at f31
-        m 5a "Yeah..."
-        m "Ahaha..."
+        m 5a "是啊..."
+        m "啊哈哈..."
         show monika zorder 2 at t31
         show yuri zorder 3 at f32
-        y 1m "You must have a lot of determination."
-        y "Starting this club, and still trying to make time for piano..."
-        show yuri 1a zorder 2 at t32
-        show monika zorder 3 at f31
-        m 1a "Well, maybe not determination..."
-        m 3a "But I guess passion."
-        m "It motivates me to work hard for the festival and..."
-        m 3n "Um..."
+        y 1m "那你的毅力挺强的。"
+        y "组织这个社团，还要挤出时间练钢琴..."
+        show yuri 1a at t32 zorder 2
+        show monika at f31 zorder 3
+        m 1a "嗯，也许不是毅力..."
+        m 3a "我觉得是热情驱动着我。"
+        m "它也激励着我更努力地准备学园祭，还有..."
+        m 3n "嗯..."
         show monika zorder 2 at t31
         show natsuki zorder 3 at f33
         n 5s "..."
         show natsuki zorder 2 at t33
         show monika zorder 3 at f31
-        m 1l "Right..."
-        m "I-I forgot..."
+        m 1l "好吧..."
+        m "我-我忘记了些东西..."
         show monika zorder 1 at thide
         hide monika
         show yuri zorder 3 at f32
-        y 2v "Um, about that, Natsuki..."
-        y "We were all talking yesterday, and..."
-        y 2t "Well...we decided that we would like to support the festival as well."
-        y 2l "However...!"
-        y 2h "I understand how you feel about not wanting the club to change."
-        y "I think we all kind of feel that way."
-        y 2f "So as long as we're all working together, this club will never become something we don't want."
+        y 2v "呃，说到这个，夏树..."
+        y "我们昨天又谈了谈，然后..."
+        y 2t "嗯...我们应该支持学园祭的活动。"
+        y 2l "不过...！"
+        y 2h "我理解你不希望社团改变的感受。"
+        y "我们都和你的感受差不多。"
+        y 2f "所以只要我们齐心协力，这个社团就永远不会成为我们不喜欢的样子。"
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
         n "..."
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-        y 2v "Um, also..."
-        y "If you help us out with the festival..."
-        y 3r "...Then I'll buy you a new manga!"
+        y 2v "唔，还有..."
+        y "如果你也能帮忙来准备学园祭的话..."
+        y 3r "...我会买一部新的漫画送给你！"
         show yuri 3t zorder 2 at t32
         show natsuki zorder 3 at f33
         n 5h "..."
-        n 2z "Ahahaha!"
-        n "Sorry, that last part was really funny."
-        n 2c "Look..."
-        n "I did some thinking about yesterday."
-        n 2q "I was a little more hostile than I meant to be..."
-        n 1q "I guess I really felt threatened or something."
-        n 1h "But I know this is something we're doing together."
-        n 1q "Another new member wouldn't hurt, as long as they're cool..."
-        n 5w "And I guess another girl would be nice this time..."
-        n 5e "...But more importantly, I would hate to see the event suck just because I chose to back out!"
-        n "I'm a pro, you know!"
-        n 5c "So I'm gonna help too, and we'll make sure it's done right."
+        n 2z "啊哈哈哈！"
+        n "抱歉，你最后那段话真的很好笑哇。"
+        n 2c "不过，你听我说..."
+        n "我已经反思过昨天的行为了。"
+        n 2q "我确实说得有点过分了..."
+        n 1q "一定是我当时觉得被吓到了之类的。"
+        n 1h "我知道我们都在努力让社团变好。"
+        n 1q "再来一两个新成员也不会怎么样，除非他们性格差到爆..."
+        n 5w "我觉得这次再来一个女生的话，也挺好的..."
+        n 5e "...但更重要的是，我可不愿意看到学园祭活动只是因为我没有加入才办得很糟！"
+        n "你也知道我是个专家的！"
+        n 5c "所以我也会帮忙的，确保万无一失。"
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-        y 2s "Thank goodness..."
-        y "Isn't that great, Monika?"
+        y 2s "谢天谢地..."
+        y "莫妮卡，是不是很棒啊？"
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-        n 2k "...Monika?"
+        n 2k "...莫妮卡？"
         show natsuki zorder 2 at t33
         show monika 1o zorder 3 at f31
-        m "Ah--"
-        m 1n "Yeah, that's wonderful!"
-        m "It wouldn't be the same without you, Natsuki."
-    m 5 "Anyway, [player]..."
-    m "What do you want to do today?"
-    m "I was thinking we could--"
+        m "啊--"
+        m 1n "是啊，那太好了！"
+        m "你一定会帮上大忙的，夏树。"
+    m 5 "总之，[player]..."
+    m "你今天想要做些什么呢？"
+    m "我在想，其实我们可以--"
     show monika zorder 2 at t31
     show yuri zorder 3 at f32
-    y 1l "We already have plans today."
+    y 1l "我们今天已经有计划了。"
     show yuri zorder 2 at t32
     show monika zorder 3 at f31
-    m 1r "Ah..."
-    m "Is that so, Yuri?"
+    m 1r "啊..."
+    m "是吗，优里？"
     show monika zorder 2 at t31
     show yuri zorder 3 at f32
-    y 1y6 "That's correct."
-    y "[player] is already engaged in a novel that we're reading together."
-    y 1y5 "Aren't you glad I've already gotten him into literature, Monika?"
+    y 1y6 "对啊。"
+    y "[player] 正和我读一本小说读得起劲呢。"
+    y 1y5 "我终于引导他进入文学的世界了，难道你不开心吗，莫妮卡？"
     show yuri 1a zorder 2 at t32
     show monika zorder 3 at f31
-    m 2l "I..."
-    m "I suppose..."
-    m "I was just--"
-    m 1r "Actually, it doesn't matter."
-    m 1i "It really doesn't."
-    m "You guys can do whatever you want."
+    m 2l "我..."
+    m "我以为..."
+    m "只是--"
+    m 1r "其实，这不重要的。"
+    m 1i "真的没什么的。"
+    m "你们想干什么都可以。"
     show monika zorder 2 at t31
     show yuri zorder 3 at hf32
-    y 2y1 "{i}(Yes!){/i}{w=0.5}{nw}"
-    y 2u "Um... Thank you for understanding, Monika."
+    y 2y1 "{i}（好耶！）{/i}{w=0.5}{nw}"
+    y 2u "唔...谢谢你的理解，莫妮卡。"
     if poemwinner[2] == "natsuki":
         $ poemwinner[2] = "yuri"
         $ y_appeal += 1
@@ -263,133 +263,133 @@ label ch23_end:
     show monika 4b zorder 2 at t32
     with wipeleft_scene
     play music t3
-    m "Okay, everyone!"
-    m "It's time to figure out the festival preparations."
-    m 1i "Let's hurry and get this over with."
+    m "好啦，各位！"
+    m "是时候分配一下学园祭的准备工作了。"
+    m 1i "让我们快点把这事弄完。"
     if n_appeal >= 2:
         show natsuki 4q zorder 3 at f31
         n "..."
     else:
         show natsuki 4q zorder 3 at f31
-        n "Jeez..."
-        n "Why is the mood so weird today?"
-        n "Look, even Yuri isn't immune to it."
+        n "天哪..."
+        n "为什么今天的氛围这么奇怪？"
+        n "你看，就连优里都不能免疫。"
     show natsuki zorder 2 at t31
     show yuri 4b zorder 3 at f33
-    y "Uu..."
-    y "Stagnating air is common foreshadowing that something terrible is about to happen..."
+    y "唔..."
+    y "死气沉沉的气氛，通常暗示着将要发生可怕的事情..."
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-    m 2r "Look, can we just get this done?"
-    m 2d "I'm going to be printing and assembling all the poetry pamphlets."
+    m 2r "好啦，能赶快搞定吗？"
+    m 2d "我会去准备印刷和装订所有的小诗册。"
     if n_appeal >= 2:
-        m 2i "Natsuki, you can make cupcakes."
-        m "I know you're at least good at that."
+        m 2i "夏树，你可以做一些纸杯蛋糕。"
+        m "我知道你至少做这个还挺拿手的。"
         show monika zorder 2 at t32
         show natsuki zorder 3 at f31
         n 5u "..."
         show natsuki zorder 2 at t31
         show monika zorder 3 at f32
     else:
-        m "Natsuki, I was thinking--"
+        m "夏树，我只是说--"
         show monika zorder 2 at t32
         show natsuki zorder 3 at f31
-        n 2d "I want to make cupcakes!"
+        n 2d "我想做纸杯蛋糕！"
         show natsuki 2a zorder 2 at t31
         show monika zorder 3 at f32
-        m 2a "...Yeah, that."
-        m "Glad we're on the same page."
-    m 1m "Yuri, you can..."
-    m 1r "...Well, it doesn't matter."
-    m 1i "Do whatever you want, as long as you think it'll help."
+        m 2a "...嗯，好。"
+        m "很高兴我们还在同一频道上。"
+    m 3n "优里，你可以..."
+    m 1r "...好吧，没事。"
+    m 1i "做你想做的吧，只要你觉得对学园祭有帮助就行了。"
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-    y 2h "Monika..."
-    y "I'm not useless, you know!"
+    y 2h "莫妮卡..."
+    y "我又不是废人！"
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-    m 2p "I-I know that!"
+    m 2p "我-我知道啊！"
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-    y 1l "I already know what I'd like to do."
-    y 1h "We can't run a successful poetry event without having the right atmosphere for the occasion."
-    y "So I'm going to make decorations and set up some nice mood lighting."
+    y 1l "我已经想好我要做什么了。"
+    y 1h "没有合适的气氛，就没办法成功开好一个赏诗大会的。"
+    y "所以我会去做些装饰，再去弄一些漂亮的灯光烘托气氛。"
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-    m 2j "There, see?"
-    m "That's a great idea!"
-    m 1a "And that gives us all something to do."
+    m 2j "这个，好像？"
+    m "是个不错的主意！"
+    m 1a "那么现在所有人都有事情做了。"
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-    y 2f "Eh?"
-    y "What about [player]?"
-    show yuri zorder 2 at t33
-    show monika zorder 3 at f32
-    m 2b "[player] is going to help me."
-    show monika 2a zorder 2 at t32
-    show natsuki zorder 3 at f31
-    n 4e "Wait, you?"
-    n "You have the easiest job, Monika!"
-    show natsuki zorder 2 at t31
-    show monika zorder 3 at f32
-    m 1i "Sorry, but that's just how it is."
-    show monika zorder 2 at t32
-    show natsuki zorder 3 at f31
-    n 1f "Like hell it is!"
-    n "What are you trying to pull?"
-    show natsuki zorder 2 at t31
-    show yuri zorder 3 at f33
-    y 3h "I-I agree with Natsuki!"
-    y "Not only is your work already most suitable for one person..."
-    y 3l "But my task is laborious enough to benefit from an extra pair of hands."
-    show yuri zorder 2 at t33
-    show natsuki zorder 3 at f31
-    n 4c "Mine too!"
+    y 2f "诶？"
+    y "那 [player] 呢？"
+    show yuri at t33 zorder 2
+    show monika at f32 zorder 3
+    m 2b "[player] 会来帮我的忙。"
+    show monika 2a at t32 zorder 2
+    show natsuki at f31 zorder 3
+    n 4e "等等，帮你？"
+    n "莫妮卡，你的工作最简单啊喂！！！"
+    show natsuki at t31 zorder 2
+    show monika at f32 zorder 3
+    m 1i "抱歉，但这就是安排。"
+    show monika at t32 zorder 2
+    show natsuki at f31 zorder 3
+    n 1f "凭什么？！！"
+    n "你到底想搞什么？"
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-    y 1h "What, your cupcakes?"
-    y "Please."
+    y 3h "我-我觉得夏树说得没错！"
+    y "不仅仅是因为你的工作本身就更适合一个人完成..."
+    y 3l "更何况我的工作更倾向于劳力，所以最适合有人来帮忙打下手。"
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-    n 1o "Like {i}you{/i} would fucking know!"
-    n 1x "All you care about now is dragging [player] around with you and your stupid books."
-    n 1f "You {i}and{/i} Monika!"
+    n 4c "我的也是！"
+    show natsuki zorder 2 at t31
+    show yuri zorder 3 at f33
+    y 1h "什么，你的小蛋糕吗？"
+    y "就这？拜托。"
+    show yuri zorder 2 at t33
+    show natsuki zorder 3 at f31
+    n 1o "说得好像 {i}你{/i} 他娘很懂一样！"
+    n 1x "你只关心如何把 [player] 拴在你和那本弱智才会看的书旁边吧。"
+    n 1f "说的是你，{i}还有{/i} 莫妮卡！"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-    m 2g "Hey!"
-    m "I didn't even do anything!"
+    m 2g "嘿！"
+    m "我可什么都没做啊！"
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-    n 3e "Okay, then why not let [player] decide who to help instead of abusing your power?"
+    n 3e "好啊，那就别滥用职权，让 [player] 自己决定去帮谁呗！"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-    m 1p "I'm not...abusing my power."
+    m 1p "我可没有...滥用职权啊。"
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-    y 2h "Yes you are, Monika."
-    y "Just let [player] make the choice, okay?"
+    y 2h "不，莫妮卡，你就是在滥用职权。"
+    y "让 [player] 自己选，好吗？"
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-    m 1r "Okay, fine!"
-    m "Fine."
+    m 1r "OK，得！"
+    m "随你便。"
     show monika 1h zorder 2 at t32
     show natsuki zorder 3 at f31
-    n 3w "Jeez..."
-    n "[player], I know how fed up you are with these two by now."
-    n 3c "We can just--"
+    n 3w "天哪..."
+    n "[player]，我知道你肯定已经受够他们两个了。"
+    n 3c "我们可以--"
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-    y 2r "Natsuki, shut your fucking mouth and let him decide for himself."
+    y 2r "夏树，闭上你他娘的臭嘴！让他自己做决定，好吗？"
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-    n 1o "{i}You{/i} shut your mouth!"
+    n 1o "{i}你{/i}才该闭嘴！"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-    m 1r "Jesus christ..."
-    m 1i "This is never going to end. Just make the choice, okay?"
+    m 1r "我的老天爷啊..."
+    m 1i "这简直没完没了了。赶快做决定吧，好吗？"
     show monika zorder 2 at t32
     python:
-        madechoice = renpy.display_menu([("Natsuki.", "natsuki"), ("Yuri.", "yuri"), ("Monika.", "monika")], screen="rigged_choice")
+        madechoice = renpy.display_menu([("夏树。", "natsuki"), ("优里。", "yuri"), ("莫妮卡。", "monika")], screen="rigged_choice")
 
     if madechoice != "monika":
         window hide(None)
@@ -409,25 +409,25 @@ label ch23_end:
         window auto
         menu:
             "[gtext]"
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
-            "Monika":
+            "莫妮卡":
                 pass
         scene bg club_day
         $ audio.t3m = "<from " + str(musicpos) + " loop 4.618>bgm/3.ogg"
@@ -439,116 +439,126 @@ label ch23_end:
         hide natsuki
         hide yuri
 
-    m 5a "Yay, you picked me!"
-    m "We can meet at your house this weekend."
-    m "I promise it'll be fun."
-    m "Is Sunday okay with you?"
+    m "耶，你选我了！"
+    m "我们可以这周末在你家见面。"
+    m "我保证这会很有趣的。"
+    m "所以周日你方便吗？"
     show natsuki 1e zorder 3 at f31
-    n "Are you fucking kidding me?"
-    n "This isn't fair at all!"
+    n "你他娘的在逗我吗？"
+    n "这可一点都不公平！"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-    m 2i "It is fair, Natsuki."
-    m "It's what he chose."
+    m 2i "夏树，这非常公平。"
+    m "这就是他自己的选择。"
     show monika zorder 2 at t32
     show yuri 3r zorder 3 at f33
-    y "No, it's not fair!"
-    y "Giving us all this work and then taking [player] for yourself."
-    y "What a shameful thing to do!"
+    y "不，这一点都不公平！"
+    y "你就是把重活累活全分给我们，然后自己带上了 [player] 跑。"
+    y "厚颜无耻！！！"
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-    m 2r "Yuri, I didn't even give you any work."
-    m 2i "You decided it for yourself."
-    m "You're being a little unreasonable here."
+    m 2r "优里，我都没给你分配工作。"
+    m 2i "我都让你自己决定的。"
+    m "你现在有一点点不讲道理。"
     stop music
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-    y 2y4 "I'm being unreasonable?"
-    y 2y3 "Ahahaha!"
-    y "Monika, I can't believe how delusional and self-important you are!"
-    y "Pulling [player] away from me every single time you're not included in something."
-    y 1y1 "Are you jealous?"
-    y "Crazy?"
-    y 1y3 "Or maybe you just hate yourself so much that you take it out on others?"
-    y 1y4 "Here's a suggestion. Have you considered killing yourself?"
-    y "It would be beneficial to your mental health."
+    y 2y4 "我又不讲道理了？"
+    y 2y3 "啊哈哈哈哈哈！"
+    y "莫妮卡，没想到你这么妄自尊大、自私自利！"
+    y "每次你只要没能参与进来，就把 [player] 从我身边拖走，次次如此。"
+    y 1y1 "你是嫉妒吗？"
+    y "还是癫了？"
+    y 1y3 "还是你对自己的憎恨溢了一地，就开始随便往别人身上泼呢？"
+    y 1y4 "我给你个建议。考虑一下自裁怎么样？"
+    y "对你的精神健康会有特大的帮助。"
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-    n 5u "Yuri, you're scaring me a little..."
+    n 5u "优里，你说的话可有点吓人..."
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-    m 1r "Natsuki, let's just go."
-    m 1i "I don't think she wants us around right now."
+    m 1r "夏树，咱们先撤吧。"
+    m 1i "我认为她不想让我们在这里继续待着了。"
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-    y 2y3 "See, that wasn't very hard."
-    y "All I want is to spend a little time with him."
-    y "Is that so much to ask?"
+    y 2y3 "看吧，想让你们滚不是很简单嘛。"
+    y "我仅仅只是想要和他再多独处那么一会。"
+    y "这样的要求很过分吗？"
     hide natsuki
     hide monika
     hide yuri
     with wipeleft
-    "Yuri follows Monika and Natsuki to the door."
+    "优里跟在莫妮卡和夏树后面，走到教室门。"
     show monika 5a zorder 2 at t11
-    m "Hey, [player]..."
-    m "Yuri is really something, isn't she?"
+    m "嘿，[player]..."
+    m "优里真的有点那啥，对吧？"
     show monika zorder 1 at thide
     hide monika
-    "Monika giggles as Yuri pushes her out the door."
+    "莫妮卡咯咯笑着被优里推出门外。"
     python:
-        try: renpy.file(config.basedir + "/have a nice weekend!")
-        except: open(config.basedir + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
-        try: os.remove(config.basedir + "/hxppy thxughts.png")
-        except: pass
-        try: os.remove(config.basedir + "/CAN YOU HEAR ME.txt")
-        except: pass
-        try: os.remove(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
-        except: pass
+        if renpy.android:
+            try: renpy.file(os.environ['ANDROID_PUBLIC'] + "/have a nice weekend!")
+            except: open(os.environ['ANDROID_PUBLIC'] + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
+            try: os.remove(os.environ['ANDROID_PUBLIC'] + "/hxppy thxughts.png")
+            except: pass
+            try: os.remove(os.environ['ANDROID_PUBLIC'] + "/CAN YOU HEAR ME.txt")
+            except: pass
+            try: os.remove(os.environ['ANDROID_PUBLIC'] + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
+            except: pass
+        else:
+            try: renpy.file(config.basedir + "/have a nice weekend!")
+            except: open(config.basedir + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
+            try: os.remove(config.basedir + "/hxppy thxughts.png")
+            except: pass
+            try: os.remove(config.basedir + "/CAN YOU HEAR ME.txt")
+            except: pass
+            try: os.remove(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
+            except: pass
 
     play music t10y
     show yuri 2m zorder 2 at t11
-    y "Finally."
-    y 2y1 "Finally!"
-    y 2s "This is really all I wanted."
-    y 1y6 "[player], there's no need to spend the weekend with Monika."
-    y "Don't listen to her."
-    y 1y5 "Just come to my house instead."
-    y 3y5 "The whole day, with just the two of us..."
-    y "Doesn't that sound wonderful?"
-    y 3y1 "Ahahaha!"
-    y 3y4 "Wow... There's really something wrong with me, isn't there?"
-    y "But you know what?"
-    y 1y3 "I don't care anymore."
-    y "I've never felt this good my whole life."
-    y 1y4 "Just being with you is a far greater pleasure than anything I could imagine."
-    y "I'm addicted to you."
-    y 3y4 "It feels like I'm going to die if I'm not breathing the same air as you."
-    y 4a "Doesn't it feel nice to have someone care about you so much?"
-    y "To have someone who wants to revolve their entire life around you?"
-    y 2y6 "But if it feels so good..."
-    y 2y4 "Then why does it feel more and more like something horrible is going to happen?"
-    y 2y6 "Maybe that's why I tried stopping myself at first..."
-    y "But the feeling is too strong now."
-    y 3y1 "I don't care anymore, [player]!"
-    y "I have to tell you!"
-    y 3y4 "I'm...I'm madly in love with you!"
-    y "It feels like every inch of my body...every drop of blood in me...is screaming your name."
-    y 3y3 "I don't care what the consequences are anymore!"
-    y "I don't care if Monika is listening!"
-    y 3w "Please, [player], just know how much I love you."
-    y 3m "I love you so much that I even touch myself with the pen I stole from you."
-    y 3y4 "I just want to pull your skin open and crawl inside of you."
-    y 3y6 "I want you all to myself."
-    y "And I will be only yours."
-    y "Doesn't that sound perfect?"
-    y 3s "Tell me, [player]."
-    y "Tell me you want to be my lover."
-    y "Do you accept my confession?"
+    y "终于啊。"
+    y 2y1 "终于啊！！！"
+    y 2s "这就是我真心想要的。"
+    y 1y6 "[player]，没必要去和莫妮卡一起度过整个周末了。"
+    y "没必要听她的。"
+    y 1y5 "就来我家吧。"
+    y 3y5 "一整天，就我们两个人..."
+    y "听起来不是很棒吗？"
+    y 3y1 "啊哈哈哈哈！"
+    y 3y4 "哇哦...我是有什么地方不对劲吧？"
+    y "但是你知道吗？"
+    y 1y3 "我根本不在乎了。"
+    y "我这辈子从来没感觉这么爽过。"
+    y 1y4 "只是和你待在一起就已经远超我所能想象到的极致愉悦了。"
+    y "我对你上瘾了。"
+    y 3y4 "就像是如果不能和你呼吸同一片空气，我马上就会死一样。"
+    y 4a "感觉不是超棒吗，有一个这么在乎你的人？"
+    y "有一个愿意整个人生都以你为中心的人？"
+    y 2y6 "但是如果这感觉真是这么好..."
+    y 2y4 "那为什么会感觉越来越可能发生可怕的事情呢？"
+    y 2y6 "也许这就是为什么我一开始还打算阻止我自己的..."
+    y "但是这份爱慕太强烈了。"
+    y 3y1 "我现在根本不在乎了，[player]！"
+    y "我必须要告诉你！"
+    y 3y4 "我...我爱你爱到发疯！"
+    y "就像是我的每一寸肌肤...每一滴血液...都在尖叫着你的名字。"
+    y 3y3 "后果是什么已经无所谓了！"
+    y "莫妮卡有没有在听我也不管了！"
+    y 3w "求你了，[player]，看看我有多爱你。"
+    y 3m "我爱你爱到甚至偷了你的笔拿去自慰。"
+    y 3y4 "我只想要扒开你的表皮，在你的体内游走。"
+    y 3y6 "我想要让你永远属于我。"
+    y "而我也只属于你。"
+    y "听起来是不是很完美啊？"
+    y 3s "所以，[player]，告诉我。"
+    y "告诉我，你想成为我的爱人。"
+    y "你接受我的告白吗？"
 
     menu:
-        "Yes.":
+        "接受。":
             jump yuri_kill
-        "No.":
+        "不接受。":
             jump yuri_kill
 
 label yuri_kill:
@@ -569,12 +579,12 @@ label yuri_kill_1:
     stop music
     scene bg club_day
     show yuri 3d at i11
-    y "...Ahahaha."
-    y "Ahahahahahaha!"
+    y "...啊哈哈哈哈哈。"
+    y "啊哈哈哈哈哈哈哈！"
     $ style.say_dialogue = style.normal
-    y 3y5 "Ahahahahahahahaha!"
+    y 3y5 "啊哈哈哈哈哈哈！"
     $ style.say_dialogue = style.edited
-    y 3y3 "AHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA{nw}"
+    y 3y3 "啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈{nw}"
     window hide(None)
     window auto
     $ style.say_dialogue = style.normal
@@ -630,7 +640,7 @@ label yuri_kill_2:
     $ renpy.save_persistent()
     python:
         _history_list = []
-        m.add_history(None, "", """Welcome to the Literature Club! It's always been a dream of mine to make something special out of the things I love. Now that you're a club member, you can help me make that dream come true in this cute game!Every day is full of chit-chat and fun activities with all of my adorable and unique club members:Sayori, the youthful bundle of sunshine who values happiness the most;Natsuki, the deceivingly cute girl who packs an assertive punch;Yuri, the timid and mysterious one who finds comfort in the world of books;...And, of course, Monika, the leader of the club! That's me!I'm super excited for you to make friends with everyone and help the Literature Club become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?Welcome to the Literature Club! It's always been a dream of mine to make something special out of the things I love. Now that you're a club member, you can help me make that dream come true in this cute game!Every day is full of chit-chat and fun activities with all of my adorable and unique club members:Sayori, the youthful bundle of sunshine who values happiness the most;Natsuki, the deceivingly cute girl who packs an assertive punch;Yuri, the timid and mysterious one who finds comfort in the world of books;...And, of course, Monika, the leader of the club! That's me!I'm super excited for you to make friends with everyone and help the Literature Club become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?Welcome to the Literature Club! It's always been a dream of mine to make something special out of the things I love. Now that you're a club member, you can help me make that dream come true in this cute game!Every day is full of chit-chat and fun activities with all of my adorable and unique club members:Sayori, the youthful bundle of sunshine who values happiness the most;Natsuki, the deceivingly cute girl who packs an assertive punch;Yuri, the timid and mysterious one who finds comfort in the world of books;...And, of course, Monika, the leader of the club! That's me!I'm super excited for you to make friends with everyone and help the Literature Club become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with""")
+        m.add_history(None, "", """欢迎加入文学部！我一直梦想着，可以为我热爱的事物做些特别的事情。既然你成为了社团的一员，那么你就可以帮我在这个可爱的游戏里实现梦想！你每天都可以和四个可爱而又特殊的社团成员闲聊、进行有趣的活动：纱世里，青春而又阳光，将幸福视为最重要的东西；夏树，这个外表看起来可爱的女孩，可能随时都会给你自信一击；优里，害羞而又神秘，在书的世界中寻找到了慰藉；……当然还有，莫妮卡，文学部的部长！就是我！我超级期待你能和所有人交上朋友，帮助文学部成为所有成员的贴心之处。我已经能看出来你是个小甜心了——你能保证和花最长的时间和我在一起吗？欢迎加入文学部！我一直梦想着，可以为我热爱的事物做些特别的事情。既然你成为了社团的一员，那么你就可以帮我在这个可爱的游戏里实现梦想！你每天都可以和四个可爱而又特殊的社团成员闲聊、进行有趣的活动：纱世里，青春而又阳光，将幸福视为最重要的东西；夏树，这个外表看起来可爱的女孩，可能随时都会给你自信一击；优里，害羞而又神秘，在书的世界中寻找到了慰藉；……当然还有，莫妮卡，文学部的部长！就是我！我超级期待你能和所有人交上朋友，帮助文学部成为所有成员的贴心之处。我已经能看出来你是个小甜心了——你能保证和花最长的时间和我在一起吗？欢迎加入文学部！我一直梦想着，可以为我热爱的事物做些特别的事情。既然你成为了社团的一员，那么你就可以帮我在这个可爱的游戏里实现梦想！你每天都可以和四个可爱而又特殊的社团成员闲聊、进行有趣的活动：纱世里，青春而又阳光，将幸福视为最重要的东西；夏树，这个外表看起来可爱的女孩，可能随时都会给你自信一击；优里，害羞而又神秘，在书的世界中寻找到了慰藉；……当然还有，莫妮卡，文学部的部长！就是我！我超级期待你能和所有人交上朋友，帮助文学部成为所有成员的贴心之处。我已经能看出来你是个小甜心了——你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我在一起吗？你能保证和花最长的时间和我""")
 
     $ style.say_dialogue = style.edited
     scene black
@@ -673,13 +683,13 @@ label yuri_kill_3:
     scene bg club_day
     "[gtext]"
     window auto
-    n "Alright, it's festival time!"
+    n "好啦，终于是学园祭的时间啦！"
     show natsuki 4k zorder 2 at t11
-    n "Wow, you got here before me?"
-    n "I thought I was pretty ea--{nw}"
+    n "哇哦，你居然到得比我早？"
+    n "我觉得我已经够早--{nw}"
     show natsuki scream at h11
-    n "EYAH!"
-    n "AAAAAAAAAAAAAAAHHHH!!!"
+    n "噫啊！"
+    n "啊啊啊啊啊啊啊啊啊啊啊！！！"
     $ pause(1.0)
     show natsuki scream at h11
     $ pause(0.75)
@@ -687,24 +697,24 @@ label yuri_kill_3:
     $ pause(1.25)
     show natsuki at lhide
     hide natsuki
-    "Natsuki runs away."
+    "夏树飞速跑开了。"
     m "..."
     show monika 2b zorder 2 at t11
-    m "I'm here!"
-    m 2d "[player], did something happen?"
-    m "Natsuki just ran past me..."
-    m 2i "...Oh..."
-    m "...Oh."
+    m "我来啦！"
+    m 2d "[player]，刚刚是不是发生了什么？"
+    m "夏树刚刚跑了过去..."
+    m 2i "...哦..."
+    m "....哦。"
     m 2r "..."
-    m 2l "Ahahaha!"
-    m "Well, that's a shame."
-    m 2d "Wait, were you here the entire weekend, [player]?"
-    m "Oh, jeez..."
-    m 2g "I didn't realize the script was broken that badly."
-    m "I'm super sorry!"
-    m "It must have been pretty boring..."
-    m 2e "I'll make it up to you, okay?"
-    m "Just gimme a sec..."
+    m 2l "啊哈哈哈！"
+    m "嘛，真是难堪。"
+    m 2d "等下，你难道整个周末都在这里吗，[player]？"
+    m "天哪..."
+    m 2g "我都没发现脚本已经崩坏到这个地步了。"
+    m "真的非常抱歉！"
+    m "那肯定很无聊吧..."
+    m 2e "我会帮你清理干净的，好吗？"
+    m "稍微等我一下就好..."
     $ consolehistory = []
     call updateconsole ("os.remove(\"characters/yuri.chr\")", "yuri.chr deleted successfully.")
     $ delete_character("yuri")
@@ -712,16 +722,16 @@ label yuri_kill_3:
     call updateconsole ("os.remove(\"characters/natsuki.chr\")", "natsuki.chr deleted successfully.")
     $ delete_character("natsuki")
     $ pause(1.0)
-    m 2a "I'm almost done."
-    m 2j "I just want to have a cupcake real quick!"
+    m 2a "可以了。"
+    m 2j "我现在想拿一个纸杯蛋糕了。"
     $ gtext = glitchtext(10)
-    "Monika lifts the foil from [gtext]'s tray and takes a cupcake."
-    m 2b "Seriously, these are the best!"
-    m "I really just had to have one, since it's the last time I'll ever get the chance to."
-    m 2a "You know, before they stop existing and everything."
-    m "...But anyway, I really shouldn't be making you wait any longer."
-    m 2j "Just bear with me, okay?"
-    m 2a "This should only take a second."
+    "莫妮卡揭开锡箔纸，从 [gtext] 的托盘里拿出了一个纸杯蛋糕。"
+    m 2b "说真的，这些蛋糕相当美味！"
+    m "我必须再吃一个，毕竟这是我最后一次有机会吃到它们了。"
+    m 2a "我是说，在这些蛋糕还有其他东西的存在消失之前。"
+    m "...不过总之，我真的不能让你再等太久了。"
+    m 2j "稍微忍耐一下，好吗？"
+    m 2a "应该只要几秒钟就好。"
 
     show screen tear(8, offtimeMult=1, ontimeMult=10)
     $ pause(1.5)

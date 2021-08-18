@@ -426,7 +426,7 @@ label ch3_end:
     show natsuki zorder 2 at t31
     show yuri 4b zorder 3 at f33
     y "唔..."
-    y "死气沉沉的气氛通常暗示着将要发生可怕的事情..."
+    y "死气沉沉的气氛，通常暗示着将要发生可怕的事情..."
     show yuri zorder 2 at t33
     mc "可能在 {i}你的{/i} 书里是这样的！"
     mc "听着，今天唯一的不同就是纱世里不在。"

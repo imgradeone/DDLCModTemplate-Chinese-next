@@ -364,23 +364,23 @@ label ch20_main2:
     y "..."
     show yuri zorder 2 at t32
     show monika 2m zorder 3 at f33
-    m "Ah..."
-    m "I mean, I thought it was a good idea..."
+    m "啊..."
+    m "我是说，我觉得这是个好主意..."
     show monika zorder 2 at t33
     show yuri zorder 3 at f32
-    y 2l "Well..."
-    y "...I think you're right, Monika."
-    y 2f "We should probably start finding activities for all of us to participate in together."
-    y 2h "I did decide to take on the responsibility of Vice President, after all..."
-    y "I need to do my best to nurture the club as well as its members."
-    y 2a "Besides, now that we have a new member..."
-    y "It seems like a good step for us to take."
-    y "Do you agree as well, [player]?"
+    y 2l "那个..."
+    y "...我觉得你说的没错，莫妮卡。"
+    y 2f "我们或许应该开始找一些可以让我们全员参与的活动了。"
+    y 2h "毕竟作为副部长，我也要负起责任来..."
+    y "我也要尽力培养社团和社团的成员。"
+    y 2a "况且，既然我们有了一个新成员..."
+    y "迈出这一步似乎也不错。"
+    y "你也同意吗，[player]?"
     show yuri zorder 2 at t32
-    mc "Hold on...there's still one problem."
+    mc "等一下...还有一个问题。"
     show monika zorder 3 at f33
-    m 1d "Eh? What's that?"
-    "Now that we've reached the most important topic, I bluntly come forth with what's been on my mind the entire time."
+    m 1d "诶？还有什么问题吗？"
+    "既然已经回到了拉我进社团的话题，我终于能够直截了当地说出我一直以来的心声。"
     show monika zorder 2 at t33
     mc "我从来都没说过我要入部啊！"
     mc "虽然莫妮卡说服了我来看看，但我可没下过任何决定。"
@@ -388,101 +388,101 @@ label ch20_main2:
     show monika 1g
     show natsuki 4g
     show yuri 2e
-    "I lose my train of thought."
-    "All three girls stare back at me with dejected eyes."
+    "我的思路戛然而止。"
+    "三个女生都用失落的眼神看着我。"
     show monika at s33
-    m 1p "B-But..."
+    m 1p "但——但是..."
     show yuri at s32
-    y 2v "I'm sorry, I thought..."
+    y 2v "抱歉，我以为..."
     show natsuki at s31
-    n 5s "Hmph."
-    mc "Eh...?"
-    "The girls exchange glances before Monika turns back to me."
+    n 5s "哼。"
+    mc "诶...？"
+    "女孩们相互交换了一下眼神，之后莫妮卡转向了我。"
     show monika zorder 3 at f33
-    m 1m "I...guess I need to tell you the truth, [player]."
-    m "The thing is..."
-    m 1p "...We don't have enough members yet to form an official club."
-    m "We need four..."
-    m "And I've been trying really, really hard to find new members."
-    m "And if we don't find one more before the festival..."
+    m 1m "我...我猜我需要告诉你真相，[player]."
+    m "事实上..."
+    m 1p "...我们甚至还没有达到组建一个正式社团的最低人数要求。"
+    m "我们至少需要四个人..."
+    m "而且我已经非常、非常尽力地去寻找新成员了。"
+    m "而如果我们没能在学园祭之前再找到一个的话..."
     show monika zorder 2 at t33
     mc "..."
-    "I...I'm defenseless against these girls."
-    "How am I supposed to make a clear-headed decision when it's like this?"
-    "I would feel terrible for letting everyone down in this situation..."
-    "And besides, the club itself seems pretty relaxed..."
-    "So, if writing poems is the price I need to pay in order to spend every day with these beautiful girls..."
-    mc "...Right."
-    mc "Okay, I've decided, then."
-    mc "I'll join the Literature Club."
+    "我...我对可爱的女孩子毫无抵抗力啊。"
+    "这种情况下我怎么做一个头脑清醒的决定啊？"
+    "在这种情况下，我还让她们失望的话，我会感到很难受的..."
+    "更何况，这个社团本身看上去还挺轻松的..."
+    "因此，如果只要写写诗，我就能每天和这些可爱的女生待在一起..."
+    mc "...好吧。"
+    mc "那我决定了。"
+    mc "我要加入文学部。"
     show monika 1e zorder 2 at t33
     show yuri 3f zorder 2 at t32
     show natsuki 1k zorder 2 at t31
-    "One by one, the girls' eyes light up."
+    "女生们的眼神一个接一个地泛起了光彩。"
     show monika zorder 3 at f33
-    m "Oh my goodness, really?"
-    m "Do you really mean that, [player]?"
+    m "我的天啊，真的吗？"
+    m "你真的确定吗，[player]?"
     show monika zorder 2 at t33
-    mc "Yeah..."
-    mc "It could be fun, right?"
+    mc "是的..."
+    mc "应该会挺有意思的，对吧？"
     show yuri zorder 3 at f32
-    y 1m "You really did scare me for a moment..."
+    y 1m "你有一瞬间真的吓到我了..."
     show yuri zorder 2 at t32
     show natsuki zorder 3 at f31
-    n 5q "I mean, if you really just left after all this, I would be super pissed."
+    n 5q "如果你真的就直接走了，我真的会超生气的。"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f33
-    m "[player], I'm so happy..."
-    m 1k "We can become an official club now!"
-    m 1e "Thank you so much for this. You're really amazing."
-    m "I'll do everything I can to give you a great time, okay?"
+    m "[player], 我非常高兴..."
+    m 1k "我们终于可以成为正式社团了！"
+    m 1e "真的非常感谢你。你很了不起。"
+    m "我会尽一切努力让你在这里的时间变得有意义的，可以吗？"
     show monika zorder 2 at t33
-    mc "Ah...thanks, I guess."
+    mc "啊...谢谢你。"
     show yuri zorder 1 at thide
     show natsuki zorder 1 at thide
     show monika zorder 2 at t11
     hide yuri
     hide natsuki
-    m 3b "Okay, everyone!"
-    m "I think with that, we can officially end today's meeting on a good note."
-    m "Everyone remember tonight's assignment:"
-    m "Write a poem to bring to the next meeting, so we can all share!"
-    "Monika looks over at me once more."
-    m 1a "[player], I look forward to seeing how you express yourself."
+    m 3b "好了, 各位!"
+    m "这么一来, 今天的社团活动到这里就正式圆满结束了。"
+    m "各位要记得今晚的任务："
+    m "每个人写一首诗，明天带过来，这样我们就可以分享了！"
+    "莫妮卡再一次看向了我。"
+    m 1a "[player]，期待你的表现哦。"
     show monika 5 at hop
-    m "Ehehe~"
-    mc "Y-Yeah..."
+    m "诶嘿嘿~"
+    mc "好...好吧..."
     show monika zorder 1 at thide
     hide monika
-    "Can I really impress the class star Monika with my mediocre writing skills?"
-    "I already feel the anxiety welling up inside me."
-    "Meanwhile, the girls continue to chit-chat as Yuri cleans up the tea set."
-    mc "I guess I'll be on my way, then..."
+    "我真的能用我那平庸的写作水平打动班级之星莫妮卡吗？"
+    "焦虑已经在我的心中开始翻涌了。"
+    "与此同时，优里开始整理桌子，大家继续这样有的没的闲聊着。"
+    mc "那我就回家了..."
     show monika 5a zorder 2 at t11
-    m "Okay!"
-    m "I'll see you tomorrow, then."
-    m "I can't wait!"
+    m "好的！"
+    m "那么我们明天见。"
+    m "我都等不及了！"
 
     scene bg residential_day
     with wipeleft_scene
 
-    "With that, I depart the clubroom and make my way home."
-    "The whole way, my mind wanders back and forth between the three girls:"
+    "就这样, 我离开了部室，踏上了回家的路。"
+    "一路上，我的思绪都在三位女孩间游转："
     show natsuki 4a zorder 2 at t31
-    "Natsuki,"
+    "夏树，"
     show yuri 1a zorder 2 at t32
-    "Yuri,"
+    "优里，"
     show monika 1a zorder 2 at t33
-    "and, of course, Monika."
-    "Will I really be happy spending every day after school in a literature club?"
-    "Perhaps I'll have the chance to grow closer to one of these girls..."
+    "当然，还有莫妮卡。"
+    "把每天放学后的时间花在文学部里，我真的会很开心吗？"
+    "说不定我还有机会和当中的某个女生拉近距离..."
     hide natsuki
     hide yuri
     hide monika
     with wipeleft
-    "Alright!"
-    "I'll just need to make the most of my circumstances, and I'm sure good fortune will find me."
-    "And I guess that starts with writing a poem tonight..."
+    "好的！"
+    "我只要充分利用条件就行了，好运总有一天会来的。"
+    "看来我要从今晚的写诗开始了..."
 
     stop music fadeout 2.0
     scene black with dissolve_scene_full
@@ -490,7 +490,7 @@ label ch20_main2:
     $ config.allow_skipping = False
     $ allow_skipping = False
 
-    call screen confirm("You have unlocked a special poem.\nWould you like to read it?", Return(True), Return(False))
+    call screen confirm("你解锁了一首特殊诗。\n是否查看？", Return(True), Return(False))
     if _return:
         call expression "poem_special_" + str(persistent.special_poems[0])
     else:

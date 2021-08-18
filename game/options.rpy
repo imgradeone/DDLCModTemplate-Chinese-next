@@ -197,6 +197,7 @@ init python:
     build.classify("game/tutorial_route_answer/**", None)
 
     build.classify('**~', None)
+    build.classify('**.zip', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
     build.classify('**/#**', None)
