@@ -1123,7 +1123,7 @@ screen history():
     tag menu
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport")):
+    use game_menu(_("历史"), scroll=("vpgrid" if gui.history_height else "viewport")):
         style_prefix "history"
         for h in _history_list:
             window:
@@ -1138,7 +1138,7 @@ screen history():
                 text what:
                     substitute False
         if not _history_list:
-            label _("The dialogue history is empty.")
+            label _("这里没有对话历史记录。")
             
 python early:
     import renpy.text.textsupport as textsupport

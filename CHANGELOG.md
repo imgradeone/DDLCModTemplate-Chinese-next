@@ -9,6 +9,7 @@
 - add: 原版剧情翻译（in progress，基于 Plus 和原版社区翻译）
 - refactor: 修改默认角色名称，匹配官方译名
 - patch: 跟进原模版 2.4.8 更新
+- fix: 修复“历史”页标题未翻译的 bug
 
 ## v2.0.0-beta1（测试版本）
 
