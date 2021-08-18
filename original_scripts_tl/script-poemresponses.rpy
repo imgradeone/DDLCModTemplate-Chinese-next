@@ -1084,7 +1084,7 @@ label ch2_n_good:
             show monika zorder 3 at f22
             m 1d "诶？"
             m "但是这首诗是 [player] 写的。"
-        m 1a "而我们应该和所有人分享，不是吗？"
+            m 1a "而我们应该和所有人分享，不是吗？"
             show monika zorder 2 at t22
             show natsuki zorder 3 at f21
             n 1x "呜--"
