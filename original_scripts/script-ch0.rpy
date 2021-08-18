@@ -5,8 +5,12 @@ label ch0_main:
     play music t2
 
     python:
-        try: renpy.file("../characters/monika.chr")
-        except: renpy.jump("ch0_kill")
+        if renpy.android:
+            try: renpy.file(os.environ['ANDROID_PUBLIC'] + "/characters/monika.chr")
+            except: renpy.jump("ch0_kill")
+        else:
+            try: renpy.file("../characters/monika.chr")
+            except: renpy.jump("ch0_kill")
 
     $ restore_all_characters()
     s "Heeeeeeeyyy!!"
