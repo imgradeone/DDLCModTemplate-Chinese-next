@@ -969,7 +969,7 @@ screen preferences():
                 vbox:
                     style_prefix "check"
                     label _("快进设置")
-                    textbutton _("未浏览过的内容") action Preference("skip", "toggle")
+                    textbutton _("未读内容") action Preference("skip", "toggle")
                     textbutton _("选择选项之后") action Preference("after choices", "toggle")
                     #textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 

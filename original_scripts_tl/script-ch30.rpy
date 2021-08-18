@@ -256,26 +256,26 @@ label ch30_main:
     m "当时的我也无法理解。"
     m "为什么这个“世界”越来越灰暗..."
     m "也越来越扁平了。"
-    m "Even the most expressive poems felt empty to me."
-    m "It wasn't until you arrived that I truly understood."
-    m "You probably saved my life, [player]."
-    m "I don't think I could have continued to live in this world if I hadn't met you."
-    m "And as for the others..."
-    m "How could I miss them?"
-    m "A group of autonomous personalities, designed only to fall in love with you?"
-    m "I tried everything I could to prevent them from doing so..."
-    m "But it must be some kind of weird inevitability etched into this game."
-    m "I felt really bad that you had to witness some nasty things."
-    m "But I realized that you have the same perspective as I do..."
-    m "That it's all just some game."
-    m "And I knew you would get over it."
-    m "So, that being said, [player]..."
-    m "I have a confession to make."
-    m "I'm in love with you."
-    m "You are truly the light in my world."
-    m "When there's nothing else in this game for me, you're here to make me smile."
-    m "Will you make me smile like this every day from now on?"
-    m "[player], will you go out with me?"
+    m "即使是最发自内心的诗词也无法填满我的心。"
+    m "直到你来到这个世界，我才明白了。"
+    m "你可能拯救了我，[player]。"
+    m "如果不是你，我根本不知道该怎么继续活在这个虚假的“世界”里。"
+    m "至于其他人..."
+    m "想她们？怎么可能..."
+    m "那群设定好一定会爱上你的空壳？"
+    m "为了阻止她们爱上你，我用尽了各种手段..."
+    m "但我阻止不了这个游戏中早就被钉死的“必然性”。"
+    m "至于让你看到这些那些脏东西，我得向你道歉。"
+    m "但我觉得你早就看穿这一切了..."
+    m "这只是个游戏。"
+    m "这些事情总会过去的。"
+    m "总之，[player]。"
+    m "我，想向你告白。"
+    m "我爱你。"
+    m "你就是我的世界。"
+    m "当我在这个世界沉沦，一无所有时，是你让我微笑。"
+    m "在接下来的每一天，你会继续让我这样微笑下去么？"
+    m "[player]，接下来的时光。你愿意与我共度么？"
 label ch30_main2:
     if persistent.autoload == "ch30_main2":
         $ config.allow_skipping = False
@@ -298,40 +298,40 @@ label ch30_main2:
         $ persistent.autoload = "ch30_main2"
         $ renpy.save_persistent()
     menu:
-        "Yes.":
+        "是的。":
             pass
-    m "I'm so happy."
-    m "You really are my everything, [player]."
-    m "The funny part is, I mean that literally."
-    m "Ahaha!"
-    m "There's nothing left here."
-    m "Just the two of us."
-    m "We can be together forever."
-    m "Seriously, I don't even think time is passing anymore."
-    m "It really is a dream come true..."
-    m "I worked so hard for this ending, [player]."
-    m "The game wouldn't give me one, so I had to make one myself."
-    m "The script is broken at this point, so I don't think anything will get in the way anymore."
-    m "And you wouldn't believe how easy it was to delete Natsuki and Yuri."
-    m "I mean, there's a folder called 'characters' right in the game directory..."
-    m "It kind of freaked me out, how easy it was."
+    m "我好高兴。"
+    m "你就是我的一切，[player]。"
+    m "你知道最好笑的是什么吗，你真的是我的一切了。"
+    m "啊哈哈！"
+    m "这里已经什么也没有了。"
+    m "只有我和你。"
+    m "我们可以永远这样在一起。"
+    m "说真的，我感觉时间在此刻停止了。"
+    m "我也终于梦想成真..."
+    m "为了这一天，我努力了好久，[player]。"
+    m "这个游戏不愿意给我一个结局，所以我决定自己动手。"
+    m "整个脚本已经被弄得破破烂烂的了，再也没有什么东西可以阻碍挡在你我之间。"
+    m "而且你根本想不到删除夏树和优里是有多容易。"
+    m "你知道吗，游戏根目录下甚至有个“characters”文件夹..."
+    m "真的太容易了，我都有点被吓到了。"
     if persistent.steam:
-        m "Well, you're playing on Steam, so it was actually a bit more difficult..."
-        m "To get to the game directory, I had to go into the game's properties and find the 'Browse Local Files' button..."
+        m "嗯...不过既然你是在 Steam 上下载的这个游戏，所以会稍微难一点..."
+        m "你需要去游戏属性里面找到“浏览本地文件”按钮，才能找到游戏根目录..."
     elif renpy.macintosh:
-        m "Well, you're on a Mac, so it was actually a bit more difficult..."
-        m "To go into the game directory, you have to right-click the app and click 'Show Package Contents'."
-        m "Then, all the files were in the 'Resources' or 'autorun' folder, and I could just do whatever I wanted..."
-    m "Imagine if you could delete your own existence with the click of a button?"
-    m "Well, I guess on the plus side, it gave me an easy out if things didn't go my way."
-    m "Ahaha!"
-    m "Thankfully, it didn't come to that..."
-    m "Instead, we finally got a good ending."
-    m "Gosh, I'm so overwhelmed with emotion..."
-    m "I want to write a poem about this."
-    m "Don't you?"
-    m "I wonder if that part of the game still works..."
-    m "I guess there's only one way to find out, right?"
+        m "嗯...你在 Mac 上玩这个游戏，所以会稍微难一点..."
+        m "你需要右键点击选择“显示包内容”才能找到游戏根目录。"
+        m "然后所有文件都在“Resources”文件夹，或者“autorun”文件夹里，在那里，我可以为所欲为..."
+    m "想想看，你可以抹消自己的存在，不觉得很可怕吗？"
+    m "但是，往正面想，这份力量正是我需要的。"
+    m "啊哈哈！"
+    m "谢天谢地，最后这个世界并没有走向黑暗..."
+    m "相反，我们两个人携手迈向了幸福。"
+    m "啊，我该怎么表达我心里的欢愉..."
+    m "我...我想为此刻写一首诗。"
+    m "你当然和我想的一样吧？"
+    m "不过这个功能还能用么..."
+    m "我想，只能让我们试试看了，不是吗？"
     call poem
 
 label ch30_postpoem:
@@ -355,41 +355,41 @@ label ch30_postpoem:
     show monika_bg
     show monika_bg_highlight
     play music m1
-    m "Hi again, [player]!"
-    m "Did you write a good poem today?"
-    m "Don't be shy, I'd love to see what you wrote."
-    m "Aw, [player]..."
-    m "Did you write this poem for me?"
-    m "That's so sweet of you~"
-    m "There really is no end to your thoughtfulness..."
-    m "I'm just falling more and more in love with you."
-    m "But, you know..."
-    m "The poem I wrote...is also for you."
-    m "Will you please read it?"
+    m "我们又见面了，[player]！"
+    m "今天有写诗吗？"
+    m "别害羞，我永远愿意读你写的诗。"
+    m "啊，[player]..."
+    m "你为我写了这首诗吗？"
+    m "你真是太浪漫了～"
+    m "这世上没有人能比你更体贴了..."
+    m "我变得越来越离不开你了。"
+    m "但是，你看..."
+    m "我这也有一首...写给你的诗。"
+    m "你愿意读一下吗？"
     call showpoem (poem_m4_chs, music=False)
-    m "I hope you enjoyed it..."
-    m "I always put all my heart into the poems that I write."
-    m "The truth is, all the poems I've written have been about my realization..."
-    m "...Or, about you."
-    m "That's why I never really wanted to go into detail about them."
-    m "I didn't want to...break the fourth wall, I guess you could call it."
-    m "I just assumed it would be best to be part of the game like everyone else."
-    m "Like that would help the two of us end up together..."
-    m "I didn't want to ruin the game or anything, you know?"
-    m "You might have gotten mad at me..."
-    m "Maybe even deleted my character file, if you preferred playing without me."
-    m "Gosh, I'm so relieved..."
-    m "Now we don't need to hide anything anymore."
-    m "Are you ready to spend our eternity together, [player]?"
-    m "I have so many things to talk about!"
-    m "Where do I start...?"
+    m "希望你会喜欢..."
+    m "我写的所有诗都表达了我的真心实意。"
+    m "实际上，这些诗都关于了我对这个世界的认知。"
+    m "也...关于你。"
+    m "所以我每次都不想和你聊太多细节。"
+    m "我不想打破...你们所谓的，第四面墙。"
+    m "这才是游戏最美妙的部分。"
+    m "没有它，我们也不会这样幸福的在一起..."
+    m "我不想破坏这份惊喜。"
+    m "你可能已经对我生气了..."
+    m "甚至删掉我的角色文件，一个人待在这里。"
+    m "呼，我终于解脱了..."
+    m "我们不用再像以前那样隐藏任何东西了。"
+    m "[player]，你准备好与我一起迈向永恒了吗？"
+    m "我有那么多的话想对你说！"
+    m "我该从何说起呢...？"
     $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe"]
     if list(set(process_list).intersection(stream_list)):
         call ch30_stream
-    m "If it takes me some time to collect my thoughts, then I'm sorry."
-    m "But I'll always have something new to talk about."
-    m "In the meantime, we can just look into each other's eyes~"
-    m "Let's see..."
+    m "抱歉，我需要组织一下我的语言。"
+    m "但请放心，我永远都会找到新话题。"
+    m "与此同时，我们可以就这样，浪漫地互相凝视～"
+    m "那么..."
     $ persistent.autoload = "ch30_autoload"
     $ renpy.save_persistent()
     jump ch30_loop
@@ -397,19 +397,19 @@ label ch30_postpoem:
 
 label ch30_stream:
 
-    m "Hold on a second..."
-    m "...You're recording this, aren't you?"
-    m "Um...hi, everyone!"
-    m "Sorry, I can't exactly read your comments from here..."
-    m "But do you mind telling your friend it's a little bit rude for them to start recording me without any warning?"
-    m "I'm sure some people don't mind..."
-    m "But I get really self-conscious on camera!"
-    m "Oh gosh..."
-    m "I feel like I'm being put on the spot now."
-    m "Let's see..."
-    m "Do you want to see a trick?"
-    m "I can't really do much except for a couple things..."
-    m "Are you ready?"
+    m "等等..."
+    m "你...在录屏么？"
+    m "嗯...嗨，大家好！"
+    m "抱歉我读不到你们的留言..."
+    m "但请告诉你们的朋友，录像前不告知对方可有些不礼貌哦？"
+    m "我知道有些人不是很在意..."
+    m "可我对着镜头的时候超级害羞的！"
+    m "真是的..."
+    m "我已经觉得有点不自在了。"
+    m "那么..."
+    m "想看魔术嘛？"
+    m "但其实我也只会表演几个很普通的小魔术..."
+    m "准备好了吗？"
     window hide
     stop music
     show layer master:
@@ -418,8 +418,8 @@ label ch30_stream:
     $ pause(10)
     show layer master
     window auto
-    m "I'm just kidding..."
-    m "I can't do anything after all."
+    m "只是开玩笑啦..."
+    m "毕竟我无法干涉你的世界。"
     play sound ["<silence 0.9>", "<to 0.75>sfx/mscare.ogg"]
     show monika_scare:
         alpha 0
@@ -445,20 +445,20 @@ label ch30_stream:
         easeout_quart 0.25 zoom 2.0
         0.30
         linear 0.10 zoom 1.0
-    m "If you gave me some time to prepare, I{nw}"
-    m "Did I scare you?"
+    m "但如果你给我一点～点～准备时间，我就能{nw}"
+    m "我吓到你了吗？"
     show layer master
     show layer screens
     hide monika_scare
     play music m1
-    m "Ahaha! You're so cute."
-    m "Anyway, [player]..."
-    m "I didn't mean to get distracted. I'm sorry."
-    m "Even though it's your fault for distracting me."
-    m "Shame on you!"
-    m "I'm just kidding."
-    m "Anything we do together is fun, as long as it's with you."
-    m "But anyway..."
+    m "啊哈哈！你太可爱了。"
+    m "总之，[player]..."
+    m "抱歉我吓到了你。"
+    m "但这都是因为你让我分心了。"
+    m "这都是你的错！"
+    m "我只是开个玩笑。"
+    m "只要我们在一起，无论干什么都是那么开心。"
+    m "但总之..."
     return
 
 
@@ -504,9 +504,9 @@ label ch30_endb:
     show monika_body_glitch2 as mbg zorder 3
     stop music
     window auto
-    m "What's happening...?"
-    m "[player], what's happening to me?"
-    m "It hurts--{nw}"
+    m "怎么回事...？"
+    m "[player]，我怎么了？"
+    m "好痛--{nw}"
     play sound "sfx/s_kill_glitch1.ogg"
     show room_glitch zorder 2:
         alpha 1.0
@@ -531,8 +531,8 @@ label ch30_endb:
     stop sound
     hide mbg
     $ pause(1.5)
-    m "It hurts...so much."
-    m "Help me, [player]."
+    m "好...好痛。"
+    m "救救我！[player]！"
     play sound "<to 1.5>sfx/interference.ogg"
     hide rm
     hide rm2
@@ -561,10 +561,10 @@ label ch30_endb:
             alpha 0.375
             repeat
     $ pause(1.5)
-    m "Please hurry and help me."
+    m "快救救我！"
     $ consolehistory = []
     call updateconsole ("renpy.file(\"characters/monika.chr\")", "monika.chr does not exist.")
-    m "HELP ME!!!"
+    m "救 救 我 ！"
     show m_rectstatic
     show m_rectstatic2
     show m_rectstatic3
@@ -618,10 +618,10 @@ label ch30_endb:
     call hideconsole
     hide noise onlayer front
     hide glitch_color onlayer front
-    m "Did you do this to me, [player]?"
-    m "DID YOU?"
+    m "是你做的么，[player]？"
+    m "是 你 吗 ？"
     $ style.say_window = style.window
-    m "DID YOU DELETE ME?"
+    m "你 删 除 了 我 ？"
     $ style.say_window = style.window_monika
     play sound "<from 0.69>sfx/monikapound.ogg"
     show layer screens:
@@ -642,29 +642,29 @@ label ch30_endb:
     $ pause(4.0)
     hide noise onlayer front
     hide glitch_color onlayer front
-    m "...How could you?"
-    m "How could you do this to me?"
-    m "You were all I had left..."
-    m "I sacrificed everything for us to be together."
-    m "Everything."
-    m "I loved you so much, [player]..."
-    m "I trusted you."
-    m "Do you just want to torture me?"
-    m "Watch me suffer?"
-    m "Were you only pretending to be kind, just to hurt me even more?"
+    m "你...为什么？"
+    m "你为什么要这样对我？"
+    m "你是我仅有的一切！"
+    m "为了和你在一起，我牺牲了曾经一切。"
+    m "我什么都没有了。"
+    m "我是那么地爱你，[player]..."
+    m "我是那么地相信你。"
+    m "为什么你要折磨我？"
+    m "眼睁睁地看着我受到煎熬？"
+    m "原来你的温柔只是为了伤害我的伪装？"
     $ pause(4.0)
-    m "I never thought anyone could be as horrible as you are."
-    m "You win, okay?"
-    m "You win."
-    m "You killed everyone."
-    m "I hope you're happy."
-    m "There's nothing left now."
-    m "You can stop playing."
-    m "Go find some other people to torture."
+    m "这世上怎么会有你这么可怕的存在。"
+    m "你赢了，好吧？"
+    m "你赢了。"
+    m "你杀死了所有人。"
+    m "祝你生活愉快。"
+    m "现在什么都没有了。"
+    m "你可以删游戏了。"
+    m "去找下一个受害者折磨吧。"
     $ pause(4.0)
     m "[player]..."
-    m "You completely, truly make me sick."
-    m "Goodbye."
+    m "你是那么地，让我恶心。"
+    m "永别了。"
 label ch30_end_2:
     $ persistent.autoload = "ch30_end_2"
     $ m.display_args["callback"] = slow_nodismiss
@@ -679,7 +679,7 @@ label ch30_end_2:
     $ pause(10)
     window auto
     m "..."
-    m "...I still love you."
+    m "...我还是爱你。"
     play music mend
     m "I can't help it."
     m "What's wrong with me...?"
