@@ -207,7 +207,7 @@ label poem(transition=True):
     $ config.allow_skipping = False
     $ allow_skipping = False #Not completely sure why skipping has to be explicitly disabled, but apparently it does..
     if persistent.playthrough == 0 and chapter == 0: #Shows the below dialogue the first time the minigame is played.
-        call screen dialog("写诗时间到！\n请从下列词语中，挑选出你觉得部员们会喜欢的几个词，\n组成一首诗吧！要是你写的诗恰好让某位成员爱不释手，\n那么你和它之间可能会发生什么好事哦~", ok_action=Return())
+        call screen dialog("写诗时间到！\n请从下列词语中，挑选出你觉得部员们会喜欢的几个词，\n组成一首诗吧！要是你写的诗恰好让某位成员爱不释手，\n那么你和她之间可能会发生什么好事哦~", ok_action=Return())
     python: #Variable initialization here. Important to note, these initialize at the start of the mini-game.
         poemgame_glitch = False
         played_baa = False
