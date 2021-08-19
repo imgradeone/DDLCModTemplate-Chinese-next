@@ -162,7 +162,7 @@ label ch30_main:
     $ m.what_args["slow_abortable"] = config.developer
     if not config.developer:
         $ style.say_dialogue = style.default_monika
-    $ m_name = "Monika"
+    $ m_name = "莫妮卡"
     $ delete_all_saves()
     scene white
     play music "bgm/monika-start.ogg" noloop

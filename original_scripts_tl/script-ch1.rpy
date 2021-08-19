@@ -684,7 +684,7 @@ label ch1_end_sayori:
     show natsuki 5f
     "夏树盯着我，我本来话已到嘴边，又咽了回去。"
     "于是我转向了优里。"
-    mc "优里i..."
+    mc "优里..."
     y 4a "..."
     "但优里的表情是如此地无助，以至于我也无法对她开口。"
     stop music fadeout 1.0
