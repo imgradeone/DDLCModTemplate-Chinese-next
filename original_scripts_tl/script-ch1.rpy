@@ -419,263 +419,263 @@ label ch1_end:
 label ch1_end_natsuki:
     $ ch1_choice = "natsuki"
     stop music fadeout 1.0
-    mc "Um..."
-    mc "Yuri!"
-    mc "You're really talented."
+    mc "呃..."
+    mc "优里！"
+    mc "你真的很有天赋。"
     show yuri 4a at s21
-    y "Eh? W-Well..."
+    y "诶？但-但是..."
     play music t8
-    mc "But Natsuki has a point!"
-    mc "I think that..."
+    mc "但是夏树说的有道理！"
+    mc "我觉得..."
     show yuri zorder 2 at t21
-    "I wrack my brain in an attempt to back myself up."
-    mc "I think that conveying feelings with few words..."
-    mc "Can be just as impressive as well!"
-    mc "It lets the reader's imagination take over."
-    mc "And Natsuki's poem did a really good job at that!"
+    "我绞尽脑汁地想要为自己背书。"
+    mc "我觉得用少量的词来传递感情..."
+    mc "也可以做到同样地令人印象深刻！"
+    mc "它能让读者发挥想象力。"
+    mc "而夏树的诗在这一点上做的非常好！"
     show natsuki zorder 3 at f22
-    n 5y "...Yeah!!"
-    n "It did, didn't it?!"
-    n "Ahah!"
-    n "Shows how much {i}you{/i} know!"
+    n 5y "...耶！！"
+    n "确实是这样的，不是吗？！"
+    n "啊哈！"
+    n "展现 {i}你{/i} 理解了多少！"
     show natsuki zorder 2 at t22
     show yuri zorder 3 at f21
-    y 4b "T-That's not..."
+    y 4b "那-那并不是..."
     show yuri zorder 2 at t21
-    mc "Natsuki..."
-    mc "I think that's enough."
+    mc "夏树..."
+    mc "我觉得到此为止吧。"
     show natsuki zorder 3 at f22
-    n 1m "Huh?"
-    n "Me?"
-    n "But she was so mean to me...!"
-    "Natsuki's voice whines."
+    n 1m "嗯？"
+    n "我？"
+    n "但是她刚刚对我那么刻薄...！"
+    "夏树的声音哀怨了起来。"
     show natsuki zorder 2 at t22
-    mc "Look..."
-    mc "What we talked about yesterday was right."
-    mc "Writing is a really personal thing."
-    mc "And sharing it can definitely be hard."
-    mc "It looks like we learned that today."
-    mc "Even small criticism can lead to something pretty heated."
-    "I glance over my shoulder."
-    "Sayori is nodding vigorously."
-    mc "Yeah, so..."
-    mc "You don't need to feel threatened."
-    mc "You're a great writer, Natsuki."
+    mc "听我说..."
+    mc "我们昨天说得没错。"
+    mc "写作是一件非常私人的事情。"
+    mc "而分享它肯定会很困难。"
+    mc "看样子，今天我们都学到了。"
+    mc "即便是很小的批评，也会导致很激烈的事情发生。"
+    "我向边上看了一眼。"
+    "纱世里正在用力地点头。"
+    mc "嗯，所以..."
+    mc "你不必感到被冒犯了。"
+    mc "你是个很棒的作者，夏树。"
     show natsuki zorder 3 at f22
-    n 1h "Ah--"
-    "Natsuki's voice gets caught in surprise."
-    n 1q "...Thanks for noticing."
-    "She finally mutters that, barely audible."
+    n 1h "啊--"
+    "夏树的声音变得有些吃惊。"
+    n 1q "...谢谢你的提醒。"
+    "她最终喃喃自语道，声音小到几乎听不见。"
     show natsuki zorder 2 at t22
-    mc "Yuri..."
+    mc "优里..."
     show yuri zorder 3 at f21
-    y 4a "...?"
-    "Yuri looks at me dejectedly."
-    "With a face like that, I can't help but feel bad for her as well."
+    y 4a "...？"
+    "优里沮丧地看着我。"
+    "看着这么一张脸，我也忍不住替她感到难过。"
     show yuri zorder 2 at t21
-    mc "I'm sure that Natsuki didn't mean everything she said."
-    mc "So you don't need to feel threatened, either."
+    mc "我敢肯定夏树的本意并不是她说出来的那样。"
+    mc "所以你也不用觉得受到冒犯了。"
     show yuri zorder 3 at f21
-    y 2v "Well..."
-    y "If you say so..."
+    y 2v "好吧..."
+    y "既然你这么说..."
     show yuri zorder 2 at t21
     show natsuki zorder 3 at f22
-    n 1g "Hey...!"
-    n "It's not like you need to apologize {i}for{/i} me, [player]."
-    n 1w "Sheesh."
-    "Natsuki takes a breath."
-    n 1q "I..."
-    n "The thing about..."
-    n "Uu..."
-    "Natsuki glances around the room."
+    n 1g "嘿...！"
+    n "好像不需要你来 {i}替{/i} 我道歉吧，[player]。"
+    n 1w "啧。"
+    "夏树吸了口气。"
+    n 1q "我..."
+    n "那件事..."
+    n "呃..."
+    "夏树环顾了整个房间。"
     show natsuki zorder 3 at hf22
-    n 1x "{i}Would everyone stop staring at me??{/i}"
-    "Unsurprisingly, Natsuki has a harder time with it than she boasted."
-    "Sayori and Monika look away."
+    n 1x "{i}大家可以不要盯着我看吗？？{/i}"
+    "不出意外地，夏树比在夸夸其谈时要更艰难。"
+    "纱世里和莫妮卡移开了视线。"
     show natsuki zorder 3 at f22
-    n 1i "Hmph."
-    n "Anyway...!"
-    n 1q "The thing about your boobs. I didn't mean it, okay?"
-    n "That's all."
-    "Natsuki looks away, avoiding eye contact with anyone."
+    n 1i "哼。"
+    n "反正...！"
+    n 1q "关于你的胸部那件事，我不是故意的，好吗？"
+    n "没别的了。"
+    "夏树扭过头，避免和任何人进行眼神接触。"
     show natsuki zorder 2 at t22
     show sayori 4x behind yuri at l41
-    s "Yeah! You're naturally beautiful, Yuri!!"
-    mc "Sayori?!"
+    s "是的，优里！你可是自然美啊！！"
+    mc "纱世里？！"
     show yuri 4c zorder 3 at f21
     y "..."
-    y "I-I'll go make some tea..."
+    y "我-我去沏点茶..."
     show yuri at lhide
     hide yuri
     show sayori zorder 3 at f41
-    s 4h "Ehh?"
-    s "I was just trying to help!"
+    s 4h "诶？"
+    s "我刚刚只想帮个忙！"
     show sayori zorder 2 at t41
-    mc "I'm sure she appreciated it, Sayori."
-    "I pat Sayori on the shoulder."
+    mc "她肯定会感谢你的，纱世里。"
+    "我拍了拍纱世里的肩膀。"
     show sayori zorder 1 at thide
     show natsuki zorder 1 at thide
     show monika 4m zorder 2 at t11
     hide sayori
     hide natsuki
-    m "Well, now that we're past that..."
-    m 4b "Everyone's read each other's poems, right?"
-    m "I hope that it was worthwhile for everyone!"
-    m 5 "Especially you, [player]!"
-    m "And to be honest..."
-    m "It's a nice change of pace from the lazing around we got a little too used to."
-    m "Ahahaha!"
-    mc "Ah, so my joining the club was responsible for ruining the atmosphere..."
-    m 1d "No, not at all, not at all!"
-    m "There's still time before we go home."
-    m 1a "So we'll all relax for a bit."
-    m "Of course, besides chatting, we do literature-related things in the clubroom..."
-    m "So maybe you can take the chance to pick up a book, or do some writing."
-    m 1b "After all, that's what the club is for!"
+    m "好了，既然事情已经过去了..."
+    m 4b "每个人都已经读过其他人的诗了，对吧？"
+    m "我希望这对大家都是值得的。"
+    m 5 "尤其是你，[player]！"
+    m "而且老实说..."
+    m "和以前我们太过于习惯的懒散日子相比，这也是个不错的变化。"
+    m "啊哈哈哈！"
+    mc "啊，也就是说我的加入导致了气氛的破坏..."
+    m 1d "不是，完全不是，完全不是！"
+    m "在回家前，我们还有些时间。"
+    m 1a "那我们就都休息会儿吧。"
+    m "当然，除了聊天之外，我们也会在部室做一些文学相关的事情..."
+    m "所以你们或许可以趁着这次机会找本书看，或者是写些东西。"
+    m 1b "毕竟这才是社团的目的！"
     show sayori 2j zorder 3 at f31
-    s "I disagree, Monika!"
+    s "我反对，莫妮卡！"
     show sayori zorder 2 at t31
     show monika zorder 3 at f32
-    m 1d "Eh? About what?"
+    m 1d "诶？反对什么？"
     show monika zorder 2 at t32
     show sayori zorder 3 at f31
-    s 2i "That's not the most important thing about the literature club!"
-    s "The most important thing..."
+    s 2i "那并不是文学部最重要的东西！"
+    s "最重要的事情..."
     show sayori 4r zorder 3 at hf31
-    s "Is having fun!"
+    s "是要开心！"
     show sayori zorder 2 at t31
     show monika zorder 3 at f32
-    m 2l "Ahaha, of course..."
-    m 2a "Well, I guess that's why you're the Vice President, Sayori."
+    m 2l "啊哈哈，那当然..."
+    m 2a "好吧，我想这就是你为什么是副部长，纱世里。"
     show monika zorder 2 at t32
     show sayori zorder 3 at f31
-    s 4q "Ehehe..."
+    s 4q "诶嘿嘿..."
     hide sayori
     hide monika
     with wipeleft
-    "In the end, though, Monika's right."
-    "Being in the Literature Club probably means I can't spend all my time doing nothing."
-    "But in the end..."
-    "...I guess it's been worth it so far."
+    "不过，莫妮卡总归说的没错。"
+    "加入文学部或许意味着我不能把所有时间都用在无所事事上。"
+    "但终究..."
+    "...我觉得到目前为止还是值得的。"
     return
 
 label ch1_end_yuri:
     $ ch1_choice = "yuri"
     stop music fadeout 1.0
-    mc "Natsuki."
-    mc "You're right that I liked your poem."
+    mc "夏树。"
+    mc "我喜欢你的诗，这一点你说得没错。"
     show natsuki zorder 3 at f22
-    n 1e "See??"
+    n 1e "听到了吗？？"
     show natsuki 1g zorder 2 at t22
     play music t8
-    mc "Wait!"
-    mc "That's not an excuse for you to be so mean!"
-    mc "You shouldn't pick a fight just because someone's opinion is different."
+    mc "等一下！"
+    mc "这并不是你可以如此刻薄的理由。"
+    mc "你不应该仅仅因为别人的观点不一样就挑起争端。"
     show natsuki zorder 3 at f22
-    n 1m "That's not what happened at all!"
-    n "Yuri wouldn't even take my poem seriously!"
+    n 1m "根本不是那么一回事！"
+    n "优里甚至都没有认真对待我的诗！"
     show natsuki zorder 2 at t22
-    mc "Mm..."
-    mc "I understand."
-    mc "Yuri."
+    mc "唔..."
+    mc "我理解。"
+    mc "优里。"
     show yuri zorder 3 at f21
-    y 2t "Eh?"
+    y 2t "诶？"
     show yuri zorder 2 at t21
-    mc "You're a seriously talented writer."
-    mc "It's no secret that I was impressed."
+    mc "你是个很有天赋的作者。"
+    mc "给我留下深刻印象也不是什么秘密。"
     show yuri zorder 3 at f21
-    y 2u "W-Well, that's..."
+    y 2u "好-好吧，那是..."
     show yuri zorder 2 at t21
-    mc "But here's the thing."
-    mc "No matter how simple or refined someone's writing style is..."
-    mc "They're still putting feelings into it, and it becomes something really personal."
-    mc "That's why Natsuki felt threatened when you said her poem was cute."
+    mc "你听我说。"
+    mc "不管别人的写作风格有多么简单或是精炼..."
+    mc "他们仍然对其倾注了感情，而它也成为了非常私人的东西。"
+    mc "这就是为什么当你说夏树的诗可爱的时候，她觉得自己受到了冒犯。"
     show yuri zorder 3 at f21
-    y 2v "I...see..."
-    y "I didn't notice that I..."
+    y 2v "我...明白了..."
+    y "我刚刚没注意自己..."
     show yuri zorder 2 at t21
-    y 2w "I-I'm sorry..."
+    y 2w "我-我很抱歉..."
     show yuri at s21
-    y "Uuu..."
+    y "唔..."
     show natsuki zorder 2 at t11
     show yuri zorder 1 at thide
     hide yuri
-    mc "But Natsuki, you took it way too far!"
-    mc "Yuri means well, and if you just told her how you felt..."
-    mc "Then this wouldn't have happened in the first place."
-    n 1e "Are you kidding?"
-    n "That's exactly what I did!"
-    n "It was {i}her{/i} that--"
+    mc "但是夏树，你也太过分了！"
+    mc "优里本意是好的，如果你告诉她你的感受..."
+    mc "那么这件事就根本不会发生。"
+    n 1e "你在开玩笑吗？"
+    n "我就是这么做的！"
+    n "是 {i}她{/i} 才--"
     show natsuki zorder 2 at t22
     show monika 2i zorder 3 at f21
-    m "Natsuki, I think that's enough."
-    m "You both said some things that you didn't mean."
-    m "Yuri apologized. Don't you think you should, too?"
+    m "夏树，我觉得到此为止吧。"
+    m "你们两个都说了并非本意的话。"
+    m "优里道歉了。你不觉得你也应该道歉吗？"
     show monika zorder 2 at t21
     show natsuki zorder 3 at f22
-    n 1x "Nnn...!"
+    n 1x "嗯...！"
     show natsuki zorder 2 at t22
-    "Natsuki clenches her fists."
-    "In the end, nobody has taken her side."
-    "She's trapped, at this point being defiant only because she can't handle the pressure."
-    "I end up even feeling bad for her."
+    "夏树握紧了拳头。"
+    "最终，没有人站在她那边。"
+    "她陷入了困境，在这种情况下的反弹只可能是因为她承受不住压力。"
+    "我在最后甚至为她感到难过。"
     show monika zorder 2 at t32
     show natsuki zorder 2 at t33
     show sayori 2h at l41
-    s "U-Um!"
-    s "Sometimes when I'm hurt..."
-    s "It helps to take a walk and clear my head!"
+    s "唔-唔！"
+    s "有时候当我受伤时..."
+    s "出去走走、清醒清醒会有些用！"
     show sayori zorder 2 at t41
-    mc "Sayori, she doesn't need to--"
+    mc "纱世里，她不需要--"
     show natsuki zorder 3 at f33
-    n 2q "You know what?"
-    n "I'm going to do that."
-    n 2w "It'll spare me from having to look at all your faces right now."
+    n 2q "你懂什么？"
+    n "我就要那么做。"
+    n 2w "这样我就不需要看到你们的脸了。"
     show natsuki zorder 1 at thide
     hide natsuki
-    "Without warning, Natsuki snatches her own poem up from the desk and storms out."
-    "On her way out, she crumples up the poem with her hands and throws it in the trash."
+    "毫无征兆地，夏树从桌上抓起了自己的诗，然后冲了出去。"
+    "在出去的路上，她把诗揉成一团扔进了垃圾桶里。"
     show sayori zorder 3 at f41
-    s 1k "Natsuki..."
+    s 1k "夏树..."
     show sayori zorder 2 at t41
     show monika zorder 3 at f32
-    m 1r "She really didn't need to do that..."
+    m 1r "她没必要这样做..."
     show sayori zorder 1 at thide
     show monika zorder 1 at thide
     hide sayori
     hide monika
-    "I look across the room."
-    "Yuri has her chin buried in her hands while she stares down at her desk."
-    "I gingerly approach her and sit in an adjacent chair."
+    "我看向了房间另一边。"
+    "优里盯着桌面，双手托着脸颊。"
+    "我小心翼翼地靠近了她，并坐在了边上的椅子上。"
     show yuri 4b zorder 2 at t11
-    y "Sigh..."
-    mc "Everything alright?"
-    y "I'm so embarrassed..."
-    y "I can't believe I acted like that."
-    y "You probably hate me now..."
-    mc "No--Yuri!"
-    mc "How could anyone not have gotten frustrated after being treated like that?"
-    mc "You handled it as well as anyone could."
-    mc "I don't think any less of you."
-    y 2v "Well..."
-    y "...Alright, I believe you."
-    y 2s "Thanks, [player]. You're too kind."
-    y "I'm thankful to have you a part of this club now."
-    mc "Er-- It's nothing."
-    y 2v "One more thing..."
-    y "Um, that one thing that Natsuki said..."
-    y 4c "About...you know..."
-    y "I would never do anything...so shameful..."
-    y "So..."
-    mc "...Eh?"
-    mc "What thing did Natsuki say?"
-    y 3n "--!"
-    y "U-Um!"
-    y 3q "Well, never mind that..."
-    y "I-I'm going to go make some tea..."
-    mc "Ah, good idea."
-    mc "Make enough for more than one person, okay?"
-    y "Y-Yeah."
+    y "唉..."
+    mc "你还好吗？"
+    y "我感到很难为情..."
+    y "我不敢相信自己居然做了那样的事情。"
+    y "你现在大概讨厌我了吧..."
+    mc "不--优里！"
+    mc "在被那样对待之后，每个人能不会感到难过的。"
+    mc "你的处理方式和所有人的一样。"
+    mc "我不会看轻你的。"
+    y 2v "嗯..."
+    y "...好吧，我相信你。"
+    y 2s "谢谢你，[player]。你真好。"
+    y "我很庆幸你现在是社团的一员。"
+    mc "呃-- 没什么。"
+    y 2v "还有一件事..."
+    y "唔，就是夏树说的那件事..."
+    y 4c "关于...你知道的..."
+    y "我从来不会做...那么羞耻的事情..."
+    y "所以..."
+    mc "...诶？"
+    mc "夏树说了什么？"
+    y 3n "--！"
+    y "唔-唔！"
+    y 3q "好吧，当我没说..."
+    y "我-我去沏些茶。"
+    mc "啊，好主意。"
+    mc "多沏几个人的，好吗？"
+    y "嗯-嗯。"
     return
 
 label ch1_end_sayori:
