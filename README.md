@@ -17,6 +17,9 @@
 
 > 此模板自带 Android 支持，详情请看原版 DDLC Mod Template 2.0 所附带的 `guide.pdf`，或在稍晚时候访问 [DokiMod 开发文档](https://docs.dokimod.cn) 了解 Android Mod 制作方式。
 
+> 提示：本模板**仅在 GitHub 提供下载，完全免费**。你可能在 CSDN 看到了这个模板，**不要去那边花冤枉钱下载**！！！（目前已知的 CSDN 盗传版是 1.x 版本，已经不受维护。）  
+> 此后本模板不再考虑托管于 SourceForge。（鉴于托管于 SourceForge 会加大恶意爬虫与盗传的概率）
+
 您可以查看 [更新日志](CHANGELOG.md)。
 
 ## 开始制作 Mod
