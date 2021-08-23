@@ -17,8 +17,9 @@
 
 > 此模板自带 Android 支持，详情请看原版 DDLC Mod Template 2.0 所附带的 `guide.pdf`，或在稍晚时候访问 [DokiMod 开发文档](https://docs.dokimod.cn) 了解 Android Mod 制作方式。
 
-> 提示：本模板**仅在 GitHub 提供下载，完全免费**。你可能在 CSDN 看到了这个模板，**不要去那边花冤枉钱下载**！！！（目前已知的 CSDN 盗传版是 1.x 版本，已经不受维护。）  
+> 提示：本模板**仅在 [GitHub](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/releases/)、[Gitee](https://gitee.com/imgradeone/DDLCModTemplate-Chinese-next/releases/) 和 [git.ddlc.top](https://git.ddlc.top/imgradeone/DDLCModTemplate-Chinese-next/releases) 提供下载，完全免费**。你可能在 CSDN 看到了这个模板，**不要去那边花冤枉钱下载**！！！（目前已知的 CSDN 盗传版是 1.x 版本，已经不受维护。）  
 > 此后本模板不再考虑托管于 SourceForge。（鉴于托管于 SourceForge 会加大恶意爬虫与盗传的概率）
+> Gitee 镜像源的版本更新不及时，但可作为中国大陆加速源。
 
 您可以查看 [更新日志](CHANGELOG.md)。
 
@@ -44,7 +45,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 
 ### 使用 Ren'Py SDK 6 进行 Mod 开发
 1. 下载并运行 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12)。  
-    > 请注意：DDLC 不兼容新版 Ren'Py，除非游戏后续更新，当然这不意味着您不能使用 Ren'Py SDK 7 进行 Mod 制作。
+    > 请注意：DDLC 不兼容新版 Ren'Py，除非游戏后续更新，当然这并不意味着您不能使用 Ren'Py SDK 7 进行 Mod 制作。
 1. 前往 Releases 页面获取 [模板的最新版本](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/releases)。（目前 Mod 模板暂无稳定版本，您可以使用 GitHub 的 `Use this template` 创建新工程）
 1. 从 [DDLC.moe](https://ddlc.moe) 或者 [Steam](https://store.steampowered.com/app/698780/) 下载 DDLC 游戏，然后将 `DDLC-1.1.1-pc` 文件夹（对于 macOS 用户则为 `ddlc-mac`，对于 Steam 版本则为 `Doki Doki Literature Club`）复制到 Ren'Py SDK（`renpy-6.99.12.4-sdk`）文件夹（或者您在 Ren'Py SDK 中自定义的文件夹）。将文件夹重命名为您的 Mod 名称。
 1. 将 Mod 模板 ZIP 包内的内容复制到您刚刚粘贴的 DDLC 文件夹内。如有提示，请允许替换所有文件。  
@@ -117,7 +118,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 - Team Salvato http://teamsalvato.com / https://ddlc.moe
 - [GanstaKingofSA](https://github.com/GanstaKingofSA)
 - 所有字体作者
-- 社区汉化补丁团队（同时也是 DDLC Plus 饭制翻译支持者）：[DB (aka dumb)][https://steamcommunity.com/id/HomuLilly/]、[Javelin&Tea (aka J&Tea)][https://steamcommunity.com/profiles/76561198037532534/]、[TBGN][https://steamcommunity.com/id/PhyYuan/]、[Pizza Hime (aka 擎天披利)][https://steamcommunity.com/id/qweion/]
+- 社区汉化补丁团队（同时也是 DDLC Plus 饭制翻译支持者）：[DB (aka dumb)](https://steamcommunity.com/id/HomuLilly/)、[Javelin&Tea (aka J&Tea)](https://steamcommunity.com/profiles/76561198037532534/)、[TBGN](https://steamcommunity.com/id/PhyYuan/)、[Pizza Hime (aka 擎天披利)](https://steamcommunity.com/id/qweion/)
 - [Riotloc 团队](https://www.riotloc.com)（DDLC Plus 官方翻译团队）
 
 ## 开源许可

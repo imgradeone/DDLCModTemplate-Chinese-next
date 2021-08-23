@@ -2,15 +2,18 @@
 
 ## 未发布版本（v2.0.0-beta2-development）
 
+### 功能
+- add: 原版剧情翻译（待进一步优化，基于 Plus 和原版社区翻译）
+- add: 双语选词游戏支持
+
+### 修改 / 修复
 - add: 帮助文档翻译（依旧不完全）
 - refactor: 翻译更新（`跳过` -> `快进`）
 - refactor: 修改默认存档位置为 `DDLCModTempCNNext`
 - refactor: 更新 `original_scripts/script.rpy` 的文件逻辑
-- add: 原版剧情翻译（in progress，基于 Plus 和原版社区翻译）
 - refactor: 修改默认角色名称，匹配官方译名
 - patch: 跟进原模版 2.4.8 更新
 - fix: 修复“历史”页标题未翻译的 bug
-- add: 双语选词游戏支持
 
 ## v2.0.0-beta1（测试版本）
 
