@@ -226,7 +226,7 @@ label sayori_exclusive_1:
     m "我们要不分享各自写的诗吧？"
     show sayori 4r at h11
     s "耶~！"
-    s 4x "[player], 我等不及要读你的诗了！"
+    s 4x "[player]，我等不及要读你的诗了！"
     mc "嗯，我也是..."
     "我看起来不是很积极，但是纱世里还是小跑着去取了她的诗。"
     show sayori behind monika at thide

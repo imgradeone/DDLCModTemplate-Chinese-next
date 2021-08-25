@@ -432,7 +432,7 @@ label ch20_main2:
     n 5q "如果你真的就直接走了，我真的会超生气的。"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f33
-    m "[player], 我非常高兴..."
+    m "[player]，我非常高兴..."
     m 1k "我们终于可以成为正式社团了！"
     m 1e "真的非常感谢你。你很了不起。"
     m "我会尽一切努力让你在这里的时间变得有意义的，可以吗？"
@@ -443,8 +443,8 @@ label ch20_main2:
     show monika zorder 2 at t11
     hide yuri
     hide natsuki
-    m 3b "好了, 各位!"
-    m "这么一来, 今天的社团活动到这里就正式圆满结束了。"
+    m 3b "好了，各位!"
+    m "这么一来，今天的社团活动到这里就正式圆满结束了。"
     m "各位要记得今晚的任务："
     m "每个人写一首诗，明天带过来，这样我们就可以分享了！"
     "莫妮卡再一次看向了我。"
@@ -466,7 +466,7 @@ label ch20_main2:
     scene bg residential_day
     with wipeleft_scene
 
-    "就这样, 我离开了部室，踏上了回家的路。"
+    "就这样，我离开了部室，踏上了回家的路。"
     "一路上，我的思绪都在三位女孩间游转："
     show natsuki 4a zorder 2 at t31
     "夏树，"
