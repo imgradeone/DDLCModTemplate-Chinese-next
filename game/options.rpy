@@ -88,7 +88,7 @@ default preferences.afm_time = 15
 default preferences.music_volume = 0.75
 default preferences.sfx_volume = 0.75
 
-# This controls the save directory of your mod.
+# Mod 的存档位置。经测试，使用中文会导致异常。
 # Change "DDLCModTempCNNext" to your mod's name
 # Windows Directory for Saves: %AppData%/RenPy/
 # macOS Directory for Saves: $HOME/Library/RenPy/ (Un-hide the Library Folder)
