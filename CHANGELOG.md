@@ -12,6 +12,7 @@
 - refactor: 修改默认存档位置为 `DDLCModTempCNNext`
 - refactor: 更新 `original_scripts/script.rpy` 的文件逻辑
 - refactor: 修改默认角色名称，匹配官方译名
+- refactor: 补充未翻译部分
 - patch: 跟进原模版 2.4.8 更新
 - fix: 修复“历史”页标题未翻译的 bug
 
