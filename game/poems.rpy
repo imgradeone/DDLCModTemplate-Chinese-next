@@ -691,7 +691,7 @@ style poem_vbar is vscrollbar:
     ysize 700
 
 style yuri_text:
-    font "mod_assets/font/shouzhuo.ttf" #font used packaged with the game
+    font "mod_assets/font/yuri.ttf" #font used packaged with the game
     size 32
     color "#000"
     outlines []
@@ -713,7 +713,7 @@ style yuri_text_3:
 # y3.ttf 暂无中文替代
 
 style natsuki_text:
-    font "mod_assets/font/acy.otf"
+    font "mod_assets/font/natsuki.otf"
     size 28
     color "#000"
     outlines []
@@ -722,13 +722,13 @@ style natsuki_text:
     kerning 1.5
 
 style sayori_text:
-    font "mod_assets/font/tegaki.ttf"
+    font "mod_assets/font/sayori.ttf"
     size 34
     color "#000"
     outlines []
 
 style monika_text:
-    font "mod_assets/font/nian.otf"
+    font "mod_assets/font/monika.ttf"
     size 34
     color "#000"
     outlines []

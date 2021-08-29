@@ -15,6 +15,15 @@
 - patch: 跟进原模版 2.4.8 更新
 - fix: 修复“历史”页标题未翻译的 bug
 
+### 中文字体
+- changed: 所有字体现已内嵌于仓库
+- changed!: 部分字体重命名
+- changed: Monika 字体改为悠哉字体
+- changed: Yuri 字体改为霞鹜文楷
+
+### 已知问题
+- Ren'Py 7 下存档页可能不展示时间信息
+
 ## v2.0.0-beta1（测试版本）
 
 First release.
