@@ -27,19 +27,9 @@
 
 ### 中文字体
 
-DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢。**开始 Mod 开发前，请务必下载这些字体，否则将无法启动工程。安装方式见 [中文字体包安装](#中文字体包安装) 小节。**
+DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢。**从 Mod 模板 v2.0.0-beta2 开始，您不需要下载任何字体即可开始开发，所有字体均内置于模板中。**
 
 如有需要，您也可以自行修改配置文件，以自定义字体，**但请自主承担版权风险**。
-
-中文字体详情请查看 [这里](./game/mod_assets/font/README.md)
-
-#### 中文字体包安装
-
-> 请注意：我们仍然建议您从各个字体的官网下载这些字体，即便它们都是免费商用字体。
-
-您可以下载懒人专用字体包，下载完后将字体解压到 `game/mod_assets/font` 目录下即可。
-
-请在 https://revolution.dokimod.cn/modtemplate/chinesefonts/ 获取字体包。
 
 ---
 
@@ -50,7 +40,6 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. 从 [DDLC.moe](https://ddlc.moe) 或者 [Steam](https://store.steampowered.com/app/698780/) 下载 DDLC 游戏，然后将 `DDLC-1.1.1-pc` 文件夹（对于 macOS 用户则为 `ddlc-mac`，对于 Steam 版本则为 `Doki Doki Literature Club`）复制到 Ren'Py SDK（`renpy-6.99.12.4-sdk`）文件夹（或者您在 Ren'Py SDK 中自定义的文件夹）。将文件夹重命名为您的 Mod 名称。
 1. 将 Mod 模板 ZIP 包内的内容复制到您刚刚粘贴的 DDLC 文件夹内。如有提示，请允许替换所有文件。  
     > 对于 macOS，请右键单击 `ddlc-mac` 文件夹内的 DDLC.app，点击 `显示包内容`，然后将 `Contents/Resources/autorun` 文件夹内的文件复制过去。如有提示，请允许替换所有文件。  
-1. 下载 [中文字体包](https://revolution.dokimod.cn/modtemplate/chinesefonts/)，将下载的 ZIP 文件的内容解压并复制到 `<Mod 工程文件夹>/game/mod_assets/fonts` 文件夹。
 1. 在 Ren'Py SDK 里启动项目。它应正常编译并启动游戏。
     > 有时候，启动项目可能不会发生任何事情，或者报错。您可以再次单击 `Launch Project` / `运行工程` ，此时工程应该可以正常启动。
 1. 当你完成脚本编写后，转到 Ren'Py SDK 主界面，选择 `Build Distributions` / `生成分发版`。将 `Build Packages` / `生成分发包` 中的其他选项全部取消，仅选中 `Ren'Py 6 DDLC Compliant Mod`，然后点击 `Build` / `生成`。这个操作会生成跨平台的 ZIP 文件，这就是你的 Mod 文件。
@@ -63,7 +52,6 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. 将 Mod 模板 ZIP 包内的内容复制到您刚刚粘贴的 DDLC 文件夹内。如有提示，请允许替换所有文件。  
     > 对于 macOS，请右键单击 `ddlc-mac` 文件夹内的 DDLC.app，点击 `显示包内容`，然后将 `Contents/Resources/autorun` 文件夹内的文件复制过去。如有提示，请允许替换所有文件。  
     > 在 Ren'Py SDK 7 中，如果遇到意外启动失败，可能是因为 `game/scripts.rpa` 的冲突，您可以尝试删除该文件。
-1. 下载 [中文字体包](https://revolution.dokimod.cn/modtemplate/chinesefonts/)，将下载的 ZIP 文件的内容解压并复制到 `<Mod 工程文件夹>/game/mod_assets/fonts` 文件夹。
 1. 在 Ren'Py SDK 里启动项目。它应正常编译并启动游戏。
     > 有时候，启动项目可能不会发生任何事情，或者报错。您可以再次单击 `Launch Project` / `运行工程` ，此时工程应该可以正常启动。
 1. 当你完成脚本编写后，转到 Ren'Py SDK 主界面，选择 `Build Distributions` / `生成分发版`。将 `Build Packages` / `生成分发包` 中的其他选项全部取消，仅选中 `Ren'Py 7 DDLC Compliant Mod`，然后点击 `Build` / `生成`。这个操作会生成跨平台的 ZIP 文件，这就是你的 Mod 文件。
@@ -78,7 +66,6 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. 从 [DDLC.moe](https://ddlc.moe) 或者 [Steam](https://store.steampowered.com/app/698780/) 下载 DDLC 游戏，然后将 `DDLC-1.1.1-pc` 文件夹（对于 macOS 用户则为 `ddlc-mac`，对于 Steam 版本则为 `Doki Doki Literature Club`）中的 3 个文件（`game/images.rpa`，`game/fonts.rpa`，`game/audio.rpa`）复制到 `<Mod 工程文件夹>/game` 文件夹。
     > 对于 macOS，请右键单击 `ddlc-mac` 文件夹内的 DDLC.app，点击 `显示包内容`，然后将 `Contents/Resources/autorun` 文件夹内的文件复制过去。如有提示，请允许替换所有文件。  
     > 在 Ren'Py SDK 7 中，如果遇到意外启动失败，可能是因为 `game/scripts.rpa` 的冲突，您可以尝试删除该文件。
-1. 下载 [中文字体包](https://revolution.dokimod.cn/modtemplate/chinesefonts/)，将下载的 ZIP 文件的内容解压并复制到 `<Mod 工程文件夹>/game/mod_assets/fonts` 文件夹。
 1. 在 Ren'Py SDK 里启动项目。它应正常编译并启动游戏。
     > 有时候，启动项目可能不会发生任何事情，或者报错。您可以再次单击 `Launch Project` / `运行工程` ，此时工程应该可以正常启动。
 1. 当你完成脚本编写后，转到 Ren'Py SDK 主界面，选择 `Build Distributions` / `生成分发版`。将 `Build Packages` / `生成分发包` 中的其他选项全部取消，仅选中 `Ren'Py 7 DDLC Compliant Mod`，然后点击 `Build` / `生成`。这个操作会生成跨平台的 ZIP 文件，这就是你的 Mod 文件。
