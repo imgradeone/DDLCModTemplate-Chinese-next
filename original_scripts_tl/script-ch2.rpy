@@ -27,7 +27,7 @@ label ch2_main:
     s 4l "诶-诶？"
     show sayori at s11
     s "为什么...突然要这么做？"
-    mc "没原因，真的。"
+    mc "没有为什么，真的。"
     mc "我只是想看看。"
     s 1l "啊-啊..."
     show sayori zorder 2 at t11
@@ -37,13 +37,13 @@ label ch2_main:
     "只掉出来了两个小硬币。"
     s 5a "啊-啊哈哈...."
     mc "我就知道..."
-    mc "你早就被看穿了，纱世里。"
+    mc "我早就看穿你了，纱世里。"
     s 5c "这不公平！"
     s "你怎么会知道的？"
     mc "很简单。"
-    mc "如果你一开始就有足够的钱，来部室之前你肯定就买到零食了。"
-    mc "所以，要么就是你不饿，只是想要一个出去走走的借口..."
-    mc "要么，你早就花光了所有的钱，所以试图装健忘骗我借钱给你！"
+    mc "如果你一开始就有足够的钱，来部室之前你肯定就买好零食了。"
+    mc "所以，要么就是你不饿，只是想找个借口出去走走..."
+    mc "要么就是，你早就花光了所有的钱，所以试图装健忘骗我借钱给你！"
     mc "不过还有一点是..."
     mc "...你没有不饿的时候！"
     mc "这样一来，就只剩下一个选项了！"
@@ -71,50 +71,50 @@ label ch2_main:
     y "别这样把我扯进来啊，纱世里..."
     y "而且..."
     y 1k "你应该根据自己的经济情况来买东西..."
-    y "坦白地说，在刚刚那样淘气的胡闹后，你也算是受到相应的报应了。"
+    y "坦白地说，耍了个小把戏后，你也算是受到相应的报应了。"
     show sayori 1b
     mc "..."
     y 3n "啊--！"
     y "我刚刚是不是..."
     y 4c "我-我不是那个意思！！"
-    y "我太专注于我的书..."
-    y "呜..."
+    y "我看这本书看得太入迷了..."
+    y "唔..."
     show yuri zorder 2 at t33
     show sayori zorder 3 at f32
     s 1r "啊哈哈！"
-    s 3x "我真喜欢你说出自己想法的样子，优里..."
+    s 3x "我真喜欢你直言不讳的样子，优里..."
     s "挺少见的，不过这也是你有趣的一面！"
     show sayori zorder 2 at t32
     show yuri zorder 3 at f33
-    y 3v "那可是..."
+    y 3v "这..."
     y "你怎么会那样想..."
     show yuri zorder 2 at t33
     show sayori zorder 3 at f32
-    s 1x "不过你说的也没错..."
-    s "我做了错事，现在我就要接受抱怨。"
+    s 1x "不过你说的倒也没错啦..."
+    s "我做了错事，于是就得接受抱怨。"
     show sayori zorder 2 at t32
     show yuri zorder 3 at f33
     y 3h "是报应..."
     show yuri zorder 2 at t33
     show sayori zorder 3 at f32
-    s 1l "就那个词！"
+    s 1l "就那个词啦！"
     show sayori zorder 2 at t32
     show yuri zorder 3 at f33
     y "难得你会这么说，纱世里..."
-    y 1a "我觉得我们每个人心中都有只小恶魔，不是吗？"
+    y 1a "大概每个人心中都有只小恶魔，不是吗？"
     show yuri zorder 2 at t33
     show sayori zorder 3 at f32
     s 1q "诶嘿嘿..."
     show sayori zorder 2 at t32
-    mc "别让她骗到你啊。"
+    mc "别让她给骗了啊。"
     mc "纱世里知道她在做什么。"
-    mc "别忘了，她在告诉我之前，就已经告诉了你们她会把我带到社团来..."
+    mc "别忘了，她在跟我说之前，就已经告诉你们她会把我带到社团来..."
     show sayori zorder 3 at f32
     s 1h "但-但是...！"
-    s "如果不是为了小蛋糕的话，你是不会来的..."
-    s "所以我要骗夏树做蛋糕！"
+    s "如果不是为了小蛋糕的话，你可不会来的..."
+    s "所以我只好骗夏树去做蛋糕！"
     show sayori zorder 2 at t32
-    mc "拜托，说点更有说服力的吧，纱世里。"
+    mc "拜托，给我多点肯定啊，纱世里。"
     show sayori zorder 3 at f32
     s 1l "诶嘿嘿..."
     play sound "sfx/slap.ogg"
@@ -125,39 +125,39 @@ label ch2_main:
     "{i}啪！{/i}"
     hide white
     s 4p "咿呀--！"
-    "不知从哪里冒出来的某个东西打到了纱世里脸上，然后滚到了桌子上。"
+    "某个东西突然凭空冒出来，啪地打在了纱世里脸上后滚落桌上。"
     s 4j "嗷..."
-    s "这是--"
+    s "什么啊--"
     s 4n "诶？？"
     s "曲-曲奇！"
     "没错，一块塑料包装的巨型曲奇。"
-    "纱世里朝四周看了看。"
+    "纱世里环绕了四周。"
     s 4m "这-这是奇迹吗？"
     s "因为我受到了报复!"
     show sayori zorder 2 at t32
-    mc "报应..."
+    mc "是报应..."
     show sayori 4n
     show yuri zorder 3 at f33
-    y 1u "实际上，这个词也差不多能用了..."
+    y 1u "其实你这个词差不多算是用对了..."
     show yuri zorder 2 at t33
     show natsuki 3z zorder 3 at f31
     n "啊哈哈哈！"
-    n "我 {i}本来{/i} 就是给你的。"
-    n 3d "但是我听到你透露了关于小蛋糕的事。"
+    n "我 {i}本来{/i} 就是想给你的。"
+    n 3d "但接着又听到你多嘴说起了小蛋糕的事。"
     n "不过，你的反应还挺有趣的。啊哈哈！"
     show natsuki zorder 2 at t31
     show sayori zorder 3 at f32
     s 4m "夏-夏树！"
-    s "你太好了！"
-    s 4s "我真开心..."
+    s "你人好好哦！"
+    s 4s "我超开心..."
     "纱世里抱住了曲奇。"
     show sayori zorder 2 at t32
-    mc "天哪，你就吃吧..."
+    mc "哎呀，你就吃吧..."
     "纱世里飞快地拆开包装，咬了一大口。"
     show sayori zorder 3 at f32
     s 4q "针不戳..."
     show sayori zorder 3 at hf32
-    s 4o "嗯——！"
+    s 4o "唔——！"
     "纱世里突然把手捂到了嘴上。"
     s 4p "我咬到舌头了..."
     show sayori zorder 2 at t32
@@ -171,7 +171,7 @@ label ch2_main:
     s "我能尝尝吗？"
     show sayori zorder 2 at t32
     show natsuki zorder 3 at f31
-    n 4e "天哪..."
+    n 4e "真是的..."
     n "乞丐没得挑！"
     show natsuki zorder 2 at t31
     show sayori zorder 3 at f32

@@ -169,8 +169,8 @@ init python:
     build.package(build.directory_name + "Mod",'zip','mod',description="Ren'Py 6 DDLC Compliant Mod")
     build.package(build.directory_name + "Renpy7Mod",'zip','windows mac linux renpy mod',description="Ren'Py 7 DDLC Compliant Mod")
 
-    build.archive("scripts", 'mod')
-    build.archive("mod_assets", 'mod')
+    build.archive("scripts", 'mod all')
+    build.archive("mod_assets", 'mod all')
 
     ## 不要动这里。
     ## 这里可以让 Ren'Py 添加 Linux / macOS 的执行文件。
@@ -211,6 +211,7 @@ init python:
     build.classify('/game/10', None)
     build.classify('/game/cache/*.*', None)
     build.classify('**.rpa', None)
+    build.classify('README.md', None)
     build.classify('help.html','mod all')
     build.classify('attributions.txt','mod all')
     build.classify('game/mod_assets/font/LICENSE-harmonyossans.txt','mod all')
