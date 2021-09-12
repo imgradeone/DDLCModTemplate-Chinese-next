@@ -178,28 +178,28 @@ label ch2_main:
     s 1h "但是你的是巧克力味的..."
     show sayori zorder 2 at t32
     show natsuki zorder 3 at f31
-    n 4c "是啊，不然你觉得我为什么会给你那一块？"
+    n 4c "是啊，不然你觉得我干嘛给你那一块？"
     show natsuki zorder 2 at t31
     show sayori zorder 3 at f32
     s 1g "好吧..."
-    s 1q "不过，我还是非常高兴你能把这块分享给我的。"
+    s 1q "不过，我还是非常高兴你能把这块分享给我呢。"
     s "诶嘿嘿～"
     show sayori behind natsuki zorder 2 at t21
-    "纱世里起身走到了夏树身后，然后用手臂环住了她。"
-    n 12c "啊--天哪..."
-    n "知道了，知道了。"
+    "纱世里起身走到夏树身后，伸出双臂搂住了她。"
+    n 12c "啊--真是的..."
+    n "行啦行啦。"
     "夏树手里还拿着曲奇，于是她用手肘把纱世里推开。"
     show sayori 1n at h21
     s "...{i}啊呜。{/i}"
-    "纱世里突然弯下身咬了一口夏树的曲奇。"
-    n 1p "{i}嘿-嘿！！{/i}"
-    n "你还真抢啊？！"
+    "纱世里突然弯下身，咬了一口夏树的曲奇。"
+    n 1p "{i}喂-喂！！{/i}"
+    n "你还真就上嘴抢啊？！"
     s 1q "呜呼呼呼~！"
     show sayori at lhide
     hide sayori
     "纱世里嘴里塞得满满的，快步跑到了安全的地方。"
     show yuri 1c
-    "优里和我也笑了。"
+    "优里和我也笑了起来。"
     show yuri 1a
     show natsuki zorder 3 at f31
     n 1w "天哪！有时候你还真像个活小孩！"
@@ -212,7 +212,7 @@ label ch2_main:
     show natsuki zorder 2 at t31
     show yuri 2f zorder 3 at f33
     y "好问题..."
-    y "你们有听说她今天会迟到之类的吗？"
+    y "她和你们说过今天会迟到之类的吗？"
     show sayori 1b zorder 3 at f32
     show yuri zorder 2 at t33
     s "没有..."
@@ -220,30 +220,30 @@ label ch2_main:
     mc "嗯，我也不知道。"
     show yuri zorder 3 at f33
     y 2l "唔..."
-    y "有点反常。"
+    y "那可有点反常。"
     show yuri zorder 2 at t33
     show sayori zorder 3 at f32
     s 1g "希望她没事..."
     show sayori zorder 2 at t32
     show natsuki 3k zorder 3 at f31
     n "她肯定没事。"
-    n "可能她只是今天有事情要做。"
+    n "可能她只是今天刚好有事情要做。"
     n 3t "毕竟她还是蛮受欢迎的..."
     show natsuki zorder 2 at t31
     show sayori 4m zorder 3 at f32
     s "诶？"
-    s "你不觉得她..."
+    s "你该不会觉得她..."
     s "她有个...！"
     show sayori zorder 2 at t32
     show yuri 1a zorder 3 at f33
-    y "啊哈哈。那我不会惊讶的。"
-    y "她可能比我们加起来都有魅力。"
+    y "啊哈哈，那也不奇怪嘛。"
+    y "她可能比我们大家加起来都有魅力。"
     show yuri zorder 2 at t33
     show sayori 1r zorder 3 at f32
-    s "诶嘿嘿，是这样的..."
+    s "诶嘿嘿，就是嘛..."
     show sayori zorder 2 at t32
     show natsuki 1p zorder 3 at f31
-    n "你说什么？！"
+    n "哪跟哪啊喂？！"
     hide natsuki
     hide sayori
     hide yuri
@@ -256,20 +256,20 @@ label ch2_main:
     m "希望你们没有担心我之类的！"
     show sayori 4n zorder 3 at f42
     s "诶？？"
-    s "最终莫妮卡在社团和男朋友之间选择了社团！"
+    s "莫妮卡最终在社团和男朋友之间选择了社团！"
     s "你的意志力真强！"
     show sayori zorder 2 at t42
     show monika zorder 3 at f41
     m 1l "男-男朋友...？"
-    m "你到底在说什么？"
+    m "你们到底在说什么？"
     "莫妮卡疑惑地看向我。"
     show monika zorder 2 at t41
-    mc "啊，别介意..."
+    mc "啊，当我们没说..."
     mc "话说回来，你是被什么事情耽误了吗？"
     show monika zorder 3 at f41
     m 1e "啊..."
     m "嗯，今天的上一段时间是自习课。"
-    m "说实话，我忘了时间..."
+    m "说实话，我忘了注意时间..."
     m "啊哈哈..."
     show monika zorder 2 at t41
     show natsuki 2c zorder 3 at f43
@@ -284,9 +284,9 @@ label ch2_main:
     y "我之前还不知道你会弹钢琴，莫妮卡。"
     show yuri zorder 2 at t44
     show monika zorder 3 at f41
-    m 1l "啊，我其实并不会...！"
+    m 1l "啊，其实也不算会弹...！"
     m "我最近才开始学。"
-    m 1m "我想学钢琴很久了。"
+    m 1m "我一直都蛮想学钢琴的。"
     show monika zorder 2 at t41
     show sayori 4x zorder 3 at f42
     s "真好啊！"
@@ -295,7 +295,7 @@ label ch2_main:
     show monika zorder 3 at f41
     m "这..."
     "莫妮卡看向了我。"
-    m 1a "也许等到我弹得稍微好些的时候，我会的。"
+    m 1a "也许等到我弹得稍微好点了，再弹给大家听吧。"
     show monika zorder 2 at t41
     show sayori zorder 3 at f42
     s 4q "耶～！"
@@ -304,7 +304,7 @@ label ch2_main:
     mc "我很期待哦。"
     show monika zorder 3 at f41
     m 1b "真的吗？"
-    m "那样的话..."
+    m "这样的话..."
     m "我不会让你失望的，[player]。"
     show sayori zorder 1 at thide
     show natsuki zorder 1 at thide
@@ -313,11 +313,11 @@ label ch2_main:
     hide sayori
     hide natsuki
     hide yuri
-    "莫妮卡甜甜地微笑着。"
+    "莫妮卡甜甜地笑着。"
     mc "啊..."
-    mc "我不是想给你压力之类的！"
+    mc "我不是想给你压力什么的！"
     m 1a "啊哈哈，别担心。"
-    m "我最近一直练习得挺多的。"
+    m "我最近练习得挺多的。"
     m "我也很乐意在我准备好之后能有机会分享。"
     mc "我明白了..."
     mc "这样的话，祝你好运。"
@@ -326,10 +326,10 @@ label ch2_main:
     mc "没...没什么。"
     show monika zorder 1 at thide
     hide monika
-    "我选择了隐瞒纱世里的胡闹。"
-    "不过，我敢肯定夏树最后会向她抱怨的。"
+    "我选择了略过纱世里的调皮恶作剧。"
+    "不过我敢肯定，夏树最后会向她抱怨的。"
     "看起来大家都已经安定下来了。"
-    "纱世里已经不知怎么地吃完了她的曲奇。"
+    "纱世里竟然已经吃完了整块曲奇。"
     "优里回到了书前，而夏树也消失在了储藏间里。"
 
 
