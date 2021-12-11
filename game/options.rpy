@@ -1,8 +1,8 @@
 ﻿# Options.rpy
-## This template version is 2.4.8. When asked to provide the template version you are using,
+## This template version is 2.4.9. When asked to provide the template version you are using,
 ## give them this version number. DO NOT REMOVE OR CHANGE THIS COMMENT.
    
-## 目前中文 Mod 模板的版本为 2.0.0-beta2，基于原版改良模板的 2.4.8 版本改造。
+## 目前中文 Mod 模板的版本为 2.0.0-beta3，基于原版改良模板的 2.4.9 版本改造。
 ## 如果你需要向别人提及模板版本，建议把这两个都放上去。
 ## 不要修改、删除这段注释，包括上面的英文原版。
 
@@ -17,7 +17,7 @@ define gui.show_name = True
 
 # 这里可以输入版本号。如果你的 Mod 版本很多，那这时版本号会很有用。
 # 如果你刚刚开始，那么建议把版本号设为 "1.0"
-define config.version = "2.0.0-beta2"
+define config.version = "2.0.0-beta3-unstable"
 
 # 这里是在“关于”页显示的 Mod 介绍文字。
 # 由于我们重新启用了关于界面，你可以在这里写点介绍。

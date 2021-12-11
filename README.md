@@ -9,7 +9,7 @@
 
 **如果你是 Mod 作者，请不要将 DDLC 游戏本体包含在你分发的 ZIP 里，这是违反 IP Guidelines 的行为。**
 
-> 目前 Ren'Py SDK 7.4.6-7.4.7 有破坏性改动，会导致 DDLC 转场失效，请暂时不要更新 SDK！！！更多详情请参考 [此 Issue](https://github.com/renpy/renpy/issues/2860)。
+> 目前 Ren'Py SDK 7.4.6-7.4.8 有破坏性改动，会导致 DDLC 转场失效，但 7.4.9 - 7.4.10 已经修复该问题，您现在可以安全地更新 Ren'Py SDK 至 7.4.10 版本并继续开发 Mod。
 
 > 本 Mod 模板不支持 Doki Doki Literature Club Plus。
 
@@ -85,7 +85,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. DDLC 的原版 RPY 文件，内含注释
 1. 高度可定制！这个模板只是起点，借助你的创意，做你想做
 1. macOS `.app` 及 Linux `.sh` 启动文件制作支持
-1. 完整的 Android 支持！DDLC 的一切（除了 `[currentuser]` 变量）可在 Android 平台正常运行。
+1. Android 支持！
     > 请前往 [原版 DDLC Mod Template 2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/blob/master/guide.pdf) 所附带的 `guide.pdf` 了解 Android Mod 移植 / 开发。
 1. Xcode 支持！您可以在 Xcode 中直接编辑、构建、测试您的 DDLC Mod，无需打开 Ren'Py 启动器。
     > 提示：您需要更改 `RENPY_TOOL` 变量，将其定位到您的 Ren'Py SDK 应用程序位置。[了解更多 &rsaquo;](XCODE.md)
@@ -93,6 +93,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. NVL 模式支持 - 特别感谢 Yagamirai01
 1. [BETA] 人称支持！现在用户可以自行选择符合自己的人称了！
     > This works best with `He/Him`, `She/Her`, and `They/Them` pronouns but this can be expanded on as much as you like. Make sure to call `finishPronouns()` in your script after a pronoun is selected! See *pronoun_example.rpy* for a example on how to use this feature.
+1. 全新蓝屏（BSOD）功能，现在来吓唬一下全平台的玩家吧！（完美支持 Windows 7 / 8 / 10 / 11，乃至 macOS / Linux！）
 
 ### DDLC 中文 Mod 模板
 1. 绝赞中文化（目前只支持简体中文）

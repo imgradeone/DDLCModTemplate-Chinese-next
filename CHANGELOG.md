@@ -1,6 +1,16 @@
 # 更新日志
 
-## 未发布版本（v2.0.0-beta2-development）
+## 未发布版本（v2.0.0-beta3-unstable）
+
+### 功能
+
+- add: 更完美的 BSoD
+
+### 开发
+
+- refactor: 解禁 Ren'Py SDK 7.4.9 - 7.4.10
+
+## v2.0.0-beta2（测试版本）
 
 ### 功能
 - add: 原版剧情翻译（待进一步优化，基于 Plus 和原版社区翻译）
