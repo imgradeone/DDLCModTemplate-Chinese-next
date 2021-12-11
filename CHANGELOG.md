@@ -2,9 +2,13 @@
 
 ## 未发布版本（v2.0.0-beta3-unstable）
 
+### 功能
+
+- add: 更完美的 BSoD
+
 ### 开发
 
-- 解禁 Ren'Py SDK 7.4.9 - 7.4.10
+- refactor: 解禁 Ren'Py SDK 7.4.9 - 7.4.10
 
 ## v2.0.0-beta2（测试版本）
 
