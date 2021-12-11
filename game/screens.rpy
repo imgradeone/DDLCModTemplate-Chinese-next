@@ -1686,7 +1686,7 @@ init python:
             if winver == 8:
                 d = Text("为你重新启动。 (" + str(percent) + "% 完成)\n", style="bsod_win8_text_cn", size=26)
             else:
-                d = Text(str(percent) + "% complete", style="bsod_win10_text_cn", line_leading=25)
+                d = Text("已完成 " + str(percent) + "%", style="bsod_win10_text_cn", line_leading=25)
         else:
             if winver == 8:
                 d = Text("we'll restart for you. (" + str(percent) + "% complete)\n", style="bsod_win8_text", size=26)
@@ -1711,6 +1711,7 @@ init python:
     if renpy.windows:
         osName = subprocess.check_output("wmic os get version", shell=True).replace("\r", "").replace(" ", "").replace("\n", "").replace("Version ", "")
 
+    osName = "6.3.9800"
 ## BSOD screen ##################################################################
 ##
 ## This screen is used to fake BSOD/kernel panic a player's computer on all
@@ -1809,15 +1810,15 @@ screen bsod(bsodCode="DDLC_ESCAPE_PLAN_FAILED", bsodFile="libGLESv2.dll", rsod=F
                 if chinese_screen:
                     if osName >= "10.0.10240" and osName < "10.0.22000":
 
-                        text "您的电脑遇到问题，需要重新启动。"
-                        text "我们只收集某些错误信息，然后为你重新启动。"
+                        text "您的电脑遇到问题，需要重新启动。" style "bsod_win10_text_cn"
+                        text "我们只收集某些错误信息，然后为你重新启动。" style "bsod_win10_text_cn"
 
                     else:
 
-                        text "您的电脑遇到问题，需要重新启动。"
-                        text "我们只收集某些错误信息，然后你可以重新启动。"
+                        text "您的电脑遇到问题，需要重新启动。" style "bsod_win10_text_cn"
+                        text "我们只收集某些错误信息，然后你可以重新启动。" style "bsod_win10_text_cn"
 
-                    add DynamicDisplayable(fakePercent, 10)
+                    add DynamicDisplayable(fakePercent, 10, chinese_screen=True)
 
                 else:
                     if osName >= "10.0.10240" and osName < "10.0.22000":
@@ -1832,7 +1833,7 @@ screen bsod(bsodCode="DDLC_ESCAPE_PLAN_FAILED", bsodFile="libGLESv2.dll", rsod=F
                         text "We're just collecting some error info, and then you can"
                         text "restart."
 
-                    add DynamicDisplayable(fakePercent, 10)
+                    add DynamicDisplayable(fakePercent, 10, chinese_screen=False)
 
                 if chinese_screen:
                     hbox:
@@ -2038,7 +2039,7 @@ if renpy.windows:
 
     style bsod_win10_sub_text_cn is bsod_win10_text_cn
     style bsod_win10_sub_text_cn:
-        size 11
+        size 13
 
 elif renpy.macintosh:
 
