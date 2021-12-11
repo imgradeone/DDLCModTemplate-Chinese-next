@@ -17,7 +17,7 @@ define gui.show_name = True
 
 # 这里可以输入版本号。如果你的 Mod 版本很多，那这时版本号会很有用。
 # 如果你刚刚开始，那么建议把版本号设为 "1.0"
-define config.version = "2.0.0-beta3-unstable"
+define config.version = "2.0.0-beta3"
 
 # 这里是在“关于”页显示的 Mod 介绍文字。
 # 由于我们重新启用了关于界面，你可以在这里写点介绍。

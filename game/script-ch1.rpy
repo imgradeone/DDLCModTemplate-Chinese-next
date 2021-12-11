@@ -1,5 +1,4 @@
 label ch0_start:
-    show screen bsod(chinese_screen=True)
-    "......"
-    hide screen bsod
+    m "这是你的第一个 Mod。"
+    m "接下来，您可以去查看教程。"
     return
