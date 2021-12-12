@@ -1,5 +1,11 @@
 # 更新日志
 
+## early-development（v2.1.0-alpha1-early-dev-unstable）
+
+### 开发
+
+- refactor: 修改 DDLC 资源缺失时提示
+
 ## v2.0.0-beta3（测试版本）
 
 ### 功能

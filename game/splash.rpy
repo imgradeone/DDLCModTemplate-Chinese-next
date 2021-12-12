@@ -8,7 +8,7 @@ init -100 python:
     if not renpy.android:
         for archive in ['audio','images','fonts']:
             if archive not in config.archives:
-                renpy.error("看样子你还没有把 DDLC 游戏的文件复制过去呐。建议您去看看 README 一步步操作。")
+                renpy.error("未在 /game 文件夹内找到 DDLC 资源，请先补全资源。")
 
 # 启动屏幕信息
 init python:
