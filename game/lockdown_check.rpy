@@ -1,4 +1,4 @@
-# Lockdown_check.rpy
+# Lockdown_check.rpy - 兼容性警告
 
 # 本文件并非来源于 DDLC。
 # 用于检测 Ren'Py SDK 版本兼容性，并对不兼容版本做出警告 / 拦截。

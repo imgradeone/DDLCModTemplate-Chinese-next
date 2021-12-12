@@ -1,10 +1,10 @@
-# Glitchtext.rpy
+# Glitchtext.rpy - 乱码文字
 
-# This defines the glitched text that shows in DDLC
+# 这里定义 DDLC 中显示的无意义乱码文字。
 
-# Use this as a starting point if you would like to override with your own.
+# 如果你乐意的话，你也可以修改这一部分，实现中文内容 / 奇怪的整活。
 
-# This defines a function that generates glitched text of how many characters are in text.
+# 您也可以定义乱码文字的长度。
 init python:
     import random
 

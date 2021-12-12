@@ -1,5 +1,12 @@
 # 更新日志
 
+## 未发布版本（v2.0.0-beta4-unstable）
+
+### 开发
+
+- refactor: 中文注释补充
+- refactor: 修改 DDLC 资源缺失时提示
+
 ## v2.0.0-beta3（测试版本）
 
 ### 功能

@@ -1,6 +1,6 @@
-# Script.rpy
-# 这里支撑着游戏的整体运行逻辑。
-
+# Script.rpy - 脚本文件
+# 这里支撑着游戏的整体运行逻辑。可以在 original_scripts_tl/script.rpy 中
+# 查看原版逻辑。
 label start:
 
     # 用于防作弊（读取之前存档）的 ID。
