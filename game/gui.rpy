@@ -60,40 +60,40 @@ define -2 gui.text_size = 24
 ## 角色名称文本大小。
 define -2 gui.name_text_size = 24
 
-## The size of text in the game's user interface.
+## 用户界面（UI）的文字大小。
 define -2 gui.interface_text_size = 24
 
-## The size of labels in the game's user interface.
+## 标签文字的大小。
 define -2 gui.label_text_size = 28
 
-## The size of text on the notify screen.
+## 通知提示文字的大小。
 define -2 gui.notify_text_size = 16
 
-## The size of the game's title.
+## 游戏标题文字的大小
 define -2 gui.title_text_size = 38
 
-# Main Menu and Game Menu
+# 主菜单及游戏菜单
 
-# Sets the background for the Start Menu
+# 游戏开始界面的背景图片
 define -2 gui.main_menu_background = "menu_bg"
 
-# Sets the background for the Pause Menu
+# 暂停时的游戏菜单界面背景图片
 define -2 gui.game_menu_background = "game_menu_bg"
 
-# Controls whether we show the name and version of the game
+# 控制是否在游戏主界面显示游戏名称及版本号
 define -2 gui.show_name = False
 
-# Dialogue
+# 文本框
 
-## The height of the textbox containing dialogue.
+## 文本框容器文字高度
 define -2 gui.textbox_height = 182
 
-## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
-## center, and 1.0 is the bottom.
+## 文本框纵向高度位置
+## 0.0 为顶部，0.5 为居中，1.0 为底部。
 define -2 gui.textbox_yalign = 0.99
 
-## The placement of the speaking character's name, relative to the textbox.
-## These can be a whole number of pixels from the left or top, or 0.5 to center.
+## 正在说话角色的名称位置，与文本框相对
+## 可以为整数像素量（从左 / 顶），或者 0.5 之类的小数（同纵向高度原理）
 define gui.name_xpos = 350
 define gui.name_ypos = -3
 
