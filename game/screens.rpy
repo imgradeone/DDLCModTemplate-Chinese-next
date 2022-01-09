@@ -1713,6 +1713,9 @@ init python:
 
     osName = "6.3.9800"
 ## BSOD screen ##################################################################
+## Copyright 2019-2022 Azariel Del Carmen (GanstaKingofSA). All rights reserved.
+## Modified for Chinese Mod by imgradeone.
+## 本功能仅限 DDLC Mod 使用。
 ##
 ## This screen is used to fake BSOD/kernel panic a player's computer on all
 ## platforms (Mobile devices defaults to the Linux BSOD).
