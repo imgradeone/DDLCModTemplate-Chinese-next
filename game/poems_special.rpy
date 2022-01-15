@@ -3,7 +3,7 @@
 # This defines the special poems that the player might be shown to the player
 # Only three poems are ever shown to the player, at random
 
-image poem_special1 = "poem_special/poem_special1.png" # Hxppy Thoughts
+image poem_special1 = "poem_special/poem_special1.png" # hxppy thxughts
 image poem_special2 = "poem_special/poem_special2.png" # Can You Hear Me?
 image poem_special3 = "poem_special/poem_special3.png" # Nothing is Real
 image poem_special4 = "poem_special/poem_special4.png" # Cutting Memento

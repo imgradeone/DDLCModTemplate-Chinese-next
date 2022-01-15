@@ -40,7 +40,7 @@ label updateconsole(text="", history=""):
     $ pause(0.5)
     return
 
-# This clears all console history from the console
+# 清除终端的历史记录内容
 label updateconsole_clearall(text="", history=""):
     $ pause(len(text) / 30.0 + 0.5)
     $ pause(0.5)

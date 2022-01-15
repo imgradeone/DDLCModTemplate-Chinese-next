@@ -18,6 +18,7 @@ game/firstrun
 characters/*.chr
 *.swp
 firstrun
+game/python-packages
 
 # fonts
 *.ttf

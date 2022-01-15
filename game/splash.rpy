@@ -371,7 +371,7 @@ label splashscreen:
 
     $ config.allow_skipping = False
 
-    ## ghost menu 随机展示，仅在二周目生效，默认概率 1/64，可以自己修改。
+    ## ghost menu（阴间版菜单）随机展示，仅在二周目生效，默认概率 1/64，可以自己修改。
     if persistent.playthrough == 2 and not persistent.seen_ghost_menu and renpy.random.randint(0, 63) == 0:
         show black
         $ config.main_menu_music = audio.ghostmenu

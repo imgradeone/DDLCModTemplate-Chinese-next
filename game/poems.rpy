@@ -774,7 +774,7 @@ style monika_text_en:
     outlines []
 
 label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, where=i11, paper=None, chinese=True):
-    #If no poem key is given, just go back
+    # 未定义诗的情况下将直接 return
     if poem == None:
         return
 
@@ -812,7 +812,7 @@ label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, w
     if img:
         $ renpy.hide(poem.author)
         $ renpy.show(img, at_list=[where])
-    
+    # 判断是否启用中文模式并选用正确字体
     if chinese:
         hide screen poem
         with Dissolve(.5)

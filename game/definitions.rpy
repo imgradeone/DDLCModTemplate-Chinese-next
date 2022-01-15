@@ -11,7 +11,8 @@ define persistent.demo = False
 define persistent.steam = ("steamapps" in config.basedir.lower())
 
 # 开发者模式开关
-define config.developer = "auto"
+# 'auto' 为自动检测（但似乎 Ren'Py 的检测会抽风）
+define config.developer = False
 
 python early:
     import singleton
@@ -25,7 +26,7 @@ init python:
     config.keymap['toggle_skip'] = []
     renpy.music.register_channel("music_poem", mixer="music", tight=True)
     
-    # Get's position of Music
+    # 获取背景音乐播放时间位置
     def get_pos(channel='music'):
         pos = renpy.music.get_pos(channel=channel)
         if pos: return pos
@@ -1391,6 +1392,7 @@ default himC = persistent.him.capitalize()
 default areC = persistent.are.capitalize()
 default hesC = persistent.hes.capitalize()
 
+# 游戏系统字体
 define gui.system_font = u'mod_assets/font/harmonyossans.ttf'
 
 # Persistent Variables
