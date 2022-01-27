@@ -1,49 +1,47 @@
-# Script.rpy
-# This is the main script that DDLC/Ren'Py calls upon to start
-# your mod's story! 
+# Script.rpy - 脚本文件
+# 这里支撑着游戏的整体运行逻辑。
 
 label start:
 
-    # Configures your mod to use a ID to prevent users from cheating.
-    # Leave this as default and only change the value 'persistent.anticheat' has
-    # in definitions.rpy if you want to change it
+    # 用于防作弊（读取之前存档）的 ID。
+    # 不要在这里修改相应 ID，请在 definitions.rpy 修改。
     $ anticheat = persistent.anticheat
 
-    # Controls what chapter the game starts for the poem game.
+    # 这里控制游戏的章节，对于 poem game 有用。
     $ chapter = 0
 
-    # This makes sure if the user quits during pause, 
-    # it is set to false after restarting the game. Precaution.
+    # 控制是否允许玩家快速展示所有文字，默认基于开发者选项 
+    # (located in definitions.rpy)
     $ _dismiss_pause = config.developer
 
-    # Names of the Characters
-    # To add a character -> $ mi_name = "Mike". Don't forget to
-    # add them also in definitions.rpy!
+    # 角色命名。
+    # 如需添加新角色 -> $ mi_name = "Mike"
+    # 一定要记得去 definitions.rpy 再定义一次角色！
     $ s_name = "???"
     $ m_name = "女孩 3"
     $ n_name = "女孩 2"
     $ y_name = "女孩 1"
 
-    # Controls whether we have a menu in the textbox or not.
+    # 控制是否显示底部文字菜单和是否允许使用 Esc 显示菜单。
     $ quick_menu = True
 
-    # Controls whether we want normal or glitched dialogue
-    # For glitched dialogue, use 'style.edited' than 'style.normal'
+    # 控制对话文字风格。
+    # 对于“修改”类文本，请使用 'style.edited'，否则请保持 'style.normal'
     $ style.say_dialogue = style.normal
 
-    # Controls whether Sayori is dead. Leave this alone unless needed.
+    # 控制 Sayori 此时是否 GG，但这个变量目前没什么用。
     $ in_sayori_kill = None
     
-    # Controls whether we allow skipping dialogue.
+    # 控制是否允许玩家跳过 / 快进对话。
     $ allow_skipping = True
     $ config.allow_skipping = True
 
-    # Start of the script
-    # 'persistent.playthrough' controls the playthrough number the player is on
+    # 脚本开始
+    # 'persistent.playthrough' 控制玩家所在周目
     if persistent.playthrough == 0:
-        # '$ chapter = 0' controls the chapter number the game is on for the poem game.
-        # 'call tutorial_selection' controls what label to call from in your script files
-        # Make sure to change this when coding your mod, else your player will face a script error
+        # '$ chapter = 0' 这里控制游戏的章节，用于 poem game。
+        # 'call ch0_main' 等都控制需要 call 的章节。
+        # 请务必对这些内容进行修改，防止报错。
 
         $ chapter = 0
         call ch0_main
@@ -53,7 +51,7 @@ label start:
         # Day 1
         $ chapter = 1
         call ch1_main
-        # 'call poemresponse_start' calls the poem response game
+        # 'call poemresponse_start' 呼出特殊反应剧情
         call poemresponse_start
         call ch1_end
 
@@ -74,14 +72,14 @@ label start:
         $ chapter = 4
         call ch4_main
 
-        ## try: renpy.file(config.basedir + "/hxppy thxughts.png") checks if there is a file
-        # where DDLC.exe (.app/.sh for MacOS/Linux) called 'hxppy thxughts.png'
+        ## try: renpy.file(config.basedir + "/hxppy thxughts.png") 检查 DDLC 启动文件所在目录下
+        # 是否存在 'hxppy thxughts.png' 文件
         ## except: open(config.basedir + "/hxppy thxughts.png", "wb").write(renpy.file("hxppy thxughts.png").read())
-        # writes 'hxppy thxughts.png' to the main directory if not found.
+        # 如果不存在相应文件，则创建 'hxppy thxughts.png' 文件并写入内容
         python:
             if renpy.android:
-                # For Android, the try and excepts must be formatted like so with this but replace
-                # hxppy thxughts.png with the file you want to write.
+                # 针对 Android 平台，请按照如下格式来创建文件。
+                # （您可以将 'hxppy thxughts.png' 修改为你想要的其他文件。）
                 ## try: renpy.file(os.environ['ANDROID_PUBLIC'] + "/hxppy thxughts.png")
                 ## except: open(os.environ['ANDROID_PUBLIC'] + "/hxppy thxughts.png"), "wb").write(renpy.file("hxppy thxughts.png").read())
                 try: renpy.file(os.environ['ANDROID_PUBLIC'] + "/hxppy thxughts.png")
@@ -92,7 +90,7 @@ label start:
         $ chapter = 5
         call ch5_main
 
-        #ends the game (not credits)
+        # 显示 END 屏幕，结束游戏（但还没到 credits）
         call endgame
 
         return
@@ -100,8 +98,7 @@ label start:
     elif persistent.playthrough == 1:
         $ chapter = 0
         call ch10_main
-        # jump calls upon a label. like call but won't ever return
-        # back here.
+        # jump 一样呼出 label，但不会重新返回（return）至此。
         jump playthrough2
 
 
@@ -139,13 +136,13 @@ label start:
             call poemresponse_start
             call ch22_end
 
-            # 'call poem(False)' calls the poemgame but with no fancy transitions
+            # 'call poem(False)' 会呼出 poem game，但不含任何过渡转场。
             call poem(False)
 
             $ chapter = 3
             call ch23_main
-            # if y_appeal >= 3: checks if our appeal with Yuri is > or = to 3
-            # if yes then it calls a special poem response game, else normal.
+            # if y_appeal >= 3: 检查优里好感度是否大于等于 3
+            # 如果成功则进入特殊诗歌反应，否则还是正常版反应
             if y_appeal >= 3:
                 call poemresponse_start2
             else:
@@ -171,7 +168,7 @@ label start:
         call ch40_main
         jump credits
 
-# the end label of the game. Not the credits.    
+# 游戏的 END 标志。（不是 Credits）
 label endgame(pause_length=4.0):
     $ quick_menu = False
     stop music fadeout 2.0

@@ -4,7 +4,16 @@
 
 ### 开发
 
+- refactor: 中文注释补充
 - refactor: 修改 DDLC 资源缺失时提示
+- refactor: 解禁 Ren'Py SDK 7.4.11
+- change: 开发者模式设置为 `False`
+- refactor: 将 BSOD 功能分离
+
+### 文件
+
+- add: script-poemresponses2
+- change: 修改 script-poemresponses 为汉化版本
 
 ## v2.0.0-beta3（测试版本）
 

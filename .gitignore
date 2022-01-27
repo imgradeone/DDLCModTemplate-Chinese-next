@@ -1,7 +1,6 @@
 # junk for a repo
 .DS_Store
 errors.txt
-*.rpa
 game/cache/bytecode.rpyb
 game/cache/pyanalysis.rpyb
 game/cache/screens.rpyb
@@ -19,6 +18,7 @@ game/firstrun
 characters/*.chr
 *.swp
 firstrun
+game/python-packages
 
 # fonts
 *.ttf
@@ -30,9 +30,13 @@ DDLC.app
 DDLC.py
 DDLC.sh
 
+# 避免内置 DDLC 游戏文件以免侵权
+*.rpa
+
+# 避免内置 Release 包
 *.zip
 
-# Avaliable free-to-use fonts
+# Avaliable free-to-use fonts 可用免费字体
 !game/mod_assets/font/harmonyossans.ttf
 !game/mod_assets/font/sayori.ttf
 !game/mod_assets/font/yuri.ttf

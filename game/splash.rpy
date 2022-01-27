@@ -1,25 +1,24 @@
-## Splash.rpy
+## Splash.rpy - 启动屏幕
 
-# Checks to see if all of DDLC's files are inside for PC
-# You may remove 'scripts' if you recieve conflict with scripts.rpa
-## Note: For building a mod for PC/Android, you must keep the DDLC RPAs 
-## and decompile them for the builds to work.
+# 检测 DDLC RPA 文件是否补全
+## 提示：若需要构建 Android Mod 包，
+## 请依旧保留 RPA 文件，同时将相应 RPA 文件解包。
 init -100 python:
     if not renpy.android:
         for archive in ['audio','images','fonts']:
             if archive not in config.archives:
                 renpy.error("未在 /game 文件夹内找到 DDLC 资源，请先补全资源。")
 
-# 启动屏幕信息
+# 启动屏幕显示的信息文本
 init python:
     menu_trans_time = 1
     # 默认的启动屏幕信息，所有玩家都可以看到。
     splash_message_default = "这是非官方的饭制 Mod，与 Team Salvato 无关。"
-    # Used sometimes to change splash messages if called upon
+    # 一些可供随机选择的额外信息
     splash_messages = [
         "请多多支持 Dan 鸽www",
         "Monika 在盯着你的粪代码。（笑）",
-        "Monika 保佑你，开发 Mod 不遇一个 unexpection！"
+        "Monika 保佑你，开发 Mod 不遇一个 expection！"
     ]
 
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
@@ -275,7 +274,7 @@ label splashscreen:
     if persistent.first_run and (config.version == persistent.oldversion or persistent.autoload == "postcredits_loop"):
         $ quick_menu = False
         scene black
-        "你似乎删除了 firstrun 文件，或者我们发现还有旧版本的存档。"
+        "你似乎删除了 firstrun 文件，或者我们发现还有旧版本 / 先前的存档。"
         menu:
             "是否删除存档并重置游戏？该操作不可撤销。"
             "是的，删除存档":
@@ -288,7 +287,7 @@ label splashscreen:
             "不，继续游戏":
                 $ restore_relevant_characters()
 
-    # 为 Ren'Py SDK 7.4.6 和更新版本增加的兼容性警告。
+    # 兼容性警告功能，详见 lockdown_check.rpy。
     ## 请 不 要 修 改 这 几 行 。
     default persistent.lockdown_warning = False
 
@@ -298,10 +297,10 @@ label splashscreen:
     else:
         $ persistent.lockdown_warning = True
     
-    # Sets First Run to False to Show Disclaimer
+    # 设定 first run 默认值为 False 以展示游戏内容警告
     default persistent.first_run = False
 
-    # 启动声明
+    # 游戏内容警告
 
     if not persistent.first_run:
         python:
@@ -372,7 +371,7 @@ label splashscreen:
 
     $ config.allow_skipping = False
 
-    ## ghost menu 随机展示，仅在二周目生效，默认概率 1/64，可以自己修改。
+    ## ghost menu（阴间版菜单）随机展示，仅在二周目生效，默认概率 1/64，可以自己修改。
     if persistent.playthrough == 2 and not persistent.seen_ghost_menu and renpy.random.randint(0, 63) == 0:
         show black
         $ config.main_menu_music = audio.ghostmenu
@@ -462,8 +461,8 @@ label warningscreen:
     show warning
     pause 3.0
 
-## If Monika.chr is deleted, this would play instead of the regular Chapter 1
-## From Script-CH0.rpy
+## 如果 monika.chr 被删除并进入游戏，将触发此特殊剧情，并删除所有角色。
+## from original_scripts_tl/script-ch0.rpy
 ## 为避免 Mod 社死，保证心理安全，默认注释该段。
 
 # label ch0_kill:
@@ -491,7 +490,7 @@ label warningscreen:
 #     $ renpy.quit()
 #     return
 
-# Checks if Afterload is the same as the anticheat
+# 反作弊功能，核对目前游戏进度与存档的反作弊 ID 是否一致
 label after_load:
     $ config.allow_skipping = allow_skipping
     $ _dismiss_pause = config.developer

@@ -1,13 +1,12 @@
-## cgs.rpy
+## cgs.rpy - CG 展示
 
-# This defines all Character Graphics (CGs) in DDLC
-# such as Yuri Chocolate CG and Natsuki Manga CG.
+# 定义 DDLC 中的所有 CG 内容，例如优里吃巧克力、陪夏树看漫画。
 
-# Use this as a base if you want to override the CGs from DDLC with your own.
+# 您可以将此作为一个基础框架，并且自己追加 CG 内容。
 
-## Yuri Chocolate CG
+## 优里吃巧克力 CG
 
-# Feeding Yuri Chocolate
+# 喂优里巧克力
 # This is the slowly fading background
 image y_cg2_bg:
     "images/cg/y_cg2_bg1.png"

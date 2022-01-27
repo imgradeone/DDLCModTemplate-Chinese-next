@@ -1,28 +1,27 @@
-# Console.rpy
+# Console.rpy - 终端
 
-# This defines the Monika Console that appears in the game when
-# Monika deletes characters
+# 这里定义莫妮卡在删除角色文件时召唤的特殊终端
 
-# Use this as a starting point if you want to override this with your own.
+# 您可以将其作为基础框架并自行定制。
 
-# The gray transparent overlay box on screen
+# 透明的灰色背景
 image console_bg:
     "#333"
     topleft
     alpha 0.75 size (480,180)
 
-# Font for the console
+# 终端字体
 style console_text:
     font "gui/font/F25_Bank_Printer.ttf"
     color "#fff"
     size 18
     outlines []
 
-# Text Speed of the console
+# 文本速度
 style console_text_console is console_text:
     slow_cps 30
 
-# Additional Styling for the console
+# 终端内容的额外风格属性
 default consolehistory = []
 image console_text = ParameterizedText(style="console_text_console", anchor=(0,0), xpos=30, ypos=10)
 image console_history = ParameterizedText(style="console_text", anchor=(0,0), xpos=30, ypos=50)
@@ -41,7 +40,7 @@ label updateconsole(text="", history=""):
     $ pause(0.5)
     return
 
-# This clears all console history from the console
+# 清除终端的历史记录内容
 label updateconsole_clearall(text="", history=""):
     $ pause(len(text) / 30.0 + 0.5)
     $ pause(0.5)

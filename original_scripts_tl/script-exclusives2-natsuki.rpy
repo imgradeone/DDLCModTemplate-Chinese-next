@@ -210,11 +210,11 @@ label natsuki_exclusive2_1:
     "{i}...等下，哪个部分？？{/i}"
     $ style.say_dialogue = style.normal
     n "我的意思是，我甚至都没法把漫画放在自己房间里..."
-
+    # 修改对话文字风格
     $ style.say_dialogue = style.edited
     n "我爸看到这些东西后，绝逼会把我打得屁滚尿流。"
     $ style.say_dialogue = style.normal
-    $ _history_list[-1].what = "我根本不知道我爸在发现这些后会怎么样。"
+    $ _history_list[-1].what = "我根本不知道我爸在发现这些后会怎么样。" # 覆写对话历史
     n "至少放在部室里挺安全的。"
     show n_cg1_exp3 at cgfade
     n "除了有莫妮卡这个什么都不懂的混蛋以外..."
