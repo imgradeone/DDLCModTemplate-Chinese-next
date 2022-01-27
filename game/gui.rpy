@@ -97,8 +97,8 @@ define -2 gui.textbox_yalign = 0.99
 define gui.name_xpos = 350
 define gui.name_ypos = -3
 
-## The horizontal alignment of the character's name. This can be 0.0 for left-
-## aligned, 0.5 for centered, and 1.0 for right-aligned.
+## 正在说话角色名称的横向偏移
+## 0 为靠左，0.5 为居中，1 为靠右
 define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or

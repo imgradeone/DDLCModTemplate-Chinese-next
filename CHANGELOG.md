@@ -8,6 +8,7 @@
 - refactor: 修改 DDLC 资源缺失时提示
 - refactor: 解禁 Ren'Py SDK 7.4.11
 - change: 开发者模式设置为 `False`
+- refactor: 将 BSOD 功能分离
 
 ### 文件
 
