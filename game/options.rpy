@@ -72,9 +72,8 @@ define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
 
 # 这里可以控制 Mod 默认的文字展示速度。
-# By default this is set to 50. 
-# Increasing this number will speed up text while decreasing the number slows down text speed.
-# 0 is instant text display.
+# 默认值为 50，增加即为加速，减小即为减速。
+# 若设置为 0，则为直接展示文字，无打字机过渡。
 default preferences.text_cps = 50
 
 # This controls the auto-forward speed
@@ -111,8 +110,8 @@ define config.autosave_on_quit = False
 # This controls the number of slots auto-saving can use
 define config.autosave_slots = 0
 
-# This controls the layers of screens, images, and more. 
-# Best not to leave this alone.
+# 控制各个 GUI 元素（屏幕、图像等）的图层。
+# 最好不要动这一块。
 define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
 
 # 最好也不要动这一块。
@@ -142,7 +141,7 @@ init python:
         else:
             return (float(height) * (float(config.screen_width) / float(config.screen_height)), height)
 
-## Build configuration #########################################################
+## 构建配置 #########################################################
 ##
 ## This section controls how Ren'Py turns your project into distribution files.
 

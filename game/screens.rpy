@@ -509,7 +509,7 @@ style navigation_button_text:
     insensitive_outlines [(4, "#fce", 0, 0), (2, "#fce", 2, 2)]
 
 
-## Main Menu screen ############################################################
+## 主菜单屏幕 ############################################################
 ##
 ## Used to display the main menu when Ren'Py starts.
 ##

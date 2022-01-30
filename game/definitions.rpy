@@ -140,7 +140,7 @@ define audio.td2 = "<from 4.5 loop 36.782>bgm/d.ogg"
 define audio.m1 = "<loop 0>bgm/m1.ogg" # Just Monika - Just Monika.
 define audio.mend = "<loop 6.424>bgm/monika-end.ogg" # I Still Love You
 
-define audio.ghostmenu = "<loop 0>bgm/ghostmenu.ogg"
+define audio.ghostmenu = "<loop 0>bgm/ghostmenu.ogg" # 阴间菜单（Ghost Menu）
 define audio.g1 = "<loop 0>bgm/g1.ogg"
 define audio.g2 = "<loop 0>bgm/g2.ogg"
 define audio.hb = "<loop 0>bgm/heartbeat.ogg" # 我...只想...看着你

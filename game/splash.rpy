@@ -78,7 +78,7 @@ image menu_art_m:
     zoom 1.00
     menu_art_move(1.00, 1000, 1.00)
 
-# Ghost Main Menu Images
+# 阴间菜单（Ghost Menu）相关图片
 image menu_art_y_ghost:
     subpixel True
     "gui/menu_art_y_ghost.png"
@@ -455,7 +455,7 @@ label splashscreen:
     $ config.allow_skipping = True
     return
 
-# Warning Screen
+# 警告屏幕
 label warningscreen:
     hide intro
     show warning
