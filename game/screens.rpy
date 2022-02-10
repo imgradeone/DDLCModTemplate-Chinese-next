@@ -599,7 +599,7 @@ style main_menu_title:
     size gui.title_text_size
 
 
-## Game Menu screen ############################################################
+## 游戏菜单屏幕 ############################################################
 ##
 ## This lays out the basic common structure of a game menu screen. It's called
 ## with the screen title, and displays the background, title, and navigation.

@@ -24,7 +24,7 @@ image poem_end = ConditionSwitch(
     "persistent.clearall == True", "poem_special/poem_end_clearall.png",
     "True", "poem_special/poem_end.png")
 
-# All of these define a label for showing a poem
+# 所有定义展示特殊诗脚本的 Label
 label poem_special_1:
     $ quick_menu = False
     play sound page_turn

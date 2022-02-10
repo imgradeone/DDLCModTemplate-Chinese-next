@@ -1,15 +1,15 @@
 FONT LICENSES for DDLC Chinese Mod Template
 
 natsuki.otf (Acy Font): 
-Copyright (c) 2019-2020, lxfly2000 (lxfly2000@outlook.com). Licensed under SIL Open Font License 1.1.
+Copyright (c) 2019-2020, lxfly2000. Licensed under SIL Open Font License 1.1.
 
 harmonyossans.ttf (HarmonyOS Sans): 
-Copyright 2021 Huawei Device Co., Ltd. Licensed under HarmonyOS Sans Fonts License Agreement.
+Copyright 2021 Huawei Device Co., Ltd. Licensed under HarmonyOS Sans Fonts License Agreement. Full license content can be viewed at /game/mod_assets/font/LICENSE-harmonyossans.txt.
 
 monika.ttf (Yozai Font): 
 Copyright (c) 2020 LXGW, Copyright (c) Y.OzVox.
 
-yuri.ttf (霞鹜文楷): 
+yuri.ttf (霞鹜文楷 / LXGW WenKai): 
 Copyright (c) 2021 LXGW, Copyright (c) 2020 The Klee Project Authors
 
 sourcehanserif.otf (Source Han Serif CN):
@@ -21,5 +21,5 @@ sayori.ttf (851tegakizatsu):
 zcoolkuaile.ttf (ZCOOL Kuaile):
 Copyright (c) 2016 刘兵克 (Liu Bingke)
 
-zhushi.ttf (杨任东竹石体):
+zhushi.ttf (杨任东竹石体 / YRDZST):
 Copyright (c) 2017 杨任东字体

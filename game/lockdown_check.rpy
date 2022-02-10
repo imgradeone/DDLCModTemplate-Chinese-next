@@ -8,7 +8,7 @@ label lockdown_check:
 
     $ version = renpy.version()
 
-    # if renpy.version_tuple >= (7, 4, 6, 1693) and renpy.version_tuple < (7, 4, 9, 2142):
+    # if renpy.version_tuple >= (7, 4, 6, 1693) and renpy.version_tuple < (7, 4, 9, 2142): # 不再阻止 7.4.6 - 7.4.9，毕竟有补丁了
 
     #     scene black
     #     "{b}警告！{/b} Ren'Py 7.4.6 的严重 bug 会导致 DDLC 转场彻底损坏。"

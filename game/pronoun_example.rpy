@@ -1,4 +1,4 @@
-# pronoun_example.rpy
+# pronoun_example.rpy - 自适应人称
 # 人称功能为实验性功能，暂时不保证可用性与易用性。
 # This file serves as a example to the pronoun feature.
 # Use this as a example on how to use the pronoun feature.

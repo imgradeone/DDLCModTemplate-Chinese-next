@@ -497,7 +497,7 @@ label after_load:
     $ persistent.ghost_menu = False
     $ style.say_dialogue = style.normal
 
-    if anticheat != persistent.anticheat:
+    if anticheat != persistent.anticheat: # 不一致则显示彩蛋并重启游戏
         stop music
         scene black
         "存档加载失败。"
@@ -537,7 +537,7 @@ label before_main_menu:
 
 # 退出游戏的事件。
 label quit:
-    if persistent.ghost_menu:
+    if persistent.ghost_menu: # Ghost Menu 的短暂恐吓，可以自行修改
         hide screen main_menu
         scene white
         show expression "gui/menu_art_m_ghost.png":

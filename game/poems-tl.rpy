@@ -79,7 +79,7 @@ init python:
 
     poem_y3b_chs = Poem(
         author = "yuri",
-        title = "灯下魅影II",
+        title = "灯下魅影 Part. 2",
         text = """\
 我卷曲的长发
 浸染在路灯的琥珀光下

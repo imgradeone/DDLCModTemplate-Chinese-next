@@ -1,7 +1,7 @@
 ## Copyright 2019-2022 Azariel Del Carmen (GanstaKingofSA). All rights reserved.
 ## This file may only be used if the author is credited in text by name.
 
-## renpy_patches.rpy
+## renpy_patches.rpy - Ren'Py 补丁
 
 # This file is not part of DDLC. This file is mainly designed to 
 # patch certain versions of Ren'Py that break DDLC/DDLC mods by
