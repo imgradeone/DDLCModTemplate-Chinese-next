@@ -10,6 +10,7 @@
 - change: 开发者模式设置为 `False`
 - refactor: 将 BSOD 功能分离
 - refactor: 修改部分译文
+- change: 补丁更新
 
 ### 文件
 
