@@ -9,6 +9,8 @@
 
 **如果你是 Mod 作者，请不要将 DDLC 游戏本体包含在你分发的 ZIP 里，这是违反 IP Guidelines 的行为。**
 
+**同时，你不应该将本模板用于非 Mod 领域的补丁。**
+
 > 目前 Ren'Py SDK 7.4.6-7.4.8 有破坏性改动，会导致 DDLC 转场失效，但 7.4.9 - 7.4.10 已经修复该问题，您现在可以安全地更新 Ren'Py SDK 至 7.4.10 版本并继续开发 Mod。
 
 > 本 Mod 模板不支持 Doki Doki Literature Club Plus。

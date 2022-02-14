@@ -89,7 +89,7 @@ label updateconsolehistory(text=""):
         show console_history "[consolehistorydisplay]" as chistory zorder 100
     return
 
-# Hides the whole console
+# 隐藏整个终端
 label hideconsole:
     hide console_bg
     hide console_caret

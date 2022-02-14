@@ -1,4 +1,4 @@
-## script-poemresponses.rpy
+## script-poemresponses.rpy - 赏诗反应
 
 # This is where the doki's respond to how good or crappy the MC's poem
 # Act 2 uses script-poemresponses2 but that is used as a hub for Act 2 responses to MC's poem
@@ -45,7 +45,7 @@ label poemresponse_start:
                 $ s_readpoem = True
                 if chapter == 1 and poemsread == 0:
                     "果然还是先和纱世里分享最轻松自在了。"
-                    "毕竟她是我的好朋友。"
+                    "毕竟她是我的好朋友嘛。"
                 call poemresponse_sayori
             "夏树" if not n_readpoem:
                 $ n_readpoem = True

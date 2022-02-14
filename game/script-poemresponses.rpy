@@ -1,4 +1,4 @@
-## script-poemresponses.rpy
+## script-poemresponses.rpy - 赏诗反应
 
 # This is where the doki's respond to how good or crappy the MC's poem
 # Act 2 uses script-poemresponses2 but that is used as a hub for Act 2 responses to MC's poem
@@ -45,7 +45,7 @@ label poemresponse_start:
                 $ s_readpoem = True
                 if chapter == 1 and poemsread == 0:
                     "果然还是先和纱世里分享最轻松自在了。"
-                    "毕竟她是我的好朋友。"
+                    "毕竟她是我的好朋友嘛。"
                 call poemresponse_sayori
             "夏树" if not n_readpoem:
                 $ n_readpoem = True
@@ -72,7 +72,7 @@ label poemresponse_start:
         if poemsread < 3 or (persistent.playthrough == 0 and poemsread < 4):
             jump poemresponse_loop
 
-    # defaults to poem responses
+    # 设定已读状态默认值为 False
     $ s_readpoem = False
     $ n_readpoem = False
     $ y_readpoem = False
@@ -83,16 +83,16 @@ label poemresponse_start:
 # Everything below here under poemresponse_ is the script used per doki
 # All comments below Sayori applies to all doki's (Monika does not have a med value. only good or bad)
 label poemresponse_sayori:
-    # default scene and pose
+    # 默认场景与姿势
     scene bg club_day
     show sayori 1a zorder 2 at t11
     with wipeleft_scene
-    # default opinion
+    # 默认看法
     $ poemopinion = "med"
-    # asks if the doki's appeal in the poem game was bad or -1. if true opinion is bad
+    # 检查诗词好感度，如果为 -1（厌恶），则观点为 bad（厌恶）
     if s_poemappeal[chapter - 1] < 0:
         $ poemopinion = "bad"
-    # asks if the doki's appeal in the poem game was good or 1. if true opinion is good else med or meh
+    # 如果为 1（喜欢），则观点为 good（喜欢），若两者都不匹配则观点为 med（中立）/ meh（无感）
     elif s_poemappeal[chapter - 1] > 0:
         $ poemopinion = "good"
     # sets the label for the response to the chapter with their opinion

@@ -8,21 +8,20 @@
 # patching the Ren'Py engine at startup.
 ### DO NOT MODIFY THIS FILE WHATSOEVER! ###
 
-## Patches 'wmic' environment variables with 'powershell' instead.
+## 将 wmic 变量修改为使用 PowerShell 调用，确保 Windows 10/11 功能兼容性
 python early:
     import os
     os.environ['wmic process get Description'] = "powershell (Get-Process).ProcessName"
     os.environ['wmic os get version'] = "powershell (Get-WmiObject -class Win32_OperatingSystem).Version"
 
 init -1 python:
-    # Patches the Monika Space Room Effects
+    # 修复莫妮卡教室的特效
     if renpy.version_tuple >= (7, 4, 5, 1648):
         config.gl2 = False
 
     # Patches the 7.4.6 - 7.4.8 transform bugs. 
     if renpy.version_tuple >= (7, 4, 6, 1693) and renpy.version_tuple < (7, 4, 9, 2142):
 
-        # Patches the 7.4.6 - 7.4.8 transform bugs. Based off 7.4.9
         class NewSceneLists(renpy.display.core.SceneLists):
 
             @staticmethod

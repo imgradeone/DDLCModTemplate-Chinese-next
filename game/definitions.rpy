@@ -1,4 +1,4 @@
-# Definitions.rpy
+# Definitions.rpy - 定义
 
 # This section defines stuff for DDLC and your mod!
 # Use this as a starting point if you would like to override with your own.
@@ -11,7 +11,7 @@ define persistent.demo = False
 define persistent.steam = ("steamapps" in config.basedir.lower())
 
 # 开发者模式开关
-# 'auto' 为自动检测（但似乎 Ren'Py 的检测会抽风）
+# 'auto' 为自动检测（但似乎 Ren'Py 的检测会抽风，所以改回了 False）
 define config.developer = False
 
 python early:
@@ -1439,9 +1439,9 @@ default m_name = "莫妮卡"
 default n_name = "夏树"
 default y_name = "优里"
 
-# Poem Variables
+# 诗歌游戏相关变量
 # This is how much each character likes your poem day by day
-# -1 - Bad, 0 - Neutral, 1 - Good
+# -1 - 厌恶, 0 - 中立, 1 - 喜欢
 ## To add a new poem person to the poem and their like status
 # default e_poemappeal = [0, 0, 0]
 default n_poemappeal = [0, 0, 0]
