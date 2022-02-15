@@ -765,11 +765,11 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Doki Doki Literature Club! ©2017 Team Salvato\n\n本 Mod 是粉丝作品，与 Team Salvato 无关，原版 DDLC 可以在 {a=https://ddlc.moe}DDLC.moe{/a} 获取。")
+            text _("Doki Doki Literature Club! ©2017 Team Salvato\n\n本 Mod 是粉丝作品，与 Team Salvato 无关，原版 DDLC 可以在 {a=https://ddlc.moe}DDLC.moe{/a} 获取。\n\n本 Mod 使用 DDLC 中文 Mod 模板 2.0 开发。\nCopyright © 2019-2022 Azariel Del Carmen (GanstaKingofSA). All rights reserved.\nTranslated and modified by imgradeone.")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
-# define gui.about = ""
+define gui.about = ""
 
 
 style about_label is gui_label

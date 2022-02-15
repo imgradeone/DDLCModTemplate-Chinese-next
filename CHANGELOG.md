@@ -11,6 +11,7 @@
 - refactor: 将 BSOD 功能分离
 - refactor: 修改部分译文
 - change: 补丁更新
+- change: 在关于页添加模板相关信息
 
 ### 文件
 

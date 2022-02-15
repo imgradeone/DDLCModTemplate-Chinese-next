@@ -3,7 +3,7 @@
 
 这是**全新的** DDLC 中文 Mod 模板！本模板基于 GanstaKingofSA 的 [DDLC Mod Template 2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0)，并得到了旧版已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](https://revolution.dokimod.cn/ipguidelines.html)。
 
-当前版本的模板支持 Ren'Py SDK 6.99.12 及 7.4.5 / 7.4.9 / 7.4.10。
+当前版本的模板支持 Ren'Py SDK 6.99.12 及 7.4.5 / 7.4.9 / 7.4.11。
 
 **本模板是为使用原版 DDLC 素材的饭制游戏和 Mod（而并非不使用原版素材的作品）设计的，提供源代码也并非以便将其复制粘贴到和 DDLC 没有关系的工程。此模板内大部分代码属于 Team Salvato 的知识产物，请遵循 Team Salvato 的 [IP Guidelines](https://revolution.dokimod.cn/ipguidelines.html) 使用，否则后果自负。**
 
@@ -33,7 +33,7 @@
 
 ### 中文字体
 
-DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢。**从 Mod 模板 v2.0.0-beta2 开始，您不需要下载任何字体即可开始开发，所有字体均内置于模板中。**字体版权及引用文件可在 [attributions.txt](attributions.txt) 中查看。
+DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢。 **从 Mod 模板 v2.0.0-beta2 开始，您不需要下载任何字体即可开始开发，所有字体均内置于模板中。** 字体版权及引用文件可在 [attributions.txt](attributions.txt) 中查看。
 
 如有需要，您也可以自行修改配置文件，以自定义字体，**但请自主承担版权风险**。
 
@@ -51,8 +51,8 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. 当你完成脚本编写后，转到 Ren'Py SDK 主界面，选择 `Build Distributions` / `生成分发版`。将 `Build Packages` / `生成分发包` 中的其他选项全部取消，仅选中 `Ren'Py 6 DDLC Compliant Mod`，然后点击 `Build` / `生成`。这个操作会生成跨平台的 ZIP 文件，这就是你的 Mod 文件。
 
 ### 使用 Ren'Py SDK 7 进行 Mod 开发
-1. 下载并运行 [Ren'Py SDK 7.4.5](https://www.renpy.org/release/7.4.5) 或 [7.4.10](https://www.renpy.org/release/7.4.10)。
-    > 请注意：使用 Ren'Py 7 构建的 Mod 不兼容 Ren'Py 6。我们也会跟进上游的变动，以完美适配最新的 Ren'Py SDK。目前 Ren'Py SDK 7.4.6-7.4.8 有破坏性改动，会导致 DDLC 转场失效，但 7.4.9 - 7.4.10 已经修复该问题，您现在可以安全地更新 Ren'Py SDK 至 7.4.10 版本并继续开发 Mod。
+1. 下载并运行 [Ren'Py SDK 7.4.5](https://www.renpy.org/release/7.4.5) 或 [7.4.11](https://www.renpy.org/release/7.4.11)。
+    > 请注意：使用 Ren'Py 7 构建的 Mod 不兼容 Ren'Py 6。我们也会跟进上游的变动，以完美适配最新的 Ren'Py SDK。目前 Ren'Py SDK 7.4.6-7.4.8 有破坏性改动，会导致 DDLC 转场失效，但 7.4.9 - 7.4.11 已经修复该问题，您现在可以安全地更新 Ren'Py SDK 至 7.4.11 版本并继续开发 Mod。
 1. 前往 Releases 页面获取 [模板的最新版本](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/releases)。（目前 Mod 模板暂无稳定版本，您可以使用 GitHub 的 `Use this template` 创建新工程）
 1. 从 [DDLC.moe](https://ddlc.moe) 或者 [Steam](https://store.steampowered.com/app/698780/) 下载 DDLC 游戏，然后将 `DDLC-1.1.1-pc` 文件夹（对于 macOS 用户则为 `ddlc-mac`，对于 Steam 版本则为 `Doki Doki Literature Club`）复制到 Ren'Py SDK（`renpy-<version>-sdk`）文件夹（或者您在 Ren'Py SDK 中自定义的文件夹）。将文件夹重命名为你的 Mod 名称。
 1. 将 Mod 模板 ZIP 包内的内容复制到您刚刚粘贴的 DDLC 文件夹内。如有提示，请允许替换所有文件。  
@@ -65,7 +65,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 ### 使用 GitHub 生成新工程
 您可能偏好使用 GitHub 托管 Mod 代码，或者希望更快创建工程，接下来您可以借助 GitHub 模板功能来创建您的 Mod 工程。
 
-1. 下载并运行前序您希望使用的 Ren'Py SDK。([6.99.12](https://www.renpy.org/release/6.99.12) | [7.4.5](https://www.renpy.org/release/7.4.5) | [7.4.10](https://www.renpy.org/release/7.4.10)）
+1. 下载并运行前序您希望使用的 Ren'Py SDK。([6.99.12](https://www.renpy.org/release/6.99.12) | [7.4.5](https://www.renpy.org/release/7.4.5) | [7.4.11](https://www.renpy.org/release/7.4.11)）
 1. 转到 [模板的 GitHub 仓库](https://github.com/imgradeone/DDLCModTemplate-Chinese-next)，点击页面上的 `Use this template`（或者使用 [此链接](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/generate)），按照指引命名 Mod 仓库，选择公开 / 私密仓库，点击 `Create repository from template`。
   > 包含所有分支（Include all branches）为可选项。
 1. 借助您的 Git 客户端，克隆刚刚创建的仓库到电脑的相应文件夹（`renpy-<version>-sdk` 文件夹，或者您在 Ren'Py SDK 中自定义的文件夹）。
