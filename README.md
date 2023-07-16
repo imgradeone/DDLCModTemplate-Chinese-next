@@ -1,8 +1,10 @@
-# 中文 Mod 模板更新提示
+> DDLC 中文 Mod 模板现已推出 4.0 版本，汉化更规范，功能更丰富，且完美兼容 Ren'Py SDK 7.5 及 8.0。您可以前往 [DokiMod/DDLCModTemplate-Chinese-future](https://github.com/DokiMod/DDLCModTemplate-Chinese-future) 仓库获取 DDLC 中文 Mod 模板 4.0（预览版）。**目前 4.0 版本不适合生产环境，因此您可以（或者说，最好）继续使用 Mod 模板 2.0 版本进行开发。**
 
-DDLC 中文 Mod 模板现已推出 4.0 版本，汉化更规范，功能更丰富，且完美兼容 Ren'Py SDK 7.5 及 8.0。您可以前往 [DokiMod/DDLCModTemplate-Chinese-future](https://github.com/DokiMod/DDLCModTemplate-Chinese-future) 仓库获取 DDLC 中文 Mod 模板 4.0（预览版）。
+**使用此模板之前请注意！本项目包含对 DDLC 的剧透。我们希望您能在通关 DDLC 原作后使用该模板进行模组开发，以避免影响游戏体验。**
 
-目前 4.0 版本可能不适合生产环境，因此您可以继续使用 Mod 模板 2.0 版本进行开发。但请注意，待模板 4.0 版本达到稳定后，DokiMod 团队可能会终止对中文 Mod 模板 2.0 的维护。
+**您仍需为自己的心理健康做周全的考虑。DDLC 本质上为心理恐怖游戏，并不适合所有玩家，且游戏内已经做了充足的提醒。心理健康比一切都重要。**
+
+---
 
 # DDLC 中文 Mod 模板 2.0
 嘿，你~~又~~想用中文写 DDLC Mod？**那你来对地方了！**
@@ -25,7 +27,7 @@ DDLC 中文 Mod 模板现已推出 4.0 版本，汉化更规范，功能更丰�
 
 > 此模板自带 Android 支持，详情请看原版 DDLC Mod Template 2.0 所附带的 `guide.pdf`，或在稍晚时候访问 [DokiMod 开发文档](https://docs.dokimod.cn) 了解 Android Mod 制作方式。
 
-> 提示：本模板**仅在 [GitHub](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/releases/)、[Gitee](https://gitee.com/imgradeone/DDLCModTemplate-Chinese-next/releases/) 和 [git.ddlc.top](https://git.ddlc.top/imgradeone/DDLCModTemplate-Chinese-next/releases) 提供下载，完全免费**。你可能在 CSDN 看到了这个模板，**不要去那边花冤枉钱下载**！！！（目前已知的 CSDN 盗传版是 1.x 版本，已经不受维护。）  
+> 提示：本模板**仅在 [GitHub](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/releases/)、[Gitee](https://gitee.com/imgradeone/DDLCModTemplate-Chinese-next/releases/)（只要还能活着）提供下载，完全免费**。你可能在 CSDN 看到了这个模板，**不要去那边花冤枉钱下载**！！！（目前已知的 CSDN 盗传版是 1.x 版本，已经不受维护。）  
 > 此后本模板不再考虑托管于 SourceForge。（鉴于托管于 SourceForge 会加大恶意爬虫与盗传的概率）
 > Gitee 镜像源的版本更新不及时，但可作为中国大陆加速源。
 
