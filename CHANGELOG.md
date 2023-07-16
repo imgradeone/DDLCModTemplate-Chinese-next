@@ -12,6 +12,8 @@
 - refactor: 修改部分译文
 - change: 补丁更新
 - change: 在关于页添加模板相关信息
+- 修复了一处弹窗未汉化的问题
+- `lockdown_check` 逻辑更新并屏蔽 Ren'Py 8
 
 ### 文件
 

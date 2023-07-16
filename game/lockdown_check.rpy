@@ -35,7 +35,7 @@ label lockdown_check:
     #     "抱歉给您带来不便，希望您保持开心，快乐 Modding。"
     #     $ renpy.quit()
 
-    elif renpy.version_tuple > (7, 4, 11, 2266):
+    elif renpy.version_tuple > (7, 4, 11, 2266) and not persistent.lockdown_warning:
         scene black
         "{b}警告！{/b} 您目前使用的 Ren'Py SDK 未经过兼容性测试。"
         "目前的 Mod 模板仅在 {a=https://www.renpy.org/release/7.4.11}Ren'Py SDK 7.4.11 版本{/a} 保证可用性。"

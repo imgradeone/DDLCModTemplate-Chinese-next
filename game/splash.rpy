@@ -291,12 +291,12 @@ label splashscreen:
     ## 请 不 要 修 改 这 几 行 。
     default persistent.lockdown_warning = False
 
-    if config.developer:
-        if not persistent.lockdown_warning:
+    if not persistent.lockdown_warning:
+        if os.path.exists(config.gamedir + "/lockdown_check.rpy"):
             call lockdown_check
-    else:
-        $ persistent.lockdown_warning = True
-    
+        else:
+            $ persistent.lockdown_warning = True
+
     # 设定 first run 默认值为 False 以展示游戏内容警告
     default persistent.first_run = False
 
