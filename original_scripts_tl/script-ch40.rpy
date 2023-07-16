@@ -518,7 +518,7 @@ label ch40_main:
         show sayori end-glitch onlayer screens
         s "...嗯？"
         s "发-发生什么了...？"
-        call screen dialog("I won't let you hurt him.", ok_action=Return())
+        call screen dialog("我不会让你伤害他的。", ok_action=Return())
         s "是谁..."
         s "停-停下——好痛——"
         show screen tear(20, 0.1, 0.1, 0, 40)

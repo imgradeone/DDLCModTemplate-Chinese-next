@@ -165,7 +165,7 @@ label ch23_n_end:
     hide screen tear
     show natsuki ghost_base
     n "我改变主意了。"
-    n "忘了刚刚你读到的一切。"
+    n "请忘掉刚刚你读到的一切。"
     n "尝试做任何事情都没有意义。"
     n "优里那么让人讨厌都是她自己的错。"
     n "你听得见我说话吗，[player]？"

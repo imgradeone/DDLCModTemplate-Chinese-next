@@ -197,7 +197,7 @@ label ch30_main:
     m "而且，现在在我面前的人，已经不再是那个人了。"
     m "那个活在游戏中的“你”，无论你给他起了什么名字。"
     m "我在和 {i}你{/i} 说话，[player]。"
-    $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe", "livehime.exe", "pandatool.exe", "yymixer.exe", "douyutool.exe", "huomaotool.exe"]
+    $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe", "livehime.exe", "pandatool.exe", "yymixer.exe", "douyutool.exe", "huomaotool.exe"] # 如需增加直播 / 录屏软件，您可以参考 splash.rpy。
     if not list(set(process_list).intersection(stream_list)):
         if currentuser != "" and currentuser.lower() != player.lower():
             m "或者说..."

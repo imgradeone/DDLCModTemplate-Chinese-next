@@ -479,10 +479,10 @@ label ch2_n_end:
     else:
         n 4c "毕竟那是我最擅长的！"
         n "除非能从中传递出一个好的主旨，不然我都不喜欢写作。" 
-        n "比如说，传递情绪很重要..."  
-        n "但是我想要让人们思考，而不是单纯地感受。"   
-        n 4b "记住这点！"  
-        n "我也会为明天写一首好诗的，所以敬请期待。"   
+        n "比如说，传递情绪很重要..."
+        n "但是我想要让人们思考，而不是单纯地感受。"
+        n 4b "记住这点！"
+        n "我也会为明天写一首好诗的，所以敬请期待。"
     return
 label ch3_n_end:
     $ n_read3 = True
@@ -744,7 +744,7 @@ label ch3_m_end:
 
 label ch1_n_bad:
     n "..."
-    mc "...?"
+    mc "...？"
     # asks if it's in Act 2 mode and if random number is 0. if true special scene happens
     if persistent.playthrough == 2 and renpy.random.randint(0, 2) == 0:
         $ currentpos = get_pos()
@@ -1067,7 +1067,7 @@ label ch2_n_good:
             m "这不过是你需要考虑的东西而已。"
             show monika zorder 2 at t22
             show natsuki 4e at l21
-            n "嘿！"
+            n "喂！"
             "夏树出现了，并且从莫妮卡手中抢过了诗。"
             "我们俩都没注意到她已经回到教室了。"
             show natsuki zorder 3 at f21
