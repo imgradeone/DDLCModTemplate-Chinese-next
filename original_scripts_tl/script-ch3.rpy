@@ -641,7 +641,7 @@ label ch3_end:
     with wipeleft_scene
     $ ch4_name = ch4_scene.capitalize()
 
-    if ch4_scene = "natsuki":
+    if ch4_scene == "natsuki":
         $ ch4_name_chs = "夏树"
     else:
         $ ch4_name_chs = "优里"
