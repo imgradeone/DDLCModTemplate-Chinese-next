@@ -178,6 +178,10 @@ init python:
     except:
         pass
     build.classify_renpy("renpy.py", "renpy all")
+
+    build.early_base_patterns.remove(('*.sh', None))
+    build.classify("LinuxLauncher.sh", "linux") ## Linux Launcher Script
+    build.classify("*.sh", None)
     
     #############################################################
 

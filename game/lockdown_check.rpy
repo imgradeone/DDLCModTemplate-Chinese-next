@@ -20,7 +20,7 @@ label lockdown_check:
                 return
             "我不同意。":
                 "您选择了不同意，因此 DDLC 中文 Mod 模板将暂时停止在 Ren'Py 8 下工作，除非重新同意。"
-                "如果您仍然希望开发模组，您应该暂时选择 {a=https://www.renpy.org/release/7.4.11}Ren'Py SDK 7.4.11 版本{/a}。"
+                "如果您仍然希望开发模组，您应该暂时选择 {a=https://www.renpy.org/release/7.6.1}Ren'Py SDK 7.6.1 版本{/a}。"
                 "如果您想选择重新同意该协议，那么您可以重新在该版本 SDK 下运行 Mod 模板，再次选择。"
                 "抱歉给您带来不便，希望您保持开心，快乐 Modding。"
                 $ renpy.quit()
@@ -35,10 +35,10 @@ label lockdown_check:
     #     "抱歉给您带来不便，希望您保持开心，快乐 Modding。"
     #     $ renpy.quit()
 
-    elif renpy.version_tuple > (7, 4, 11, 2266) and not persistent.lockdown_warning:
+    elif renpy.version_tuple > (7, 6, 1, 23060707) and not persistent.lockdown_warning:
         scene black
         "{b}警告！{/b} 您目前使用的 Ren'Py SDK 未经过兼容性测试。"
-        "目前的 Mod 模板仅在 {a=https://www.renpy.org/release/7.4.11}Ren'Py SDK 7.4.11 版本{/a} 保证可用性。"
+        "目前的 Mod 模板仅在 {a=https://www.renpy.org/release/7.6.1}Ren'Py SDK 7.6.1 版本{/a} 保证可用性。"
         "如果您想在当前版本的 Ren'Py SDK 上开发模组，您可能会遇到兼容性问题与错误。"
         menu:
             "如果您同意使用该版本的 Ren'Py SDK 进行模组开发，则意味着您能接受未知的兼容性 bug。"
@@ -47,7 +47,7 @@ label lockdown_check:
                 return
             "我不同意。":
                 "您选择了不同意，因此 DDLC 中文 Mod 模板将暂时停止在该版本 Ren'Py SDK 下工作，除非重新同意。"
-                "如果您仍然希望开发模组，您应该暂时选择 {a=https://www.renpy.org/release/7.4.11}Ren'Py SDK 7.4.11 版本{/a}。"
+                "如果您仍然希望开发模组，您应该暂时选择 {a=https://www.renpy.org/release/7.6.1}Ren'Py SDK 7.6.1 版本{/a}。"
                 "如果您想选择重新同意该协议，那么您可以重新在该版本 SDK 下运行 Mod 模板，再次选择。"
                 "抱歉给您带来不便，希望您保持开心，快乐 Modding。"
                 $ renpy.quit()
