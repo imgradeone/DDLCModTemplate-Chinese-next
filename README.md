@@ -47,7 +47,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 
 ---
 
-### 使用 Ren'Py SDK 6 进行 Mod 开发
+### 使用 Ren'Py SDK 6 进行 Mod 开发（不建议）
 1. 下载并运行 [Ren'Py SDK 6.99.12](https://www.renpy.org/release/6.99.12)。  
     > 请注意：DDLC 不兼容新版 Ren'Py，除非游戏后续更新，当然这并不意味着您不能使用 Ren'Py SDK 7 进行 Mod 制作。
 1. 前往 Releases 页面获取 [模板的最新版本](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/releases)。（目前 Mod 模板暂无稳定版本，您可以使用 GitHub 的 `Use this template` 创建新工程）
@@ -59,7 +59,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. 当你完成脚本编写后，转到 Ren'Py SDK 主界面，选择 `Build Distributions` / `生成分发版`。将 `Build Packages` / `生成分发包` 中的其他选项全部取消，仅选中 `Ren'Py 6 DDLC Compliant Mod`，然后点击 `Build` / `生成`。这个操作会生成跨平台的 ZIP 文件，这就是你的 Mod 文件。
 
 ### 使用 Ren'Py SDK 7 进行 Mod 开发
-1. 下载并运行 [Ren'Py SDK 7.4.5](https://www.renpy.org/release/7.4.5) 或 [7.4.11](https://www.renpy.org/release/7.4.11)。
+1. 下载并运行 [Ren'Py SDK 7.4.5](https://www.renpy.org/release/7.4.5) 或 [7.4.11](https://www.renpy.org/release/7.4.11) 或 [7.6.1](https://www.renpy.org/release/7.6.1)。
     > 请注意：使用 Ren'Py 7 构建的 Mod 不兼容 Ren'Py 6。我们也会跟进上游的变动，以完美适配最新的 Ren'Py SDK。目前 Ren'Py SDK 7.4.6-7.4.8 有破坏性改动，会导致 DDLC 转场失效，但 7.4.9 - 7.4.11 已经修复该问题，您现在可以安全地更新 Ren'Py SDK 至 7.4.11 版本并继续开发 Mod。
 1. 前往 Releases 页面获取 [模板的最新版本](https://github.com/imgradeone/DDLCModTemplate-Chinese-next/releases)。（目前 Mod 模板暂无稳定版本，您可以使用 GitHub 的 `Use this template` 创建新工程）
 1. 从 [DDLC.moe](https://ddlc.moe) 或者 [Steam](https://store.steampowered.com/app/698780/) 下载 DDLC 游戏，然后将 `DDLC-1.1.1-pc` 文件夹（对于 macOS 用户则为 `ddlc-mac`，对于 Steam 版本则为 `Doki Doki Literature Club`）复制到 Ren'Py SDK（`renpy-<version>-sdk`）文件夹（或者您在 Ren'Py SDK 中自定义的文件夹）。将文件夹重命名为你的 Mod 名称。
