@@ -9,7 +9,7 @@
 # DDLC 中文 Mod 模板 2.0
 嘿，你~~又~~想用中文写 DDLC Mod？**那你来对地方了！**
 
-这是**全新的** DDLC 中文 Mod 模板！本模板基于 GanstaKingofSA 的 [DDLC Mod Template 2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0)，并得到了旧版已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](https://revolution.dokimod.cn/ipguidelines.html)。
+这是**全新的** DDLC 中文 Mod 模板！本模板基于 Bronya-Rand 的 [DDLC Mod Template 2.0](https://github.com/Bronya-Rand/DDLCModTemplate2.0)，并得到了旧版已经进行的一系列汉化。使用本模板制作 Mod 时，请遵循 Team Salvato 的 [IP Guidelines](https://revolution.dokimod.cn/ipguidelines.html)。
 
 当前版本的模板支持 Ren'Py SDK 6.99.12 及 7.4.5 / 7.4.9 / 7.4.11 / 7.6.1。
 
@@ -85,12 +85,12 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. 当你完成脚本编写后，转到 Ren'Py SDK 主界面，选择 `Build Distributions` / `生成分发版`。将 `Build Packages` / `生成分发包` 中的其他选项全部取消，仅选中 `Ren'Py <SDK 版本> DDLC Compliant Mod`，然后点击 `Build` / `生成`。这个操作会生成跨平台的 ZIP 文件，这就是你的 Mod 文件。
 
 ### 开始 Android Mod 移植 / 开发
-您可以查阅[原版 DDLC Mod Template 2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/blob/master/guide.pdf) 所附带的 `guide.pdf`，或在稍晚时候访问 [DokiMod 开发文档](https://docs.dokimod.cn) 了解 Android Mod 制作方式，但请遵循以下几点：
+您可以查阅[原版 DDLC Mod Template 2.0](https://github.com/Bronya-Rand/DDLCModTemplate2.0/blob/master/guide.pdf) 所附带的 `guide.pdf`，或在稍晚时候访问 [DokiMod 开发文档](https://docs.dokimod.cn) 了解 Android Mod 制作方式，但请遵循以下几点：
 
 1. 对于 Ren'Py SDK 启动器内的包名，您应该以 `com.<作者>.<项目名>` 的格式命名并遵循 Android 包名规范。
   > 例如：如果您的昵称为 Yuri，项目名（`build.name`）为 Storm，那么您在 Ren'Py SDK 启动器的 `Android` -> `Configure` / `配置` 内的包名应该为 `com.yuri.storm`。
 
-更多内容请前往 [原版 DDLC Mod Template 2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/blob/master/guide.pdf) 所附带的 `guide.pdf` 了解。
+更多内容请前往 [原版 DDLC Mod Template 2.0](https://github.com/Bronya-Rand/DDLCModTemplate2.0/blob/master/guide.pdf) 所附带的 `guide.pdf` 了解。
 
 ## 模板特色功能
 
@@ -100,7 +100,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 1. 高度可定制！这个模板只是起点，借助你的创意，做你想做
 1. macOS `.app` 及 Linux `.sh` 启动文件制作支持
 1. Android 支持！
-    > 请前往 [原版 DDLC Mod Template 2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0/blob/master/guide.pdf) 所附带的 `guide.pdf` 了解 Android Mod 移植 / 开发。
+    > 请前往 [原版 DDLC Mod Template 2.0](https://github.com/Bronya-Rand/DDLCModTemplate2.0/blob/master/guide.pdf) 所附带的 `guide.pdf` 了解 Android Mod 移植 / 开发。
 1. Xcode 支持！您可以在 Xcode 中直接编辑、构建、测试您的 DDLC Mod，无需打开 Ren'Py 启动器。
     > 提示：您需要更改 `RENPY_TOOL` 变量，将其定位到您的 Ren'Py SDK 应用程序位置。[了解更多 &rsaquo;](XCODE.md)
 1. Terra 的深度诗词游戏教程（WIP）
@@ -118,7 +118,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 ## 特别感谢
 
 - Team Salvato http://teamsalvato.com / https://ddlc.moe
-- [GanstaKingofSA](https://github.com/GanstaKingofSA)
+- [Bronya-Rand](https://github.com/Bronya-Rand)
 - 所有字体作者
 - 社区汉化补丁团队（同时也是 DDLC Plus 饭制翻译支持者）：[DB (aka dumb)](https://steamcommunity.com/id/HomuLilly/)、[Javelin&Tea (aka J&Tea)](https://steamcommunity.com/profiles/76561198037532534/)、[TBGN](https://steamcommunity.com/id/PhyYuan/)、[Pizza Hime (aka 擎天披利)](https://steamcommunity.com/id/qweion/)
 - [Riotloc 团队](https://www.riotloc.com)（DDLC Plus 官方翻译团队）
@@ -128,7 +128,7 @@ DDLC 中文 Mod 模板使用了一些免费商用的中文字体，在此致谢�
 本 Mod 模板需要使用 Ren'Py。  
 Ren'Py 的许可，请参照 https://www.renpy.cn/doc/license.html （简体中文）或 https://www.renpy.org/doc/html/license.html （英文）。
 
-本模板基于 GanstaKingofSA 的 [DDLCModTemplate2.0](https://github.com/GanstaKingofSA/DDLCModTemplate2.0)。
+本模板基于 Bronya-Rand 的 [DDLCModTemplate2.0](https://github.com/Bronya-Rand/DDLCModTemplate2.0)。
 
 本模板属于粉丝作品，遵循 Team Salvato IP Guidelines。
 
@@ -140,7 +140,7 @@ Ren'Py 的许可，请参照 https://www.renpy.cn/doc/license.html （简体中�
 
 ---
 
-Copyright © 2019-2021 GanstaKingofSA. All rights reserved. 
+Copyright © 2019-2021 Bronya-Rand. All rights reserved. 
 
 Modified and translated by imgradeone.
 

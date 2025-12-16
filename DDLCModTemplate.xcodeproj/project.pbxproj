@@ -42,7 +42,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = GanstaKingOfSA;
+				ORGANIZATIONNAME = BronyaRand;
 				TargetAttributes = {
 					BF7B5E7622AD8AA2007BEAD8 = {
 						CreatedOnToolsVersion = 11.0;

@@ -1,5 +1,5 @@
 ## BSOD screen ##################################################################
-## Copyright 2019-2022 Azariel Del Carmen (GanstaKingofSA). All rights reserved.
+## Copyright 2019-2022 Azariel Del Carmen (Bronya-Rand). All rights reserved.
 ## Modified for Chinese Mod by imgradeone.
 ## 本功能仅限 DDLC Mod 使用。
 ##
