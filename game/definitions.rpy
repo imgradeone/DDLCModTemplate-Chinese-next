@@ -1393,7 +1393,7 @@ default areC = persistent.are.capitalize()
 default hesC = persistent.hes.capitalize()
 
 # 游戏系统字体
-define gui.system_font = u'mod_assets/font/harmonyossans.ttf'
+define gui.system_font = u'mod_assets/font/sarasagothic.ttf'
 
 # Persistent Variables
 

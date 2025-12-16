@@ -37,7 +37,7 @@ DDLC.sh
 *.zip
 
 # Avaliable free-to-use fonts 可用免费字体
-!game/mod_assets/font/harmonyossans.ttf
+!game/mod_assets/font/sarasagothic.ttf
 !game/mod_assets/font/sayori.ttf
 !game/mod_assets/font/yuri.ttf
 !game/mod_assets/font/zhushi.ttf

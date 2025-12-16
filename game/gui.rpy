@@ -46,13 +46,13 @@ define -2 gui.interface_text_color = '#ffffff'
 # 字体和字体大小
 
 ## 用于游戏内文本的字体。
-define -2 gui.default_font = "mod_assets/font/harmonyossans.ttf"
+define -2 gui.default_font = "mod_assets/font/sarasagothic.ttf"
 
 ## 用于角色名称的字体。
 define -2 gui.name_font = "mod_assets/font/zcoolkuaile.ttf"
 
 ## 用于游戏外文本的字体。
-define -2 gui.interface_font = "mod_assets/font/harmonyossans.ttf"
+define -2 gui.interface_font = "mod_assets/font/sarasagothic.ttf"
 
 ## 普通对话文本的大小。
 define -2 gui.text_size = 24

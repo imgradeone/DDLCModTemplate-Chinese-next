@@ -217,7 +217,6 @@ init python:
     build.classify('README.md', None)
     build.classify('help.html','mod all')
     build.classify('attributions.txt','mod all')
-    build.classify('game/mod_assets/font/LICENSE-harmonyossans.txt','mod all')
 
     # Set's help.html as documentation
     build.documentation('help.html')
