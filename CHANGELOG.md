@@ -1,6 +1,6 @@
 # 更新日志
 
-## 未发布版本（v2.0.0-dev）
+## v2.0.0-beta3-fix
 
 ### 开发
 
@@ -10,10 +10,14 @@
 - change: 开发者模式设置为 `False`
 - refactor: 将 BSOD 功能分离
 - refactor: 修改部分译文
+
+### 修改 / 修复
+
 - change: 补丁更新
 - change: 在关于页添加模板相关信息
 - 修复了一处弹窗未汉化的问题
 - `lockdown_check` 逻辑更新并屏蔽 Ren'Py 8
+- change: 将 HarmonyOS Sans 替换为更纱黑体
 
 ### 文件
 
