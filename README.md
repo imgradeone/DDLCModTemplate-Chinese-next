@@ -1,4 +1,4 @@
-> DDLC 中文 Mod 模板现已推出 4.0 版本，汉化更规范，功能更丰富，且完美兼容 Ren'Py SDK 7.5 及 8.0。您可以前往 [DokiMod/DDLCModTemplate-Chinese-future](https://github.com/DokiMod/DDLCModTemplate-Chinese-future) 仓库获取 DDLC 中文 Mod 模板 4.0（预览版）。**目前 4.0 版本不适合生产环境，因此您可以（或者说，最好）继续使用 Mod 模板 2.0 版本进行开发。**
+> DDLC 中文 Mod 模板 5.0 版本正在紧锣密鼓开发中，汉化更规范、更完善，功能更丰富，代码更现代化，完美兼容 Ren'Py SDK 8，且正全力修复模板历史遗留问题。您可以前往 [DokiMod/DDLCModTemplate-Chinese-v5](https://github.com/DokiMod/DDLCModTemplate-Chinese-v5) 仓库获取 DDLC 中文 Mod 模板 5.0（预览版）。**目前 5.0 版本不适合生产环境，因此您可以继续使用 Mod 模板 2.0 版本进行开发。**
 
 **使用此模板之前请注意！本项目包含对 DDLC 的剧透。我们希望您能在通关 DDLC 原作后使用该模板进行模组开发，以避免影响游戏体验。**
 
